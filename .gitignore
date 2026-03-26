@@ -4,3 +4,5 @@ Documents
 util1.py
 util2.py
 info_df
+__pycache__/
+.venv/
