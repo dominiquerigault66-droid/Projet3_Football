@@ -1,0 +1,1795 @@
+2026-03-19 16:43:55,362 [ERROR] Erreur sur Ligue-1 : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:44:17,041 [ERROR] Erreur sur La-Liga : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:44:32,752 [ERROR] Erreur sur Bundesliga : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:44:47,479 [ERROR] Erreur sur Serie-A : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:45:08,479 [ERROR] Erreur sur Eredivisie : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:45:22,365 [ERROR] Erreur sur Primeira-Liga : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:45:34,552 [ERROR] Erreur sur Belgian-Pro-League : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:45:55,708 [ERROR] Erreur sur Primera-Division : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:46:15,561 [ERROR] Erreur sur Premier-League : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:46:39,454 [ERROR] Erreur sur Serie-A : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:46:59,683 [ERROR] Erreur sur Major-League-SoccerLiga-MX : 'Transfermarkt' object has no attribute 'get_player_info'
+2026-03-19 16:52:55,000 [INFO] Methodes disponibles dans Transfermarkt : ['get_club_links', 'get_match_links', 'get_player_links', 'get_valid_seasons', 'scrape_player', 'scrape_players']
+2026-03-19 16:52:55,000 [INFO] Noms de ligues valides pour Transfermarkt :
+'Transfermarkt' object has no attribute 'get_club_urls'
+2026-03-19 16:52:55,001 [INFO] === Ligue : Ligue-1 ===
+2026-03-19 16:52:55,001 [ERROR] Erreur sur Ligue-1 : 'Transfermarkt' object has no attribute 'get_club_urls'
+2026-03-19 16:52:55,001 [INFO]   Pause 22.8s avant la ligue suivante...
+2026-03-19 16:55:44,557 [INFO] === Ligue : Ligue-1 ===
+2026-03-19 16:55:44,614 [ERROR] Erreur sur Ligue-1 : Ligue-1 is not a valid league for Transfermarkt. Valid leagues are ['Argentina Liga Profesional', 'Belgium Pro League', 'Brazil Serie A', 'England Premier League', 'England EFL Championship', 'England EFL League 1', 'England EFL League 2', 'France Ligue 1', 'France Ligue 2', 'Germany Bundesliga', 'Germany 2.Bundesliga', 'Italy Serie A', 'Italy Serie B', 'Italy Primavera 1', 'Italy Primavera 2 - A', 'Italy Primavera 2 - B', 'Italy Campionato U18', 'Netherlands Eredivisie', 'Portugal Primeira Liga', 'Russia Premier League', 'Scotland Premier League', 'Spain La Liga', 'Spain La Liga 2', 'Turkiye Super Lig', 'USA MLS']
+2026-03-19 16:55:44,614 [INFO]   Pause 15.9s avant la ligue suivante...
+2026-03-19 16:56:00,495 [INFO] === Ligue : La-Liga ===
+2026-03-19 16:56:00,547 [ERROR] Erreur sur La-Liga : La-Liga is not a valid league for Transfermarkt. Valid leagues are ['Argentina Liga Profesional', 'Belgium Pro League', 'Brazil Serie A', 'England Premier League', 'England EFL Championship', 'England EFL League 1', 'England EFL League 2', 'France Ligue 1', 'France Ligue 2', 'Germany Bundesliga', 'Germany 2.Bundesliga', 'Italy Serie A', 'Italy Serie B', 'Italy Primavera 1', 'Italy Primavera 2 - A', 'Italy Primavera 2 - B', 'Italy Campionato U18', 'Netherlands Eredivisie', 'Portugal Primeira Liga', 'Russia Premier League', 'Scotland Premier League', 'Spain La Liga', 'Spain La Liga 2', 'Turkiye Super Lig', 'USA MLS']
+2026-03-19 16:56:00,548 [INFO]   Pause 24.2s avant la ligue suivante...
+2026-03-19 16:59:26,250 [INFO] === Ligue : Argentina Liga Profesional ===
+2026-03-19 17:00:30,333 [ERROR] Erreur sur Argentina Liga Profesional : 'NoneType' object has no attribute 'find'
+2026-03-19 17:00:30,333 [INFO]   Pause 22.5s avant la ligue suivante...
+2026-03-19 17:02:22,263 [INFO] === Ligue : Argentina Liga Profesional ===
+2026-03-19 17:02:22,263 [INFO]   Tentative 1/3...
+2026-03-19 17:15:03,886 [ERROR]   Erreur (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-19 17:15:03,887 [INFO]   Nouvelle tentative dans 30s...
+2026-03-19 17:15:34,214 [INFO]   Tentative 2/3...
+2026-03-19 17:27:30,631 [ERROR]   Erreur (tentative 2) : 'NoneType' object has no attribute 'text'
+2026-03-19 17:27:30,632 [INFO]   Nouvelle tentative dans 45s...
+2026-03-19 17:28:15,821 [INFO]   Tentative 3/3...
+2026-03-19 17:30:30,017 [INFO] 
+=======================================================
+2026-03-19 17:30:30,017 [INFO] === Ligue : Argentina Liga Profesional ===
+2026-03-19 17:30:30,017 [INFO] =======================================================
+2026-03-19 17:30:30,018 [INFO]   Recuperation des liens joueurs...
+2026-03-19 17:33:49,116 [INFO]   2401 joueurs trouves dans Argentina Liga Profesional
+2026-03-19 17:33:49,117 [INFO]   Progression : 1/2401 (0 OK, 0 erreurs)
+2026-03-19 17:40:54,050 [INFO]   Progression : 50/2401 (49 OK, 0 erreurs)
+2026-03-19 17:46:50,724 [INFO]   Progression : 100/2401 (99 OK, 0 erreurs)
+2026-03-19 17:58:31,644 [INFO] 
+=======================================================
+2026-03-19 17:58:31,645 [INFO] === Ligue : Argentina Liga Profesional ===
+2026-03-19 17:58:31,645 [INFO] =======================================================
+2026-03-19 17:58:31,645 [INFO]   Recuperation des liens joueurs...
+2026-03-19 18:01:00,110 [INFO]   2401 joueurs trouves dans Argentina Liga Profesional
+2026-03-19 18:01:00,110 [INFO]   Progression : 1/2401 (0 OK, 0 erreurs)
+2026-03-19 18:07:20,952 [INFO]   Progression : 50/2401 (49 OK, 0 erreurs)
+2026-03-19 18:13:19,325 [INFO] 
+=======================================================
+2026-03-19 18:13:19,326 [INFO] === Ligue : Argentina Liga Profesional ===
+2026-03-19 18:13:19,326 [INFO] =======================================================
+2026-03-19 18:13:19,326 [INFO]   Recuperation des liens joueurs...
+2026-03-19 18:14:58,911 [INFO]   2401 joueurs trouves dans Argentina Liga Profesional
+2026-03-19 18:14:58,912 [INFO]   Progression : 1/2401 (0 OK, 0 erreurs)
+2026-03-19 18:35:55,435 [INFO]   Progression : 100/2401 (99 OK, 0 erreurs)
+2026-03-19 18:41:44,337 [INFO]   Progression : 150/2401 (149 OK, 0 erreurs)
+2026-03-19 18:50:32,461 [INFO]   Progression : 200/2401 (199 OK, 0 erreurs)
+2026-03-19 19:02:02,657 [INFO]   Progression : 300/2401 (299 OK, 0 erreurs)
+2026-03-19 19:08:02,104 [INFO]   Progression : 350/2401 (349 OK, 0 erreurs)
+2026-03-19 19:08:12,145 [WARNING]     Joueur ignore : https://www.transfermarkt.us/lautaro-toledo-pacheco/profil/spieler/1115867 -> 'NoneType' object has no attribute 'text'
+2026-03-19 19:13:58,630 [INFO]   Progression : 400/2401 (398 OK, 1 erreurs)
+2026-03-19 19:20:05,482 [INFO]   Progression : 450/2401 (448 OK, 1 erreurs)
+2026-03-19 19:33:44,681 [INFO]   Progression : 550/2401 (548 OK, 1 erreurs)
+2026-03-19 19:41:55,682 [INFO]   Progression : 600/2401 (598 OK, 1 erreurs)
+2026-03-19 19:48:13,623 [INFO]   Progression : 650/2401 (648 OK, 1 erreurs)
+2026-03-19 19:55:07,937 [INFO]   Progression : 700/2401 (698 OK, 1 erreurs)
+2026-03-19 20:03:04,724 [INFO]   Progression : 750/2401 (748 OK, 1 erreurs)
+2026-03-19 20:08:47,438 [INFO]   Progression : 800/2401 (798 OK, 1 erreurs)
+2026-03-19 20:24:51,432 [INFO]   Progression : 900/2401 (898 OK, 1 erreurs)
+2026-03-19 20:30:47,511 [INFO]   Progression : 950/2401 (948 OK, 1 erreurs)
+2026-03-19 20:38:44,700 [INFO]   Progression : 1000/2401 (998 OK, 1 erreurs)
+2026-03-19 20:40:49,082 [WARNING]     Joueur ignore : https://www.transfermarkt.us/braian-sanchez/marktwertverlauf/spieler/540163 -> 'NoneType' object has no attribute 'text'
+2026-03-19 20:45:19,128 [INFO]   Progression : 1050/2401 (1047 OK, 2 erreurs)
+2026-03-19 20:51:25,166 [INFO]   Progression : 1100/2401 (1097 OK, 2 erreurs)
+2026-03-19 20:56:09,344 [WARNING]     Joueur ignore : https://www.transfermarkt.us/federico-medina/profil/spieler/1228198 -> 'NoneType' object has no attribute 'text'
+2026-03-19 20:57:50,236 [INFO]   Progression : 1150/2401 (1146 OK, 3 erreurs)
+2026-03-19 21:03:30,991 [INFO]   Progression : 1200/2401 (1196 OK, 3 erreurs)
+2026-03-19 21:09:38,183 [INFO]   Progression : 1250/2401 (1246 OK, 3 erreurs)
+2026-03-19 21:12:29,940 [WARNING]     Joueur ignore : https://www.transfermarkt.us/lorenzo-scipioni/profil/spieler/1010577 -> 'NoneType' object has no attribute 'text'
+2026-03-19 21:13:29,232 [WARNING]     Joueur ignore : https://www.transfermarkt.us/alvaro-dionisio/marktwertverlauf/spieler/776193 -> 'NoneType' object has no attribute 'text'
+2026-03-19 21:17:40,581 [INFO]   Progression : 1300/2401 (1294 OK, 5 erreurs)
+2026-03-19 21:23:22,903 [INFO]   Progression : 1350/2401 (1344 OK, 5 erreurs)
+2026-03-19 21:28:25,812 [INFO]   Progression : 1400/2401 (1394 OK, 5 erreurs)
+2026-03-19 21:34:40,173 [INFO]   Progression : 1450/2401 (1444 OK, 5 erreurs)
+2026-03-19 21:40:47,031 [INFO]   Progression : 1500/2401 (1494 OK, 5 erreurs)
+2026-03-19 21:46:24,471 [INFO]   Progression : 1550/2401 (1544 OK, 5 erreurs)
+2026-03-19 21:52:37,188 [WARNING]     Joueur ignore : https://www.transfermarkt.us/santiago-castro/marktwertverlauf/spieler/849520 -> 'NoneType' object has no attribute 'text'
+2026-03-19 22:00:06,414 [INFO]   Progression : 1650/2401 (1643 OK, 6 erreurs)
+2026-03-19 22:06:17,562 [WARNING]     Joueur ignore : https://www.transfermarkt.us/matias-coccaro/marktwertverlauf/spieler/454625 -> 'NoneType' object has no attribute 'text'
+2026-03-19 22:06:20,872 [INFO]   Progression : 1700/2401 (1692 OK, 7 erreurs)
+2026-03-19 22:20:01,476 [INFO]   Progression : 1800/2401 (1792 OK, 7 erreurs)
+2026-03-19 22:27:56,233 [INFO]   Progression : 1850/2401 (1842 OK, 7 erreurs)
+2026-03-19 22:33:51,551 [INFO]   Progression : 1900/2401 (1892 OK, 7 erreurs)
+2026-03-19 22:39:48,539 [INFO]   Progression : 1950/2401 (1942 OK, 7 erreurs)
+2026-03-19 22:45:41,889 [INFO]   Progression : 2000/2401 (1992 OK, 7 erreurs)
+2026-03-19 22:52:28,598 [INFO]   Progression : 2050/2401 (2042 OK, 7 erreurs)
+2026-03-19 22:58:51,792 [INFO]   Progression : 2100/2401 (2092 OK, 7 erreurs)
+2026-03-19 23:03:50,626 [INFO]   Progression : 2150/2401 (2142 OK, 7 erreurs)
+2026-03-19 23:12:43,610 [WARNING]     Joueur ignore : https://www.transfermarkt.us/matias-diaz-cantoni/profil/spieler/1283309 -> 'NoneType' object has no attribute 'text'
+2026-03-19 23:15:36,469 [INFO]   Progression : 2250/2401 (2241 OK, 8 erreurs)
+2026-03-19 23:21:12,822 [INFO]   Progression : 2300/2401 (2291 OK, 8 erreurs)
+2026-03-19 23:33:04,189 [WARNING]     Joueur ignore : https://www.transfermarkt.us/julio-soler/marktwertverlauf/spieler/1009658 -> 'NoneType' object has no attribute 'text'
+2026-03-19 23:33:07,652 [INFO]   Progression : 2400/2401 (2390 OK, 9 erreurs)
+2026-03-19 23:33:17,982 [INFO]   Ligue terminee : 2392 OK, 9 erreurs
+2026-03-19 23:33:17,988 [INFO]   Pause 28.0s avant la ligue suivante...
+2026-03-19 23:33:46,037 [INFO] 
+=======================================================
+2026-03-19 23:33:46,038 [INFO] === Ligue : Belgium Pro League ===
+2026-03-19 23:33:46,038 [INFO] =======================================================
+2026-03-19 23:33:46,038 [INFO]   Recuperation des liens joueurs...
+2026-03-19 23:34:01,523 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Belgium Pro League. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64', '62/63', '61/62', '60/61', '59/60', '58/59', '57/58', '56/57', '55/56', '54/55', '53/54', '52/53', '51/52', '50/51', '49/50', '48/49', '47/48', '46/47', '45/46', '44/45', '43/44', '42/43', '41/42', '40/41', '39/40', '38/39', '37/38', '36/37', '35/36', '34/35', '33/34', '32/33', '31/32', '30/31', '1929/30', '1928/29', '1927/28', '1926/27', '1925/26', '1924/25', '1923/24', '1922/23', '1921/22', '1920/21', '1919/20', '1918/19', '1917/18', '1916/17', '1915/16', '1914/15', '1913/14', '1912/13', '1911/12', '1910/11', '1909/10', '1908/09', '1907/08', '1906/07', '1905/06', '1904/05', '1903/04', '1902/03', '1901/02', '1900/01', '1899/00', '1898/99', '1897/98', '1896/97', '1895/96'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-19 23:34:01,529 [INFO]   Pause 19.4s avant la ligue suivante...
+2026-03-19 23:34:20,904 [INFO] 
+=======================================================
+2026-03-19 23:34:20,905 [INFO] === Ligue : Brazil Serie A ===
+2026-03-19 23:34:20,905 [INFO] =======================================================
+2026-03-19 23:34:20,906 [INFO]   Recuperation des liens joueurs...
+2026-03-19 23:37:31,685 [INFO]   1734 joueurs trouves dans Brazil Serie A
+2026-03-19 23:37:31,686 [INFO]   Progression : 1/1734 (0 OK, 0 erreurs)
+2026-03-19 23:42:46,149 [INFO]   Progression : 50/1734 (49 OK, 0 erreurs)
+2026-03-19 23:49:37,000 [INFO]   Progression : 100/1734 (99 OK, 0 erreurs)
+2026-03-19 23:55:50,822 [INFO]   Progression : 150/1734 (149 OK, 0 erreurs)
+2026-03-20 00:01:06,214 [INFO]   Progression : 200/1734 (199 OK, 0 erreurs)
+2026-03-20 00:08:24,014 [INFO]   Progression : 250/1734 (249 OK, 0 erreurs)
+2026-03-20 00:14:31,588 [INFO]   Progression : 300/1734 (299 OK, 0 erreurs)
+2026-03-20 00:21:18,551 [INFO]   Progression : 350/1734 (349 OK, 0 erreurs)
+2026-03-20 00:21:25,372 [WARNING]     Joueur ignore : https://www.transfermarkt.us/fabricio-lentz/profil/spieler/1226993 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:21:46,230 [WARNING]     Joueur ignore : https://www.transfermarkt.us/rafael/marktwertverlauf/spieler/68097 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:22:10,324 [WARNING]     Joueur ignore : https://www.transfermarkt.us/davi-goes/profil/spieler/1096275 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:22:40,566 [WARNING]     Joueur ignore : https://www.transfermarkt.us/jean-lucas/profil/spieler/578872 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:23:06,171 [WARNING]     Joueur ignore : https://www.transfermarkt.us/ze-welison/profil/spieler/323452 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:24:10,397 [WARNING]     Joueur ignore : https://www.transfermarkt.us/emersonn/marktwertverlauf/spieler/743599 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:27:02,671 [WARNING]     Joueur ignore : https://www.transfermarkt.us/claudinho/profil/spieler/697845 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:29:12,771 [INFO]   Progression : 400/1734 (392 OK, 7 erreurs)
+2026-03-20 00:31:55,647 [WARNING]     Joueur ignore : https://www.transfermarkt.us/gustavo-almeida/profil/spieler/1223073 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:32:25,141 [WARNING]     Joueur ignore : https://www.transfermarkt.us/fabricio-bruno/marktwertverlauf/spieler/432773 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:32:51,868 [WARNING]     Joueur ignore : https://www.transfermarkt.us/mariano/marktwertverlauf/spieler/54155 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:33:10,198 [WARNING]     Joueur ignore : https://www.transfermarkt.us/everaldo/profil/spieler/205041 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:33:31,050 [WARNING]     Joueur ignore : https://www.transfermarkt.us/alexandre-jesus/profil/spieler/739439 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:33:44,095 [WARNING]     Joueur ignore : https://www.transfermarkt.us/vitinho/profil/spieler/323944 -> 'NoneType' object has no attribute 'text'
+2026-03-20 00:37:50,585 [INFO]   Progression : 450/1734 (436 OK, 13 erreurs)
+2026-03-20 00:43:56,032 [INFO]   Progression : 500/1734 (486 OK, 13 erreurs)
+2026-03-20 00:49:41,209 [INFO]   Progression : 550/1734 (536 OK, 13 erreurs)
+2026-03-20 00:55:03,488 [INFO]   Progression : 600/1734 (586 OK, 13 erreurs)
+2026-03-20 01:01:29,525 [INFO]   Progression : 650/1734 (636 OK, 13 erreurs)
+2026-03-20 01:06:39,531 [INFO]   Progression : 700/1734 (686 OK, 13 erreurs)
+2026-03-20 01:14:37,242 [INFO]   Progression : 750/1734 (736 OK, 13 erreurs)
+2026-03-20 01:20:38,500 [INFO]   Progression : 800/1734 (786 OK, 13 erreurs)
+2026-03-20 01:27:59,435 [INFO]   Progression : 850/1734 (836 OK, 13 erreurs)
+2026-03-20 01:34:34,809 [INFO]   Progression : 900/1734 (886 OK, 13 erreurs)
+2026-03-20 01:42:45,995 [INFO]   Progression : 950/1734 (936 OK, 13 erreurs)
+2026-03-20 01:44:00,012 [WARNING]     Joueur ignore : https://www.transfermarkt.us/gerald-anjos/profil/spieler/1115717 -> 'NoneType' object has no attribute 'text'
+2026-03-20 01:48:53,451 [INFO]   Progression : 1000/1734 (985 OK, 14 erreurs)
+2026-03-20 01:54:47,273 [INFO]   Progression : 1050/1734 (1035 OK, 14 erreurs)
+2026-03-20 02:00:42,594 [INFO]   Progression : 1100/1734 (1085 OK, 14 erreurs)
+2026-03-20 02:07:05,305 [INFO]   Progression : 1150/1734 (1135 OK, 14 erreurs)
+2026-03-20 02:12:29,093 [INFO]   Progression : 1200/1734 (1185 OK, 14 erreurs)
+2026-03-20 02:18:16,405 [INFO]   Progression : 1250/1734 (1235 OK, 14 erreurs)
+2026-03-20 02:24:14,073 [INFO]   Progression : 1300/1734 (1285 OK, 14 erreurs)
+2026-03-20 02:30:53,324 [INFO]   Progression : 1350/1734 (1335 OK, 14 erreurs)
+2026-03-20 02:36:39,584 [INFO]   Progression : 1400/1734 (1385 OK, 14 erreurs)
+2026-03-20 02:43:20,771 [INFO]   Progression : 1450/1734 (1435 OK, 14 erreurs)
+2026-03-20 02:49:07,892 [INFO]   Progression : 1500/1734 (1485 OK, 14 erreurs)
+2026-03-20 02:55:57,470 [INFO]   Progression : 1550/1734 (1535 OK, 14 erreurs)
+2026-03-20 03:01:14,358 [INFO]   Progression : 1600/1734 (1585 OK, 14 erreurs)
+2026-03-20 03:06:56,917 [INFO]   Progression : 1650/1734 (1635 OK, 14 erreurs)
+2026-03-20 03:13:14,226 [INFO]   Progression : 1700/1734 (1685 OK, 14 erreurs)
+2026-03-20 03:17:54,295 [INFO]   Ligue terminee : 1720 OK, 14 erreurs
+2026-03-20 03:17:54,303 [INFO]   Pause 25.1s avant la ligue suivante...
+2026-03-20 03:18:19,361 [INFO] 
+=======================================================
+2026-03-20 03:18:19,361 [INFO] === Ligue : England Premier League ===
+2026-03-20 03:18:19,362 [INFO] =======================================================
+2026-03-20 03:18:19,362 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:18:22,264 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for England Premier League. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:18:22,272 [INFO]   Pause 27.8s avant la ligue suivante...
+2026-03-20 03:18:50,096 [INFO] 
+=======================================================
+2026-03-20 03:18:50,096 [INFO] === Ligue : France Ligue 1 ===
+2026-03-20 03:18:50,097 [INFO] =======================================================
+2026-03-20 03:18:50,097 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:18:52,867 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for France Ligue 1. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64', '62/63', '61/62', '60/61', '59/60', '58/59', '57/58', '56/57', '55/56', '54/55', '53/54', '52/53', '51/52', '50/51', '49/50', '48/49', '47/48', '46/47', '45/46', '38/39', '37/38', '36/37', '35/36', '34/35', '33/34', '32/33'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:18:52,876 [INFO]   Pause 25.6s avant la ligue suivante...
+2026-03-20 03:19:18,523 [INFO] 
+=======================================================
+2026-03-20 03:19:18,524 [INFO] === Ligue : Germany Bundesliga ===
+2026-03-20 03:19:18,524 [INFO] =======================================================
+2026-03-20 03:19:18,524 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:19:20,004 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Germany Bundesliga. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:19:20,013 [INFO]   Pause 27.7s avant la ligue suivante...
+2026-03-20 03:19:47,683 [INFO] 
+=======================================================
+2026-03-20 03:19:47,684 [INFO] === Ligue : Italy Serie A ===
+2026-03-20 03:19:47,684 [INFO] =======================================================
+2026-03-20 03:19:47,684 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:19:49,298 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Italy Serie A. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64', '62/63', '61/62', '60/61', '59/60', '58/59', '57/58', '56/57', '55/56', '54/55', '53/54', '52/53', '51/52', '50/51', '49/50', '48/49', '47/48', '46/47', '42/43', '41/42', '40/41', '39/40', '38/39', '37/38', '36/37', '35/36', '34/35', '33/34', '32/33', '31/32', '30/31', '1929/30'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:19:49,306 [INFO]   Pause 24.0s avant la ligue suivante...
+2026-03-20 03:20:13,278 [INFO] 
+=======================================================
+2026-03-20 03:20:13,279 [INFO] === Ligue : Netherlands Eredivisie ===
+2026-03-20 03:20:13,279 [INFO] =======================================================
+2026-03-20 03:20:13,280 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:20:15,804 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Netherlands Eredivisie. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64', '62/63', '61/62', '60/61', '59/60', '58/59', '57/58', '56/57'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:20:15,812 [INFO]   Pause 19.7s avant la ligue suivante...
+2026-03-20 03:20:35,557 [INFO] 
+=======================================================
+2026-03-20 03:20:35,558 [INFO] === Ligue : Portugal Primeira Liga ===
+2026-03-20 03:20:35,558 [INFO] =======================================================
+2026-03-20 03:20:35,558 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:20:37,109 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Portugal Primeira Liga. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '86/87', '69/70', '62/63', '61/62', '60/61', '59/60', '58/59', '57/58', '56/57', '55/56', '54/55', '53/54', '52/53', '51/52', '50/51', '49/50', '48/49', '47/48', '46/47', '45/46', '44/45', '43/44', '42/43', '41/42', '40/41', '39/40', '38/39', '37/38', '36/37', '35/36', '34/35'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:20:37,117 [INFO]   Pause 28.1s avant la ligue suivante...
+2026-03-20 03:21:05,237 [INFO] 
+=======================================================
+2026-03-20 03:21:05,237 [INFO] === Ligue : Scotland Premier League ===
+2026-03-20 03:21:05,238 [INFO] =======================================================
+2026-03-20 03:21:05,238 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:21:06,479 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Scotland Premier League. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64', '62/63', '61/62', '60/61', '59/60', '58/59', '57/58', '56/57', '55/56', '54/55', '53/54', '52/53', '51/52', '50/51', '49/50', '48/49', '47/48', '46/47', '38/39', '37/38', '36/37', '35/36', '34/35', '33/34', '32/33', '31/32', '30/31', '1929/30', '1928/29', '1927/28', '1926/27', '1925/26', '1924/25', '1923/24', '1922/23', '1921/22', '1920/21', '1919/20', '1918/19', '1917/18', '1916/17', '1915/16', '1914/15', '1913/14', '1912/13', '1911/12', '1910/11', '1909/10', '1908/09', '1907/08', '1906/07', '1905/06', '1904/05', '1903/04', '1902/03', '1901/02', '1900/01', '1899/00', '1898/99', '1897/98', '1896/97', '1895/96', '1894/95', '1893/94', '1892/93', '1891/92', '1890/91'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:21:06,488 [INFO]   Pause 22.1s avant la ligue suivante...
+2026-03-20 03:21:28,638 [INFO] 
+=======================================================
+2026-03-20 03:21:28,639 [INFO] === Ligue : Spain La Liga ===
+2026-03-20 03:21:28,639 [INFO] =======================================================
+2026-03-20 03:21:28,639 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:21:31,498 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Spain La Liga. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64', '62/63', '61/62', '60/61', '59/60', '58/59', '57/58', '56/57', '55/56', '54/55', '53/54', '52/53', '51/52', '50/51', '49/50', '48/49', '47/48', '46/47', '45/46', '44/45', '43/44', '42/43', '41/42', '40/41', '39/40', '35/36', '34/35', '33/34', '32/33', '31/32', '30/31', '1929/30', '1928/29'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:21:31,507 [INFO]   Pause 29.7s avant la ligue suivante...
+2026-03-20 03:22:01,204 [INFO] 
+=======================================================
+2026-03-20 03:22:01,204 [INFO] === Ligue : Turkiye Super Lig ===
+2026-03-20 03:22:01,205 [INFO] =======================================================
+2026-03-20 03:22:01,205 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:22:03,590 [ERROR]   Impossible de recuperer les liens : 2024 is not a valid year for Turkiye Super Lig. Valid years are ['25/26', '24/25', '23/24', '22/23', '21/22', '20/21', '19/20', '18/19', '17/18', '16/17', '15/16', '14/15', '13/14', '12/13', '11/12', '10/11', '09/10', '08/09', '07/08', '06/07', '05/06', '04/05', '03/04', '02/03', '01/02', '00/01', '99/00', '98/99', '97/98', '96/97', '95/96', '94/95', '93/94', '92/93', '91/92', '90/91', '89/90', '88/89', '87/88', '86/87', '85/86', '84/85', '83/84', '82/83', '81/82', '80/81', '79/80', '78/79', '77/78', '76/77', '75/76', '74/75', '73/74', '72/73', '71/72', '70/71', '69/70', '68/69', '67/68', '66/67', '65/66', '64/65', '63/64', '62/63', '61/62', '60/61', '59/60', '1959'].
+
+See https://scraperfc.readthedocs.io/en/latest/year_parameter.html for specifics.
+
+2026-03-20 03:22:03,600 [INFO]   Pause 15.4s avant la ligue suivante...
+2026-03-20 03:22:19,032 [INFO] 
+=======================================================
+2026-03-20 03:22:19,033 [INFO] === Ligue : USA MLS ===
+2026-03-20 03:22:19,033 [INFO] =======================================================
+2026-03-20 03:22:19,033 [INFO]   Recuperation des liens joueurs...
+2026-03-20 03:24:37,962 [INFO]   1775 joueurs trouves dans USA MLS
+2026-03-20 03:24:37,963 [INFO]   Progression : 1/1775 (0 OK, 0 erreurs)
+2026-03-20 03:31:12,430 [INFO]   Progression : 50/1775 (49 OK, 0 erreurs)
+2026-03-20 03:36:58,327 [INFO]   Progression : 100/1775 (99 OK, 0 erreurs)
+2026-03-20 03:44:50,891 [INFO]   Progression : 150/1775 (149 OK, 0 erreurs)
+2026-03-20 03:51:47,803 [INFO]   Progression : 200/1775 (199 OK, 0 erreurs)
+2026-03-20 03:58:00,297 [INFO]   Progression : 250/1775 (249 OK, 0 erreurs)
+2026-03-20 04:04:01,742 [INFO]   Progression : 300/1775 (299 OK, 0 erreurs)
+2026-03-20 04:09:20,896 [INFO]   Progression : 350/1775 (349 OK, 0 erreurs)
+2026-03-20 04:15:09,726 [INFO]   Progression : 400/1775 (399 OK, 0 erreurs)
+2026-03-20 04:21:08,884 [INFO]   Progression : 450/1775 (449 OK, 0 erreurs)
+2026-03-20 04:26:37,058 [INFO]   Progression : 500/1775 (499 OK, 0 erreurs)
+2026-03-20 04:32:47,073 [INFO]   Progression : 550/1775 (549 OK, 0 erreurs)
+2026-03-20 04:38:09,931 [INFO]   Progression : 600/1775 (599 OK, 0 erreurs)
+2026-03-20 04:44:40,184 [INFO]   Progression : 650/1775 (649 OK, 0 erreurs)
+2026-03-20 04:52:02,888 [INFO]   Progression : 700/1775 (699 OK, 0 erreurs)
+2026-03-20 04:58:15,541 [INFO]   Progression : 750/1775 (749 OK, 0 erreurs)
+2026-03-20 05:03:16,216 [INFO]   Progression : 800/1775 (799 OK, 0 erreurs)
+2026-03-20 05:08:19,670 [INFO]   Progression : 850/1775 (849 OK, 0 erreurs)
+2026-03-20 05:13:20,954 [INFO]   Progression : 900/1775 (899 OK, 0 erreurs)
+2026-03-20 05:15:05,707 [WARNING]     Joueur ignore : https://www.transfermarkt.us/diego-konincks/profil/spieler/1242700 -> could not convert string to float: "1'87"
+2026-03-20 05:18:53,417 [INFO]   Progression : 950/1775 (948 OK, 1 erreurs)
+2026-03-20 05:24:30,259 [INFO]   Progression : 1000/1775 (998 OK, 1 erreurs)
+2026-03-20 05:37:26,678 [INFO]   Progression : 1100/1775 (1098 OK, 1 erreurs)
+2026-03-20 05:43:54,145 [INFO]   Progression : 1150/1775 (1148 OK, 1 erreurs)
+2026-03-20 05:49:10,698 [INFO]   Progression : 1200/1775 (1198 OK, 1 erreurs)
+2026-03-20 05:55:10,684 [INFO]   Progression : 1250/1775 (1248 OK, 1 erreurs)
+2026-03-20 06:01:14,778 [INFO]   Progression : 1300/1775 (1298 OK, 1 erreurs)
+2026-03-20 06:07:04,288 [INFO]   Progression : 1350/1775 (1348 OK, 1 erreurs)
+2026-03-20 06:12:20,978 [INFO]   Progression : 1400/1775 (1398 OK, 1 erreurs)
+2026-03-20 06:17:34,099 [INFO]   Progression : 1450/1775 (1448 OK, 1 erreurs)
+2026-03-20 06:24:49,779 [INFO]   Progression : 1500/1775 (1498 OK, 1 erreurs)
+2026-03-20 06:30:37,594 [INFO]   Progression : 1550/1775 (1548 OK, 1 erreurs)
+2026-03-20 06:37:00,206 [INFO]   Progression : 1600/1775 (1598 OK, 1 erreurs)
+2026-03-20 06:43:09,919 [INFO]   Progression : 1650/1775 (1648 OK, 1 erreurs)
+2026-03-20 06:48:46,606 [INFO]   Progression : 1700/1775 (1698 OK, 1 erreurs)
+2026-03-20 06:56:15,640 [INFO]   Progression : 1750/1775 (1748 OK, 1 erreurs)
+2026-03-20 06:59:23,463 [INFO]   Ligue terminee : 1774 OK, 1 erreurs
+2026-03-20 06:59:23,474 [INFO]   Pause 21.2s avant la ligue suivante...
+2026-03-20 06:59:44,697 [INFO] 
+=======================================================
+2026-03-20 06:59:44,698 [INFO] Ligues terminees : 3/13
+2026-03-20 06:59:44,698 [WARNING] Ligues echouees : ['Belgium Pro League', 'England Premier League', 'France Ligue 1', 'Germany Bundesliga', 'Italy Serie A', 'Netherlands Eredivisie', 'Portugal Primeira Liga', 'Scotland Premier League', 'Spain La Liga', 'Turkiye Super Lig']
+2026-03-20 06:59:44,699 [WARNING] Joueurs en erreur : 24 (voir data\transfermarkt\players_errors.csv)
+2026-03-20 06:59:44,752 [INFO] Total : 5818 joueurs dans data\transfermarkt\players_all.csv
+2026-03-20 06:59:44,753 [INFO] Colonnes : ['Name', 'ID', 'Value', 'Value last updated', 'DOB', 'Age', 'Height (m)', 'Nationality', 'Citizenship', 'Position', 'Other positions', 'Team', 'Last club', 'Since', 'Joined', 'Contract expiration', 'Market value history', 'Transfer history', 'player_url', 'league', 'scraped_at']
+2026-03-20 09:05:17,504 [INFO] [SKIP] Argentina Liga Profesional deja traite
+2026-03-20 09:05:17,505 [INFO] 
+=======================================================
+2026-03-20 09:05:17,505 [INFO] === Ligue : Belgium Pro League ===
+2026-03-20 09:05:17,506 [INFO] =======================================================
+2026-03-20 09:05:17,507 [INFO]   Recuperation des liens joueurs...
+2026-03-20 09:06:17,657 [INFO]   1159 joueurs trouves dans Belgium Pro League
+2026-03-20 09:06:17,657 [INFO]   Progression : 1/1159 (0 OK, 0 erreurs)
+2026-03-20 09:07:16,661 [INFO]   Progression : 10/1159 (9 OK, 0 erreurs)
+2026-03-20 09:08:24,359 [INFO]   Progression : 20/1159 (19 OK, 0 erreurs)
+2026-03-20 09:09:52,874 [INFO]   Progression : 30/1159 (29 OK, 0 erreurs)
+2026-03-20 09:11:40,918 [INFO]   Progression : 40/1159 (39 OK, 0 erreurs)
+2026-03-20 09:12:47,145 [INFO]   Progression : 50/1159 (49 OK, 0 erreurs)
+2026-03-20 10:32:44,174 [INFO] [SKIP] Argentina Liga Profesional deja traite
+2026-03-20 10:32:44,174 [INFO] 
+=======================================================
+2026-03-20 10:32:44,175 [INFO] === Ligue : Belgium Pro League ===
+2026-03-20 10:32:44,175 [INFO] =======================================================
+2026-03-20 10:32:44,175 [INFO]   Recuperation des liens joueurs...
+2026-03-20 10:34:09,871 [INFO]   1159 joueurs trouves dans Belgium Pro League
+2026-03-20 10:34:09,872 [INFO]   Progression : 1/1159 (0 OK, 0 erreurs)
+2026-03-20 10:35:25,582 [INFO]   Progression : 10/1159 (9 OK, 0 erreurs)
+2026-03-20 10:36:36,573 [INFO]   Progression : 20/1159 (19 OK, 0 erreurs)
+2026-03-20 10:37:58,046 [INFO]   Progression : 30/1159 (29 OK, 0 erreurs)
+2026-03-20 10:39:30,129 [INFO]   Progression : 40/1159 (39 OK, 0 erreurs)
+2026-03-20 10:41:01,809 [INFO]   Progression : 50/1159 (49 OK, 0 erreurs)
+2026-03-20 10:42:13,524 [INFO]   Progression : 60/1159 (59 OK, 0 erreurs)
+2026-03-20 10:43:44,642 [INFO]   Progression : 70/1159 (69 OK, 0 erreurs)
+2026-03-20 10:44:46,159 [INFO]   Progression : 80/1159 (79 OK, 0 erreurs)
+2026-03-20 10:45:41,364 [INFO]   Progression : 90/1159 (89 OK, 0 erreurs)
+2026-03-20 10:46:55,285 [INFO]   Progression : 100/1159 (99 OK, 0 erreurs)
+2026-03-20 10:47:43,148 [INFO]     Retry joueur rlauf/spieler/592403 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 10:47:52,005 [WARNING]     Joueur ignore : https://www.transfermarkt.us/adem-zorgane/marktwertverlauf/spieler/592403 -> 'NoneType' object has no attribute 'text'
+2026-03-20 10:48:59,907 [INFO]   Progression : 110/1159 (108 OK, 1 erreurs)
+2026-03-20 10:50:10,937 [INFO]   Progression : 120/1159 (118 OK, 1 erreurs)
+2026-03-20 10:51:12,768 [INFO]   Progression : 130/1159 (128 OK, 1 erreurs)
+2026-03-20 10:52:25,940 [INFO]   Progression : 140/1159 (138 OK, 1 erreurs)
+2026-03-20 10:53:41,324 [INFO]   Progression : 150/1159 (148 OK, 1 erreurs)
+2026-03-20 10:54:51,247 [INFO]   Progression : 160/1159 (158 OK, 1 erreurs)
+2026-03-20 10:56:25,528 [INFO]   Progression : 170/1159 (168 OK, 1 erreurs)
+2026-03-20 10:57:43,772 [INFO]   Progression : 180/1159 (178 OK, 1 erreurs)
+2026-03-20 10:59:19,352 [INFO]   Progression : 190/1159 (188 OK, 1 erreurs)
+2026-03-20 11:00:56,780 [INFO]   Progression : 200/1159 (198 OK, 1 erreurs)
+2026-03-20 11:02:58,809 [INFO]   Progression : 210/1159 (208 OK, 1 erreurs)
+2026-03-20 11:04:44,954 [INFO]     Retry joueur rofil/spieler/183120 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 11:05:52,263 [INFO]   Progression : 220/1159 (218 OK, 1 erreurs)
+2026-03-20 11:07:41,388 [INFO]   Progression : 230/1159 (228 OK, 1 erreurs)
+2026-03-20 11:09:25,496 [INFO]   Progression : 240/1159 (238 OK, 1 erreurs)
+2026-03-20 11:10:44,601 [INFO]   Progression : 250/1159 (248 OK, 1 erreurs)
+2026-03-20 11:12:11,976 [INFO]   Progression : 260/1159 (258 OK, 1 erreurs)
+2026-03-20 11:13:19,271 [INFO]   Progression : 270/1159 (268 OK, 1 erreurs)
+2026-03-20 11:14:41,070 [INFO]   Progression : 280/1159 (278 OK, 1 erreurs)
+2026-03-20 11:16:08,509 [INFO]   Progression : 290/1159 (288 OK, 1 erreurs)
+2026-03-20 11:17:22,240 [INFO]   Progression : 300/1159 (298 OK, 1 erreurs)
+2026-03-20 11:18:25,851 [INFO]   Progression : 310/1159 (308 OK, 1 erreurs)
+2026-03-20 11:21:12,236 [INFO]   Progression : 330/1159 (328 OK, 1 erreurs)
+2026-03-20 11:22:30,406 [INFO]   Progression : 340/1159 (338 OK, 1 erreurs)
+2026-03-20 11:23:50,009 [INFO]   Progression : 350/1159 (348 OK, 1 erreurs)
+2026-03-20 11:24:58,394 [INFO]   Progression : 360/1159 (358 OK, 1 erreurs)
+2026-03-20 11:27:11,642 [INFO]   Progression : 380/1159 (378 OK, 1 erreurs)
+2026-03-20 11:28:17,708 [INFO]   Progression : 390/1159 (388 OK, 1 erreurs)
+2026-03-20 11:29:24,845 [INFO]   Progression : 400/1159 (398 OK, 1 erreurs)
+2026-03-20 11:30:42,275 [INFO]   Progression : 410/1159 (408 OK, 1 erreurs)
+2026-03-20 11:31:42,102 [INFO]   Progression : 420/1159 (418 OK, 1 erreurs)
+2026-03-20 11:32:54,813 [INFO]   Progression : 430/1159 (428 OK, 1 erreurs)
+2026-03-20 11:34:04,770 [INFO]   Progression : 440/1159 (438 OK, 1 erreurs)
+2026-03-20 11:35:20,015 [INFO]   Progression : 450/1159 (448 OK, 1 erreurs)
+2026-03-20 11:36:23,992 [INFO]   Progression : 460/1159 (458 OK, 1 erreurs)
+2026-03-20 11:37:35,413 [INFO]   Progression : 470/1159 (468 OK, 1 erreurs)
+2026-03-20 11:38:47,986 [INFO]   Progression : 480/1159 (478 OK, 1 erreurs)
+2026-03-20 11:39:49,308 [INFO]   Progression : 490/1159 (488 OK, 1 erreurs)
+2026-03-20 11:42:27,991 [INFO]   Progression : 510/1159 (508 OK, 1 erreurs)
+2026-03-20 11:43:35,449 [INFO]   Progression : 520/1159 (518 OK, 1 erreurs)
+2026-03-20 11:44:43,056 [INFO]   Progression : 530/1159 (528 OK, 1 erreurs)
+2026-03-20 11:45:39,398 [INFO]   Progression : 540/1159 (538 OK, 1 erreurs)
+2026-03-20 11:46:49,815 [INFO]   Progression : 550/1159 (548 OK, 1 erreurs)
+2026-03-20 11:47:54,902 [INFO]   Progression : 560/1159 (558 OK, 1 erreurs)
+2026-03-20 11:49:18,396 [INFO]   Progression : 570/1159 (568 OK, 1 erreurs)
+2026-03-20 11:51:19,787 [INFO]   Progression : 590/1159 (588 OK, 1 erreurs)
+2026-03-20 11:53:39,773 [INFO]   Progression : 600/1159 (598 OK, 1 erreurs)
+2026-03-20 11:54:55,456 [INFO]   Progression : 610/1159 (608 OK, 1 erreurs)
+2026-03-20 11:56:10,250 [INFO]   Progression : 620/1159 (618 OK, 1 erreurs)
+2026-03-20 11:57:23,676 [INFO]   Progression : 630/1159 (628 OK, 1 erreurs)
+2026-03-20 11:59:21,164 [INFO]   Progression : 640/1159 (638 OK, 1 erreurs)
+2026-03-20 12:00:50,736 [INFO]   Progression : 650/1159 (648 OK, 1 erreurs)
+2026-03-20 12:01:50,075 [INFO]   Progression : 660/1159 (658 OK, 1 erreurs)
+2026-03-20 12:02:53,249 [INFO]   Progression : 670/1159 (668 OK, 1 erreurs)
+2026-03-20 12:04:10,682 [INFO]   Progression : 680/1159 (678 OK, 1 erreurs)
+2026-03-20 12:05:15,940 [INFO]   Progression : 690/1159 (688 OK, 1 erreurs)
+2026-03-20 12:06:22,094 [INFO]   Progression : 700/1159 (698 OK, 1 erreurs)
+2026-03-20 12:07:17,836 [INFO]   Progression : 710/1159 (708 OK, 1 erreurs)
+2026-03-20 12:08:24,539 [INFO]   Progression : 720/1159 (718 OK, 1 erreurs)
+2026-03-20 12:09:25,251 [INFO]   Progression : 730/1159 (728 OK, 1 erreurs)
+2026-03-20 12:10:34,568 [INFO]   Progression : 740/1159 (738 OK, 1 erreurs)
+2026-03-20 12:11:41,073 [INFO]   Progression : 750/1159 (748 OK, 1 erreurs)
+2026-03-20 12:12:45,475 [INFO]   Progression : 760/1159 (758 OK, 1 erreurs)
+2026-03-20 12:13:48,682 [INFO]   Progression : 770/1159 (768 OK, 1 erreurs)
+2026-03-20 12:14:43,706 [INFO]   Progression : 780/1159 (778 OK, 1 erreurs)
+2026-03-20 12:16:35,674 [INFO]   Progression : 790/1159 (788 OK, 1 erreurs)
+2026-03-20 12:17:48,777 [INFO]   Progression : 800/1159 (798 OK, 1 erreurs)
+2026-03-20 12:18:51,869 [INFO]   Progression : 810/1159 (808 OK, 1 erreurs)
+2026-03-20 12:19:57,508 [INFO]   Progression : 820/1159 (818 OK, 1 erreurs)
+2026-03-20 12:21:09,770 [INFO]   Progression : 830/1159 (828 OK, 1 erreurs)
+2026-03-20 12:22:09,437 [INFO]   Progression : 840/1159 (838 OK, 1 erreurs)
+2026-03-20 12:23:31,810 [INFO]   Progression : 850/1159 (848 OK, 1 erreurs)
+2026-03-20 12:24:33,149 [INFO]   Progression : 860/1159 (858 OK, 1 erreurs)
+2026-03-20 12:26:00,810 [INFO]   Progression : 870/1159 (868 OK, 1 erreurs)
+2026-03-20 12:27:02,491 [INFO]   Progression : 880/1159 (878 OK, 1 erreurs)
+2026-03-20 12:28:20,859 [INFO]   Progression : 890/1159 (888 OK, 1 erreurs)
+2026-03-20 12:30:53,046 [INFO]   Progression : 900/1159 (898 OK, 1 erreurs)
+2026-03-20 12:32:24,250 [INFO]     Retry joueur rofil/spieler/848083 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 12:32:30,531 [WARNING]     Joueur ignore : https://www.transfermarkt.us/cheick-thiam/profil/spieler/848083 -> 'NoneType' object has no attribute 'text'
+2026-03-20 12:32:59,484 [INFO]   Progression : 910/1159 (907 OK, 2 erreurs)
+2026-03-20 12:34:30,725 [INFO]   Progression : 920/1159 (917 OK, 2 erreurs)
+2026-03-20 12:35:58,140 [INFO]   Progression : 930/1159 (927 OK, 2 erreurs)
+2026-03-20 12:37:15,445 [INFO]   Progression : 940/1159 (937 OK, 2 erreurs)
+2026-03-20 12:38:40,305 [INFO]   Progression : 950/1159 (947 OK, 2 erreurs)
+2026-03-20 12:39:36,673 [INFO]   Progression : 960/1159 (957 OK, 2 erreurs)
+2026-03-20 12:41:03,988 [INFO]   Progression : 970/1159 (967 OK, 2 erreurs)
+2026-03-20 12:42:58,368 [INFO]   Progression : 990/1159 (987 OK, 2 erreurs)
+2026-03-20 12:44:02,011 [INFO]   Progression : 1000/1159 (997 OK, 2 erreurs)
+2026-03-20 12:45:09,986 [INFO]   Progression : 1010/1159 (1007 OK, 2 erreurs)
+2026-03-20 12:47:17,247 [INFO]   Progression : 1020/1159 (1017 OK, 2 erreurs)
+2026-03-20 12:48:22,950 [INFO]   Progression : 1030/1159 (1027 OK, 2 erreurs)
+2026-03-20 12:50:19,643 [INFO]   Progression : 1040/1159 (1037 OK, 2 erreurs)
+2026-03-20 12:51:57,817 [INFO]     Retry joueur rofil/spieler/926670 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 12:52:38,473 [INFO]   Progression : 1050/1159 (1047 OK, 2 erreurs)
+2026-03-20 12:54:54,007 [INFO]   Progression : 1060/1159 (1057 OK, 2 erreurs)
+2026-03-20 12:56:14,357 [INFO]     Retry joueur rlauf/spieler/193469 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 12:56:21,307 [WARNING]     Joueur ignore : https://www.transfermarkt.us/bjorn-engels/marktwertverlauf/spieler/193469 -> 'NoneType' object has no attribute 'text'
+2026-03-20 12:56:41,737 [INFO]   Progression : 1070/1159 (1066 OK, 3 erreurs)
+2026-03-20 12:57:51,192 [INFO]   Progression : 1080/1159 (1076 OK, 3 erreurs)
+2026-03-20 12:58:53,343 [INFO]   Progression : 1090/1159 (1086 OK, 3 erreurs)
+2026-03-20 13:00:02,916 [INFO]   Progression : 1100/1159 (1096 OK, 3 erreurs)
+2026-03-20 13:00:43,855 [INFO]     Retry joueur rlauf/spieler/345468 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:00:52,886 [WARNING]     Joueur ignore : https://www.transfermarkt.us/andi-zeqiri/marktwertverlauf/spieler/345468 -> 'NoneType' object has no attribute 'text'
+2026-03-20 13:02:09,620 [INFO]   Progression : 1110/1159 (1105 OK, 4 erreurs)
+2026-03-20 13:03:10,703 [INFO]   Progression : 1120/1159 (1115 OK, 4 erreurs)
+2026-03-20 13:05:20,233 [INFO]   Progression : 1140/1159 (1135 OK, 4 erreurs)
+2026-03-20 13:06:28,800 [INFO]   Progression : 1150/1159 (1145 OK, 4 erreurs)
+2026-03-20 13:08:34,608 [INFO]   Ligue terminee : 1155 OK, 4 erreurs
+2026-03-20 13:08:34,620 [INFO]   Pause 19.7s avant la ligue suivante...
+2026-03-20 13:08:54,292 [INFO] [SKIP] Brazil Serie A deja traite
+2026-03-20 13:08:54,293 [INFO] 
+=======================================================
+2026-03-20 13:08:54,293 [INFO] === Ligue : England Premier League ===
+2026-03-20 13:08:54,293 [INFO] =======================================================
+2026-03-20 13:08:54,294 [INFO]   Recuperation des liens joueurs...
+2026-03-20 13:10:56,043 [INFO]   1470 joueurs trouves dans England Premier League
+2026-03-20 13:10:56,043 [INFO]   Progression : 1/1470 (0 OK, 0 erreurs)
+2026-03-20 13:12:35,138 [INFO]   Progression : 10/1470 (9 OK, 0 erreurs)
+2026-03-20 13:14:22,372 [INFO]   Progression : 20/1470 (19 OK, 0 erreurs)
+2026-03-20 13:16:01,327 [INFO]   Progression : 30/1470 (29 OK, 0 erreurs)
+2026-03-20 13:17:05,482 [INFO]   Progression : 40/1470 (39 OK, 0 erreurs)
+2026-03-20 13:18:25,301 [INFO]   Progression : 50/1470 (49 OK, 0 erreurs)
+2026-03-20 13:19:33,080 [INFO]   Progression : 60/1470 (59 OK, 0 erreurs)
+2026-03-20 13:21:08,470 [INFO]   Progression : 70/1470 (69 OK, 0 erreurs)
+2026-03-20 13:22:35,521 [INFO]   Progression : 80/1470 (79 OK, 0 erreurs)
+2026-03-20 13:24:01,639 [INFO]   Progression : 90/1470 (89 OK, 0 erreurs)
+2026-03-20 13:25:18,514 [INFO]   Progression : 100/1470 (99 OK, 0 erreurs)
+2026-03-20 13:27:03,211 [INFO]   Progression : 110/1470 (109 OK, 0 erreurs)
+2026-03-20 13:28:22,323 [INFO]   Progression : 120/1470 (119 OK, 0 erreurs)
+2026-03-20 13:29:30,926 [INFO]   Progression : 130/1470 (129 OK, 0 erreurs)
+2026-03-20 13:30:39,372 [INFO]   Progression : 140/1470 (139 OK, 0 erreurs)
+2026-03-20 13:32:12,758 [INFO]   Progression : 150/1470 (149 OK, 0 erreurs)
+2026-03-20 13:33:29,343 [INFO]     Retry joueur rlauf/spieler/123275 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:33:36,204 [WARNING]     Joueur ignore : https://www.transfermarkt.us/tom-cairney/marktwertverlauf/spieler/123275 -> 'NoneType' object has no attribute 'text'
+2026-03-20 13:33:57,968 [INFO]   Progression : 160/1470 (158 OK, 1 erreurs)
+2026-03-20 13:35:51,057 [INFO]     Retry joueur rofil/spieler/567576 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:35:59,758 [WARNING]     Joueur ignore : https://www.transfermarkt.us/elliot-anderson/profil/spieler/567576 -> 'NoneType' object has no attribute 'text'
+2026-03-20 13:36:35,774 [INFO]   Progression : 170/1470 (167 OK, 2 erreurs)
+2026-03-20 13:38:04,410 [INFO]   Progression : 180/1470 (177 OK, 2 erreurs)
+2026-03-20 13:38:27,445 [INFO]     Retry joueur rofil/spieler/540941 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:40:09,069 [INFO]   Progression : 190/1470 (187 OK, 2 erreurs)
+2026-03-20 13:41:51,194 [INFO]   Progression : 200/1470 (197 OK, 2 erreurs)
+2026-03-20 13:43:16,924 [INFO]   Progression : 210/1470 (207 OK, 2 erreurs)
+2026-03-20 13:45:17,198 [INFO]   Progression : 220/1470 (217 OK, 2 erreurs)
+2026-03-20 13:46:39,401 [INFO]     Retry joueur rofil/spieler/234803 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:46:45,545 [WARNING]     Joueur ignore : https://www.transfermarkt.us/andrew-robertson/profil/spieler/234803 -> 'NoneType' object has no attribute 'text'
+2026-03-20 13:47:42,585 [INFO]     Retry joueur rofil/spieler/474701 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:47:49,754 [WARNING]     Joueur ignore : https://www.transfermarkt.us/crysencio-summerville/profil/spieler/474701 -> 'NoneType' object has no attribute 'text'
+2026-03-20 13:48:32,969 [INFO]     Retry joueur rofil/spieler/256977 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:48:41,509 [WARNING]     Joueur ignore : https://www.transfermarkt.us/daniel-podence/profil/spieler/256977 -> 'NoneType' object has no attribute 'text'
+2026-03-20 13:48:45,869 [INFO]   Progression : 230/1470 (224 OK, 5 erreurs)
+2026-03-20 13:49:20,072 [INFO]     Retry joueur rofil/spieler/199527 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 13:49:26,937 [WARNING]     Joueur ignore : https://www.transfermarkt.us/jacob-murphy/profil/spieler/199527 -> 'NoneType' object has no attribute 'text'
+2026-03-20 13:50:34,895 [INFO]   Progression : 240/1470 (233 OK, 6 erreurs)
+2026-03-20 13:52:52,017 [INFO]   Progression : 250/1470 (243 OK, 6 erreurs)
+2026-03-20 13:54:08,002 [INFO]   Progression : 260/1470 (253 OK, 6 erreurs)
+2026-03-20 13:56:36,012 [INFO]   Progression : 270/1470 (263 OK, 6 erreurs)
+2026-03-20 13:57:30,142 [INFO]   Progression : 280/1470 (273 OK, 6 erreurs)
+2026-03-20 13:58:58,215 [INFO]   Progression : 290/1470 (283 OK, 6 erreurs)
+2026-03-20 14:00:03,872 [INFO]   Progression : 300/1470 (293 OK, 6 erreurs)
+2026-03-20 14:01:19,067 [INFO]   Progression : 310/1470 (303 OK, 6 erreurs)
+2026-03-20 14:02:42,341 [INFO]   Progression : 320/1470 (313 OK, 6 erreurs)
+2026-03-20 14:03:44,829 [INFO]   Progression : 330/1470 (323 OK, 6 erreurs)
+2026-03-20 14:05:01,882 [INFO]   Progression : 340/1470 (333 OK, 6 erreurs)
+2026-03-20 14:06:09,772 [INFO]   Progression : 350/1470 (343 OK, 6 erreurs)
+2026-03-20 14:07:21,185 [INFO]   Progression : 360/1470 (353 OK, 6 erreurs)
+2026-03-20 14:08:51,201 [INFO]   Progression : 370/1470 (363 OK, 6 erreurs)
+2026-03-20 14:09:58,500 [INFO]   Progression : 380/1470 (373 OK, 6 erreurs)
+2026-03-20 14:11:01,245 [INFO]   Progression : 390/1470 (383 OK, 6 erreurs)
+2026-03-20 14:12:24,212 [INFO]   Progression : 400/1470 (393 OK, 6 erreurs)
+2026-03-20 14:13:43,298 [INFO]   Progression : 410/1470 (403 OK, 6 erreurs)
+2026-03-20 14:15:44,304 [INFO]   Progression : 420/1470 (413 OK, 6 erreurs)
+2026-03-20 14:16:59,360 [INFO]   Progression : 430/1470 (423 OK, 6 erreurs)
+2026-03-20 14:18:47,789 [INFO]   Progression : 440/1470 (433 OK, 6 erreurs)
+2026-03-20 14:19:56,230 [INFO]   Progression : 450/1470 (443 OK, 6 erreurs)
+2026-03-20 14:21:12,585 [INFO]   Progression : 460/1470 (453 OK, 6 erreurs)
+2026-03-20 14:22:31,469 [INFO]   Progression : 470/1470 (463 OK, 6 erreurs)
+2026-03-20 14:23:30,791 [INFO]   Progression : 480/1470 (473 OK, 6 erreurs)
+2026-03-20 14:24:40,704 [INFO]   Progression : 490/1470 (483 OK, 6 erreurs)
+2026-03-20 14:25:39,396 [INFO]   Progression : 500/1470 (493 OK, 6 erreurs)
+2026-03-20 14:26:53,069 [INFO]   Progression : 510/1470 (503 OK, 6 erreurs)
+2026-03-20 14:27:55,601 [INFO]   Progression : 520/1470 (513 OK, 6 erreurs)
+2026-03-20 14:29:32,028 [INFO] [SKIP] Argentina Liga Profesional deja traite
+2026-03-20 14:29:32,029 [INFO] [SKIP] Belgium Pro League deja traite
+2026-03-20 14:29:32,029 [INFO] [SKIP] Brazil Serie A deja traite
+2026-03-20 14:29:32,029 [INFO] 
+=======================================================
+2026-03-20 14:29:32,029 [INFO] === Ligue : England Premier League ===
+2026-03-20 14:29:32,029 [INFO] =======================================================
+2026-03-20 14:29:32,029 [INFO]   Recuperation des liens joueurs...
+2026-03-20 14:31:19,389 [INFO]   1470 joueurs trouves dans England Premier League
+2026-03-20 14:31:56,793 [INFO]   Progression : 10/1470 (9 OK, 0 erreurs)
+2026-03-20 14:32:39,370 [INFO]   Progression : 20/1470 (19 OK, 0 erreurs)
+2026-03-20 14:33:20,931 [INFO]   Progression : 30/1470 (29 OK, 0 erreurs)
+2026-03-20 14:34:15,745 [INFO]   Progression : 40/1470 (39 OK, 0 erreurs)
+2026-03-20 14:34:49,904 [INFO]   Progression : 50/1470 (49 OK, 0 erreurs)
+2026-03-20 14:35:24,830 [INFO]   Progression : 60/1470 (59 OK, 0 erreurs)
+2026-03-20 14:40:55,115 [INFO]   Progression : 110/1470 (109 OK, 0 erreurs)
+2026-03-20 14:41:58,648 [INFO]   Progression : 120/1470 (119 OK, 0 erreurs)
+2026-03-20 14:43:47,363 [INFO]   Progression : 130/1470 (129 OK, 0 erreurs)
+2026-03-20 14:45:21,951 [INFO]   Progression : 140/1470 (139 OK, 0 erreurs)
+2026-03-20 14:46:21,476 [INFO]   Progression : 150/1470 (149 OK, 0 erreurs)
+2026-03-20 14:47:15,553 [INFO]   Progression : 160/1470 (159 OK, 0 erreurs)
+2026-03-20 14:48:10,969 [INFO]   Progression : 170/1470 (169 OK, 0 erreurs)
+2026-03-20 14:50:04,123 [INFO]   Progression : 190/1470 (189 OK, 0 erreurs)
+2026-03-20 14:51:16,088 [INFO]   Progression : 200/1470 (199 OK, 0 erreurs)
+2026-03-20 14:53:01,544 [INFO]   Progression : 210/1470 (209 OK, 0 erreurs)
+2026-03-20 14:54:59,587 [INFO]   Progression : 230/1470 (229 OK, 0 erreurs)
+2026-03-20 14:56:38,649 [INFO]   Progression : 250/1470 (249 OK, 0 erreurs)
+2026-03-20 14:57:31,674 [INFO]   Progression : 260/1470 (259 OK, 0 erreurs)
+2026-03-20 15:00:37,744 [INFO]   Progression : 290/1470 (289 OK, 0 erreurs)
+2026-03-20 15:01:12,025 [INFO]     Retry joueur rlauf/spieler/979064 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 15:01:19,372 [WARNING]     Joueur ignore : https://www.transfermarkt.us/tony-yogane/marktwertverlauf/spieler/979064 -> 'NoneType' object has no attribute 'text'
+2026-03-20 15:02:52,827 [INFO]   Progression : 300/1470 (298 OK, 1 erreurs)
+2026-03-20 15:06:14,995 [INFO]   Progression : 340/1470 (338 OK, 1 erreurs)
+2026-03-20 15:07:43,742 [INFO]   Progression : 350/1470 (348 OK, 1 erreurs)
+2026-03-20 15:09:02,119 [INFO]   Progression : 360/1470 (358 OK, 1 erreurs)
+2026-03-20 15:12:46,898 [INFO]   Progression : 420/1470 (418 OK, 1 erreurs)
+2026-03-20 15:13:42,793 [INFO]   Progression : 430/1470 (428 OK, 1 erreurs)
+2026-03-20 15:14:38,342 [INFO]   Progression : 440/1470 (438 OK, 1 erreurs)
+2026-03-20 15:15:32,865 [INFO]   Progression : 450/1470 (448 OK, 1 erreurs)
+2026-03-20 15:15:58,396 [INFO]   Progression : 460/1470 (458 OK, 1 erreurs)
+2026-03-20 15:18:55,206 [INFO]   Progression : 490/1470 (488 OK, 1 erreurs)
+2026-03-20 15:19:57,686 [INFO]   Progression : 500/1470 (498 OK, 1 erreurs)
+2026-03-20 15:21:23,830 [INFO]   Progression : 520/1470 (518 OK, 1 erreurs)
+2026-03-20 15:22:20,686 [INFO]   Progression : 530/1470 (528 OK, 1 erreurs)
+2026-03-20 15:26:38,702 [INFO]   Progression : 590/1470 (588 OK, 1 erreurs)
+2026-03-20 15:27:59,014 [INFO]   Progression : 600/1470 (598 OK, 1 erreurs)
+2026-03-20 15:29:21,753 [INFO]   Progression : 620/1470 (618 OK, 1 erreurs)
+2026-03-20 15:30:22,277 [INFO]   Progression : 630/1470 (628 OK, 1 erreurs)
+2026-03-20 15:31:10,165 [INFO]   Progression : 640/1470 (638 OK, 1 erreurs)
+2026-03-20 15:32:16,663 [INFO]     Retry joueur rofil/spieler/939290 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 15:32:25,437 [WARNING]     Joueur ignore : https://www.transfermarkt.us/jayden-danns/profil/spieler/939290 -> 'NoneType' object has no attribute 'text'
+2026-03-20 15:32:57,013 [INFO]     Retry joueur rlauf/spieler/260827 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 15:33:04,439 [WARNING]     Joueur ignore : https://www.transfermarkt.us/joachim-andersen/marktwertverlauf/spieler/260827 -> 'NoneType' object has no attribute 'text'
+2026-03-20 15:33:07,918 [INFO]   Progression : 650/1470 (646 OK, 3 erreurs)
+2026-03-20 15:36:19,777 [INFO]     Retry joueur rlauf/spieler/212847 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 15:36:26,501 [WARNING]     Joueur ignore : https://www.transfermarkt.us/adam-webster/marktwertverlauf/spieler/212847 -> 'NoneType' object has no attribute 'text'
+2026-03-20 15:36:34,324 [INFO]   Progression : 680/1470 (675 OK, 4 erreurs)
+2026-03-20 15:37:30,836 [INFO]   Progression : 690/1470 (685 OK, 4 erreurs)
+2026-03-20 15:38:41,008 [INFO]   Progression : 700/1470 (695 OK, 4 erreurs)
+2026-03-20 15:39:23,265 [INFO]   Progression : 710/1470 (705 OK, 4 erreurs)
+2026-03-20 15:40:57,890 [INFO]   Progression : 730/1470 (725 OK, 4 erreurs)
+2026-03-20 15:41:47,355 [INFO]   Progression : 740/1470 (735 OK, 4 erreurs)
+2026-03-20 15:42:25,711 [INFO]   Progression : 750/1470 (745 OK, 4 erreurs)
+2026-03-20 15:45:28,529 [INFO]   Progression : 790/1470 (785 OK, 4 erreurs)
+2026-03-20 15:46:13,835 [INFO]   Progression : 800/1470 (795 OK, 4 erreurs)
+2026-03-20 15:48:42,940 [INFO]   Progression : 830/1470 (825 OK, 4 erreurs)
+2026-03-20 15:49:26,628 [INFO]   Progression : 840/1470 (835 OK, 4 erreurs)
+2026-03-20 15:50:08,434 [INFO]   Progression : 850/1470 (845 OK, 4 erreurs)
+2026-03-20 15:53:45,557 [INFO]   Progression : 890/1470 (885 OK, 4 erreurs)
+2026-03-20 15:55:19,160 [INFO]   Progression : 910/1470 (905 OK, 4 erreurs)
+2026-03-20 15:56:23,544 [INFO]   Progression : 920/1470 (915 OK, 4 erreurs)
+2026-03-20 15:57:34,328 [INFO]   Progression : 930/1470 (925 OK, 4 erreurs)
+2026-03-20 15:58:35,205 [INFO]   Progression : 940/1470 (935 OK, 4 erreurs)
+2026-03-20 15:59:16,387 [INFO]   Progression : 950/1470 (945 OK, 4 erreurs)
+2026-03-20 16:01:08,523 [INFO]   Progression : 970/1470 (965 OK, 4 erreurs)
+2026-03-20 16:01:45,728 [INFO]   Progression : 980/1470 (975 OK, 4 erreurs)
+2026-03-20 16:03:28,578 [INFO]   Progression : 1000/1470 (995 OK, 4 erreurs)
+2026-03-20 16:04:43,298 [INFO]   Progression : 1010/1470 (1005 OK, 4 erreurs)
+2026-03-20 16:05:33,102 [INFO]   Progression : 1020/1470 (1015 OK, 4 erreurs)
+2026-03-20 16:07:54,372 [INFO]   Progression : 1040/1470 (1035 OK, 4 erreurs)
+2026-03-20 16:09:43,750 [INFO]     Retry joueur rlauf/spieler/845289 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 16:09:50,852 [WARNING]     Joueur ignore : https://www.transfermarkt.us/james-mcconnell/marktwertverlauf/spieler/845289 -> 'NoneType' object has no attribute 'text'
+2026-03-20 16:14:05,254 [INFO]   Progression : 1100/1470 (1094 OK, 5 erreurs)
+2026-03-20 16:16:02,961 [INFO]   Progression : 1110/1470 (1104 OK, 5 erreurs)
+2026-03-20 16:17:22,153 [INFO]   Progression : 1120/1470 (1114 OK, 5 erreurs)
+2026-03-20 16:18:37,076 [INFO]   Progression : 1130/1470 (1124 OK, 5 erreurs)
+2026-03-20 16:19:28,953 [INFO]   Progression : 1140/1470 (1134 OK, 5 erreurs)
+2026-03-20 16:20:01,927 [INFO]   Progression : 1150/1470 (1144 OK, 5 erreurs)
+2026-03-20 16:20:48,034 [INFO]   Progression : 1160/1470 (1154 OK, 5 erreurs)
+2026-03-20 16:21:27,706 [INFO]   Progression : 1170/1470 (1164 OK, 5 erreurs)
+2026-03-20 16:23:28,660 [INFO]   Progression : 1190/1470 (1184 OK, 5 erreurs)
+2026-03-20 16:24:13,394 [INFO]   Progression : 1200/1470 (1194 OK, 5 erreurs)
+2026-03-20 16:24:50,510 [INFO]   Progression : 1210/1470 (1204 OK, 5 erreurs)
+2026-03-20 16:28:43,088 [INFO]   Progression : 1250/1470 (1244 OK, 5 erreurs)
+2026-03-20 16:29:11,800 [INFO]   Progression : 1260/1470 (1254 OK, 5 erreurs)
+2026-03-20 16:30:20,911 [INFO]   Progression : 1270/1470 (1264 OK, 5 erreurs)
+2026-03-20 16:31:07,687 [INFO]   Progression : 1280/1470 (1274 OK, 5 erreurs)
+2026-03-20 16:32:27,194 [INFO]   Progression : 1300/1470 (1294 OK, 5 erreurs)
+2026-03-20 16:34:26,530 [INFO]   Progression : 1330/1470 (1324 OK, 5 erreurs)
+2026-03-20 16:36:11,188 [INFO]   Progression : 1350/1470 (1344 OK, 5 erreurs)
+2026-03-20 16:37:23,095 [INFO]   Progression : 1370/1470 (1364 OK, 5 erreurs)
+2026-03-20 16:39:09,454 [INFO]   Progression : 1390/1470 (1384 OK, 5 erreurs)
+2026-03-20 16:40:53,607 [INFO]   Progression : 1410/1470 (1404 OK, 5 erreurs)
+2026-03-20 16:43:11,301 [INFO]   Progression : 1430/1470 (1424 OK, 5 erreurs)
+2026-03-20 16:43:44,998 [INFO]   Progression : 1440/1470 (1434 OK, 5 erreurs)
+2026-03-20 16:45:30,422 [INFO]   Progression : 1450/1470 (1444 OK, 5 erreurs)
+2026-03-20 16:46:13,867 [INFO]   Progression : 1460/1470 (1454 OK, 5 erreurs)
+2026-03-20 16:47:18,290 [INFO]   Progression : 1470/1470 (1464 OK, 5 erreurs)
+2026-03-20 16:47:23,561 [INFO]   Ligue terminee : 1465 OK, 5 erreurs
+2026-03-20 16:47:23,585 [INFO]   Pause 20.1s avant la ligue suivante...
+2026-03-20 16:47:43,729 [INFO] 
+=======================================================
+2026-03-20 16:47:43,730 [INFO] === Ligue : France Ligue 1 ===
+2026-03-20 16:47:43,730 [INFO] =======================================================
+2026-03-20 16:47:43,730 [INFO]   Recuperation des liens joueurs...
+2026-03-20 16:49:10,743 [INFO]   1292 joueurs trouves dans France Ligue 1
+2026-03-20 16:49:10,745 [INFO]   Progression : 1/1292 (0 OK, 0 erreurs)
+2026-03-20 16:52:32,985 [INFO]   Progression : 20/1292 (19 OK, 0 erreurs)
+2026-03-20 16:53:55,034 [INFO]     Retry joueur rofil/spieler/524937 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 16:54:00,665 [WARNING]     Joueur ignore : https://www.transfermarkt.us/alex-dominguez/profil/spieler/524937 -> 'NoneType' object has no attribute 'text'
+2026-03-20 16:54:20,121 [INFO]     Retry joueur rlauf/spieler/239743 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 16:54:26,197 [WARNING]     Joueur ignore : https://www.transfermarkt.us/przemyslaw-frankowski/marktwertverlauf/spieler/239743 -> 'NoneType' object has no attribute 'text'
+2026-03-20 16:54:51,152 [INFO]     Retry joueur rlauf/spieler/398073 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 16:55:09,659 [INFO]   Progression : 30/1292 (27 OK, 2 erreurs)
+2026-03-20 16:57:56,532 [INFO]   Progression : 40/1292 (37 OK, 2 erreurs)
+2026-03-20 16:59:13,403 [INFO]   Progression : 50/1292 (47 OK, 2 erreurs)
+2026-03-20 17:00:46,562 [INFO]   Progression : 60/1292 (57 OK, 2 erreurs)
+2026-03-20 17:02:02,578 [INFO]   Progression : 70/1292 (67 OK, 2 erreurs)
+2026-03-20 17:03:13,799 [INFO]   Progression : 80/1292 (77 OK, 2 erreurs)
+2026-03-20 17:04:08,517 [INFO]   Progression : 90/1292 (87 OK, 2 erreurs)
+2026-03-20 17:05:23,376 [INFO]   Progression : 100/1292 (97 OK, 2 erreurs)
+2026-03-20 17:06:48,284 [INFO]   Progression : 110/1292 (107 OK, 2 erreurs)
+2026-03-20 17:08:05,584 [INFO]   Progression : 120/1292 (117 OK, 2 erreurs)
+2026-03-20 17:09:23,220 [INFO]   Progression : 130/1292 (127 OK, 2 erreurs)
+2026-03-20 17:11:11,970 [INFO]   Progression : 140/1292 (137 OK, 2 erreurs)
+2026-03-20 17:12:20,680 [INFO]   Progression : 150/1292 (147 OK, 2 erreurs)
+2026-03-20 17:14:13,406 [INFO]   Progression : 160/1292 (157 OK, 2 erreurs)
+2026-03-20 17:14:47,568 [INFO]     Retry joueur rofil/spieler/806793 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 17:14:55,790 [WARNING]     Joueur ignore : https://www.transfermarkt.us/clement-akpa/profil/spieler/806793 -> 'NoneType' object has no attribute 'text'
+2026-03-20 17:16:17,811 [INFO]   Progression : 170/1292 (166 OK, 3 erreurs)
+2026-03-20 17:17:52,332 [INFO]   Progression : 180/1292 (176 OK, 3 erreurs)
+2026-03-20 17:18:59,819 [INFO]   Progression : 190/1292 (186 OK, 3 erreurs)
+2026-03-20 17:20:25,183 [INFO]   Progression : 200/1292 (196 OK, 3 erreurs)
+2026-03-20 17:21:47,980 [INFO]   Progression : 210/1292 (206 OK, 3 erreurs)
+2026-03-20 17:24:11,086 [INFO]   Progression : 220/1292 (216 OK, 3 erreurs)
+2026-03-20 17:25:39,828 [INFO]   Progression : 230/1292 (226 OK, 3 erreurs)
+2026-03-20 17:27:54,850 [INFO]   Progression : 240/1292 (236 OK, 3 erreurs)
+2026-03-20 17:29:22,240 [INFO]   Progression : 250/1292 (246 OK, 3 erreurs)
+2026-03-20 17:30:34,737 [INFO]   Progression : 260/1292 (256 OK, 3 erreurs)
+2026-03-20 17:31:44,318 [INFO]   Progression : 270/1292 (266 OK, 3 erreurs)
+2026-03-20 17:33:28,197 [INFO]   Progression : 280/1292 (276 OK, 3 erreurs)
+2026-03-20 17:36:19,833 [INFO]   Progression : 290/1292 (286 OK, 3 erreurs)
+2026-03-20 17:37:22,998 [INFO]   Progression : 300/1292 (296 OK, 3 erreurs)
+2026-03-20 17:38:34,137 [INFO]   Progression : 310/1292 (306 OK, 3 erreurs)
+2026-03-20 17:39:46,904 [INFO]   Progression : 320/1292 (316 OK, 3 erreurs)
+2026-03-20 17:40:53,377 [INFO]   Progression : 330/1292 (326 OK, 3 erreurs)
+2026-03-20 17:41:53,975 [INFO]   Progression : 340/1292 (336 OK, 3 erreurs)
+2026-03-20 17:43:09,279 [INFO]   Progression : 350/1292 (346 OK, 3 erreurs)
+2026-03-20 17:44:23,798 [INFO]   Progression : 360/1292 (356 OK, 3 erreurs)
+2026-03-20 17:46:39,954 [INFO]   Progression : 370/1292 (366 OK, 3 erreurs)
+2026-03-20 17:48:07,403 [INFO]   Progression : 380/1292 (376 OK, 3 erreurs)
+2026-03-20 17:49:32,291 [INFO]   Progression : 390/1292 (386 OK, 3 erreurs)
+2026-03-20 17:51:34,250 [INFO]   Progression : 400/1292 (396 OK, 3 erreurs)
+2026-03-20 17:52:54,833 [INFO]   Progression : 410/1292 (406 OK, 3 erreurs)
+2026-03-20 17:54:18,014 [INFO]   Progression : 420/1292 (416 OK, 3 erreurs)
+2026-03-20 17:54:55,420 [INFO]     Retry joueur rlauf/spieler/807688 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 17:55:01,667 [WARNING]     Joueur ignore : https://www.transfermarkt.us/yassin-belkhdim/marktwertverlauf/spieler/807688 -> 'NoneType' object has no attribute 'text'
+2026-03-20 17:57:28,155 [INFO]   Progression : 430/1292 (425 OK, 4 erreurs)
+2026-03-20 17:58:32,858 [INFO]   Progression : 440/1292 (435 OK, 4 erreurs)
+2026-03-20 18:00:01,416 [INFO]   Progression : 450/1292 (445 OK, 4 erreurs)
+2026-03-20 18:01:36,645 [INFO]   Progression : 460/1292 (455 OK, 4 erreurs)
+2026-03-20 18:03:36,678 [INFO]   Progression : 470/1292 (465 OK, 4 erreurs)
+2026-03-20 18:05:01,036 [INFO]   Progression : 480/1292 (475 OK, 4 erreurs)
+2026-03-20 18:07:05,999 [INFO]   Progression : 490/1292 (485 OK, 4 erreurs)
+2026-03-20 18:09:13,458 [INFO]   Progression : 500/1292 (495 OK, 4 erreurs)
+2026-03-20 18:10:47,382 [INFO]     Retry joueur rofil/spieler/538874 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 18:10:53,222 [WARNING]     Joueur ignore : https://www.transfermarkt.us/terem-moffi/profil/spieler/538874 -> 'NoneType' object has no attribute 'text'
+2026-03-20 18:12:00,177 [INFO]   Progression : 510/1292 (504 OK, 5 erreurs)
+2026-03-20 18:14:30,468 [INFO]   Progression : 520/1292 (514 OK, 5 erreurs)
+2026-03-20 18:17:57,784 [INFO]   Progression : 530/1292 (524 OK, 5 erreurs)
+2026-03-20 18:19:50,725 [INFO]   Progression : 540/1292 (534 OK, 5 erreurs)
+2026-03-20 18:22:38,171 [INFO]   Progression : 550/1292 (544 OK, 5 erreurs)
+2026-03-20 18:23:51,836 [INFO]   Progression : 560/1292 (554 OK, 5 erreurs)
+2026-03-20 18:25:57,515 [INFO]   Progression : 570/1292 (564 OK, 5 erreurs)
+2026-03-20 18:28:28,596 [INFO]   Progression : 590/1292 (584 OK, 5 erreurs)
+2026-03-20 18:29:36,949 [INFO]   Progression : 600/1292 (594 OK, 5 erreurs)
+2026-03-20 18:32:57,732 [INFO]   Progression : 620/1292 (614 OK, 5 erreurs)
+2026-03-20 18:35:38,972 [INFO]   Progression : 630/1292 (624 OK, 5 erreurs)
+2026-03-20 18:36:38,274 [INFO]   Progression : 640/1292 (634 OK, 5 erreurs)
+2026-03-20 18:37:52,309 [INFO]   Progression : 650/1292 (644 OK, 5 erreurs)
+2026-03-20 18:40:30,557 [INFO]   Progression : 660/1292 (654 OK, 5 erreurs)
+2026-03-20 18:40:33,953 [INFO]     Retry joueur rlauf/spieler/782632 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 18:40:43,681 [WARNING]     Joueur ignore : https://www.transfermarkt.us/jibril-othman/marktwertverlauf/spieler/782632 -> 'NoneType' object has no attribute 'text'
+2026-03-20 18:41:24,506 [INFO]     Retry joueur rlauf/spieler/745181 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 18:41:33,552 [WARNING]     Joueur ignore : https://www.transfermarkt.us/soungoutou-magassa/marktwertverlauf/spieler/745181 -> 'NoneType' object has no attribute 'text'
+2026-03-20 18:42:17,602 [INFO]   Progression : 670/1292 (662 OK, 7 erreurs)
+2026-03-20 18:43:47,601 [INFO]   Progression : 680/1292 (672 OK, 7 erreurs)
+2026-03-20 18:45:49,784 [INFO]   Progression : 690/1292 (682 OK, 7 erreurs)
+2026-03-20 18:47:24,191 [INFO]     Retry joueur rlauf/spieler/986261 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 18:47:59,398 [INFO]   Progression : 700/1292 (692 OK, 7 erreurs)
+2026-03-20 18:49:03,208 [INFO]   Progression : 710/1292 (702 OK, 7 erreurs)
+2026-03-20 18:50:20,476 [INFO]   Progression : 720/1292 (712 OK, 7 erreurs)
+2026-03-20 18:51:46,480 [INFO]   Progression : 730/1292 (722 OK, 7 erreurs)
+2026-03-20 18:54:53,889 [INFO]   Progression : 750/1292 (742 OK, 7 erreurs)
+2026-03-20 18:55:42,619 [INFO]   Progression : 760/1292 (752 OK, 7 erreurs)
+2026-03-20 18:56:25,802 [INFO]     Retry joueur lauf/spieler/1203026 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 18:56:32,983 [WARNING]     Joueur ignore : https://www.transfermarkt.us/wilfried-ndollo-bille/marktwertverlauf/spieler/1203026 -> 'NoneType' object has no attribute 'text'
+2026-03-20 18:57:10,901 [INFO]   Progression : 770/1292 (761 OK, 8 erreurs)
+2026-03-20 18:59:51,638 [INFO]   Progression : 780/1292 (771 OK, 8 erreurs)
+2026-03-20 19:01:15,520 [INFO]   Progression : 790/1292 (781 OK, 8 erreurs)
+2026-03-20 19:02:26,214 [INFO]   Progression : 800/1292 (791 OK, 8 erreurs)
+2026-03-20 19:03:48,171 [INFO]   Progression : 810/1292 (801 OK, 8 erreurs)
+2026-03-20 19:04:55,265 [INFO]   Progression : 820/1292 (811 OK, 8 erreurs)
+2026-03-20 19:07:53,067 [INFO]   Progression : 840/1292 (831 OK, 8 erreurs)
+2026-03-20 19:10:41,604 [INFO]   Progression : 850/1292 (841 OK, 8 erreurs)
+2026-03-20 19:12:11,644 [INFO]   Progression : 860/1292 (851 OK, 8 erreurs)
+2026-03-20 19:13:42,118 [INFO]   Progression : 870/1292 (861 OK, 8 erreurs)
+2026-03-20 19:16:27,441 [INFO]   Progression : 880/1292 (871 OK, 8 erreurs)
+2026-03-20 19:17:06,664 [INFO]     Retry joueur rlauf/spieler/490417 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 19:18:14,808 [INFO]   Progression : 890/1292 (881 OK, 8 erreurs)
+2026-03-20 19:19:09,482 [INFO]   Progression : 900/1292 (891 OK, 8 erreurs)
+2026-03-20 19:20:20,981 [INFO]   Progression : 910/1292 (901 OK, 8 erreurs)
+2026-03-20 19:20:34,956 [INFO]     Retry joueur rofil/spieler/423678 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 19:20:42,944 [WARNING]     Joueur ignore : https://www.transfermarkt.us/meschack-elia/profil/spieler/423678 -> 'NoneType' object has no attribute 'text'
+2026-03-20 19:21:31,166 [INFO]   Progression : 920/1292 (910 OK, 9 erreurs)
+2026-03-20 19:23:26,035 [INFO]   Progression : 940/1292 (930 OK, 9 erreurs)
+2026-03-20 19:24:30,740 [INFO]   Progression : 950/1292 (940 OK, 9 erreurs)
+2026-03-20 19:25:40,139 [INFO]   Progression : 960/1292 (950 OK, 9 erreurs)
+2026-03-20 19:26:53,155 [INFO]   Progression : 970/1292 (960 OK, 9 erreurs)
+2026-03-20 19:28:39,808 [INFO]   Progression : 980/1292 (970 OK, 9 erreurs)
+2026-03-20 19:29:41,125 [INFO]   Progression : 990/1292 (980 OK, 9 erreurs)
+2026-03-20 19:31:01,556 [INFO]   Progression : 1000/1292 (990 OK, 9 erreurs)
+2026-03-20 19:32:54,988 [INFO]   Progression : 1010/1292 (1000 OK, 9 erreurs)
+2026-03-20 19:34:22,733 [INFO]   Progression : 1020/1292 (1010 OK, 9 erreurs)
+2026-03-20 19:35:16,457 [INFO]   Progression : 1030/1292 (1020 OK, 9 erreurs)
+2026-03-20 19:36:32,895 [INFO]   Progression : 1040/1292 (1030 OK, 9 erreurs)
+2026-03-20 19:37:36,513 [INFO]   Progression : 1050/1292 (1040 OK, 9 erreurs)
+2026-03-20 19:38:40,418 [INFO]   Progression : 1060/1292 (1050 OK, 9 erreurs)
+2026-03-20 19:39:50,676 [INFO]   Progression : 1070/1292 (1060 OK, 9 erreurs)
+2026-03-20 19:42:04,358 [INFO]   Progression : 1090/1292 (1080 OK, 9 erreurs)
+2026-03-20 19:43:38,243 [INFO]   Progression : 1100/1292 (1090 OK, 9 erreurs)
+2026-03-20 19:44:32,906 [INFO]   Progression : 1110/1292 (1100 OK, 9 erreurs)
+2026-03-20 19:45:46,631 [INFO]   Progression : 1120/1292 (1110 OK, 9 erreurs)
+2026-03-20 19:46:52,286 [INFO]   Progression : 1130/1292 (1120 OK, 9 erreurs)
+2026-03-20 19:48:01,929 [INFO]   Progression : 1140/1292 (1130 OK, 9 erreurs)
+2026-03-20 19:49:14,819 [INFO]   Progression : 1150/1292 (1140 OK, 9 erreurs)
+2026-03-20 19:50:34,828 [INFO]   Progression : 1160/1292 (1150 OK, 9 erreurs)
+2026-03-20 19:53:54,636 [INFO]   Progression : 1180/1292 (1170 OK, 9 erreurs)
+2026-03-20 19:55:08,043 [INFO]   Progression : 1190/1292 (1180 OK, 9 erreurs)
+2026-03-20 19:56:22,679 [INFO]   Progression : 1200/1292 (1190 OK, 9 erreurs)
+2026-03-20 19:58:39,603 [INFO]   Progression : 1220/1292 (1210 OK, 9 erreurs)
+2026-03-20 19:59:44,892 [INFO]   Progression : 1230/1292 (1220 OK, 9 erreurs)
+2026-03-20 20:01:02,111 [INFO]   Progression : 1240/1292 (1230 OK, 9 erreurs)
+2026-03-20 20:02:48,313 [INFO]   Progression : 1250/1292 (1240 OK, 9 erreurs)
+2026-03-20 20:04:10,739 [INFO]   Progression : 1260/1292 (1250 OK, 9 erreurs)
+2026-03-20 20:05:44,958 [INFO]   Progression : 1270/1292 (1260 OK, 9 erreurs)
+2026-03-20 20:06:51,295 [INFO]   Progression : 1280/1292 (1270 OK, 9 erreurs)
+2026-03-20 20:08:33,937 [INFO]   Progression : 1290/1292 (1280 OK, 9 erreurs)
+2026-03-20 20:09:01,908 [INFO]   Ligue terminee : 1283 OK, 9 erreurs
+2026-03-20 20:09:01,930 [INFO]   Pause 29.8s avant la ligue suivante...
+2026-03-20 20:09:31,736 [INFO] 
+=======================================================
+2026-03-20 20:09:31,736 [INFO] === Ligue : Germany Bundesliga ===
+2026-03-20 20:09:31,736 [INFO] =======================================================
+2026-03-20 20:09:31,737 [INFO]   Recuperation des liens joueurs...
+2026-03-20 20:11:27,297 [INFO]   1219 joueurs trouves dans Germany Bundesliga
+2026-03-20 20:11:27,298 [INFO]   Progression : 1/1219 (0 OK, 0 erreurs)
+2026-03-20 20:12:49,609 [INFO]   Progression : 10/1219 (9 OK, 0 erreurs)
+2026-03-20 20:14:06,197 [INFO]   Progression : 20/1219 (19 OK, 0 erreurs)
+2026-03-20 20:15:09,823 [INFO]   Progression : 30/1219 (29 OK, 0 erreurs)
+2026-03-20 20:16:21,461 [INFO]   Progression : 40/1219 (39 OK, 0 erreurs)
+2026-03-20 20:17:20,424 [INFO]   Progression : 50/1219 (49 OK, 0 erreurs)
+2026-03-20 20:18:26,297 [INFO]   Progression : 60/1219 (59 OK, 0 erreurs)
+2026-03-20 20:19:57,433 [INFO]   Progression : 70/1219 (69 OK, 0 erreurs)
+2026-03-20 20:21:19,521 [INFO]   Progression : 80/1219 (79 OK, 0 erreurs)
+2026-03-20 20:22:31,032 [INFO]   Progression : 90/1219 (89 OK, 0 erreurs)
+2026-03-20 20:23:45,686 [INFO]   Progression : 100/1219 (99 OK, 0 erreurs)
+2026-03-20 20:24:55,394 [INFO]   Progression : 110/1219 (109 OK, 0 erreurs)
+2026-03-20 20:26:04,540 [INFO]   Progression : 120/1219 (119 OK, 0 erreurs)
+2026-03-20 20:26:17,370 [INFO]     Retry joueur ofil/spieler/1074523 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 20:26:25,564 [WARNING]     Joueur ignore : https://www.transfermarkt.us/wesley-adeh/profil/spieler/1074523 -> 'NoneType' object has no attribute 'text'
+2026-03-20 20:27:18,080 [INFO]   Progression : 130/1219 (128 OK, 1 erreurs)
+2026-03-20 20:28:37,349 [INFO]   Progression : 140/1219 (138 OK, 1 erreurs)
+2026-03-20 20:29:56,030 [INFO]   Progression : 150/1219 (148 OK, 1 erreurs)
+2026-03-20 20:30:52,847 [INFO]   Progression : 160/1219 (158 OK, 1 erreurs)
+2026-03-20 20:31:50,182 [INFO]   Progression : 170/1219 (168 OK, 1 erreurs)
+2026-03-20 20:33:02,725 [INFO]   Progression : 180/1219 (178 OK, 1 erreurs)
+2026-03-20 20:34:23,690 [INFO]   Progression : 190/1219 (188 OK, 1 erreurs)
+2026-03-20 20:35:10,793 [INFO]     Retry joueur rofil/spieler/388409 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 20:35:17,044 [WARNING]     Joueur ignore : https://www.transfermarkt.us/philipp-sander/profil/spieler/388409 -> 'NoneType' object has no attribute 'text'
+2026-03-20 20:35:59,236 [INFO]   Progression : 200/1219 (197 OK, 2 erreurs)
+2026-03-20 20:37:10,609 [INFO]   Progression : 210/1219 (207 OK, 2 erreurs)
+2026-03-20 20:38:18,233 [INFO]   Progression : 220/1219 (217 OK, 2 erreurs)
+2026-03-20 20:39:42,828 [INFO]   Progression : 230/1219 (227 OK, 2 erreurs)
+2026-03-20 20:41:11,216 [INFO]   Progression : 240/1219 (237 OK, 2 erreurs)
+2026-03-20 20:42:12,103 [INFO]   Progression : 250/1219 (247 OK, 2 erreurs)
+2026-03-20 20:43:31,668 [INFO]     Retry joueur ofil/spieler/1009439 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 20:43:40,493 [WARNING]     Joueur ignore : https://www.transfermarkt.us/leon-klanac/profil/spieler/1009439 -> 'NoneType' object has no attribute 'text'
+2026-03-20 20:44:08,697 [INFO]   Progression : 260/1219 (256 OK, 3 erreurs)
+2026-03-20 20:45:50,710 [INFO]   Progression : 270/1219 (266 OK, 3 erreurs)
+2026-03-20 20:47:33,877 [INFO]   Progression : 280/1219 (276 OK, 3 erreurs)
+2026-03-20 20:48:47,258 [INFO]   Progression : 290/1219 (286 OK, 3 erreurs)
+2026-03-20 20:50:04,861 [INFO]   Progression : 300/1219 (296 OK, 3 erreurs)
+2026-03-20 20:51:03,749 [INFO]   Progression : 310/1219 (306 OK, 3 erreurs)
+2026-03-20 20:53:12,942 [INFO]   Progression : 330/1219 (326 OK, 3 erreurs)
+2026-03-20 20:54:24,658 [INFO]   Progression : 340/1219 (336 OK, 3 erreurs)
+2026-03-20 20:55:36,377 [INFO]   Progression : 350/1219 (346 OK, 3 erreurs)
+2026-03-20 20:56:49,139 [INFO]   Progression : 360/1219 (356 OK, 3 erreurs)
+2026-03-20 20:57:19,412 [INFO]     Retry joueur rlauf/spieler/278343 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 20:57:26,887 [WARNING]     Joueur ignore : https://www.transfermarkt.us/felix-uduokhai/marktwertverlauf/spieler/278343 -> 'NoneType' object has no attribute 'text'
+2026-03-20 20:58:29,747 [INFO]   Progression : 370/1219 (365 OK, 4 erreurs)
+2026-03-20 20:59:37,743 [INFO]   Progression : 380/1219 (375 OK, 4 erreurs)
+2026-03-20 21:01:22,473 [INFO]   Progression : 390/1219 (385 OK, 4 erreurs)
+2026-03-20 21:02:20,293 [INFO]   Progression : 400/1219 (395 OK, 4 erreurs)
+2026-03-20 21:03:28,958 [INFO]   Progression : 410/1219 (405 OK, 4 erreurs)
+2026-03-20 21:04:40,656 [INFO]   Progression : 420/1219 (415 OK, 4 erreurs)
+2026-03-20 21:07:39,150 [INFO]   Progression : 440/1219 (435 OK, 4 erreurs)
+2026-03-20 21:09:34,412 [INFO]   Progression : 450/1219 (445 OK, 4 erreurs)
+2026-03-20 21:11:06,017 [INFO]   Progression : 460/1219 (455 OK, 4 erreurs)
+2026-03-20 21:12:15,557 [INFO]   Progression : 470/1219 (465 OK, 4 erreurs)
+2026-03-20 21:14:32,357 [INFO]   Progression : 490/1219 (485 OK, 4 erreurs)
+2026-03-20 21:17:48,591 [INFO]   Progression : 500/1219 (495 OK, 4 erreurs)
+2026-03-20 21:19:07,753 [INFO]   Progression : 510/1219 (505 OK, 4 erreurs)
+2026-03-20 21:21:22,956 [INFO]   Progression : 520/1219 (515 OK, 4 erreurs)
+2026-03-20 21:23:30,637 [INFO]   Progression : 530/1219 (525 OK, 4 erreurs)
+2026-03-20 21:27:22,459 [INFO]   Progression : 550/1219 (545 OK, 4 erreurs)
+2026-03-20 21:29:06,066 [INFO]   Progression : 560/1219 (555 OK, 4 erreurs)
+2026-03-20 21:30:22,615 [INFO]     Retry joueur erlauf/spieler/43824 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 21:30:48,150 [INFO]   Progression : 570/1219 (565 OK, 4 erreurs)
+2026-03-20 21:32:49,912 [INFO]   Progression : 580/1219 (575 OK, 4 erreurs)
+2026-03-20 21:34:34,633 [INFO]   Progression : 590/1219 (585 OK, 4 erreurs)
+2026-03-20 21:36:00,815 [INFO]   Progression : 600/1219 (595 OK, 4 erreurs)
+2026-03-20 21:40:50,549 [INFO]   Progression : 630/1219 (625 OK, 4 erreurs)
+2026-03-20 21:43:25,708 [INFO]   Progression : 640/1219 (635 OK, 4 erreurs)
+2026-03-20 21:45:44,896 [INFO]   Progression : 650/1219 (645 OK, 4 erreurs)
+2026-03-20 21:47:28,594 [INFO]   Progression : 660/1219 (655 OK, 4 erreurs)
+2026-03-20 21:49:09,297 [INFO]   Progression : 670/1219 (665 OK, 4 erreurs)
+2026-03-20 21:50:18,686 [INFO]   Progression : 680/1219 (675 OK, 4 erreurs)
+2026-03-20 21:51:29,905 [INFO]   Progression : 690/1219 (685 OK, 4 erreurs)
+2026-03-20 21:53:15,635 [INFO]   Progression : 700/1219 (695 OK, 4 erreurs)
+2026-03-20 21:54:33,483 [INFO]   Progression : 710/1219 (705 OK, 4 erreurs)
+2026-03-20 21:55:55,118 [INFO]   Progression : 720/1219 (715 OK, 4 erreurs)
+2026-03-20 21:57:24,649 [INFO]   Progression : 730/1219 (725 OK, 4 erreurs)
+2026-03-20 21:59:15,321 [INFO]   Progression : 740/1219 (735 OK, 4 erreurs)
+2026-03-20 22:01:23,926 [INFO]   Progression : 750/1219 (745 OK, 4 erreurs)
+2026-03-20 22:03:30,919 [INFO]   Progression : 760/1219 (755 OK, 4 erreurs)
+2026-03-20 22:05:26,115 [INFO]   Progression : 770/1219 (765 OK, 4 erreurs)
+2026-03-20 22:06:51,844 [INFO]   Progression : 780/1219 (775 OK, 4 erreurs)
+2026-03-20 22:08:07,098 [INFO]   Progression : 790/1219 (785 OK, 4 erreurs)
+2026-03-20 22:10:41,117 [INFO]   Progression : 800/1219 (795 OK, 4 erreurs)
+2026-03-20 22:13:29,737 [INFO]   Progression : 810/1219 (805 OK, 4 erreurs)
+2026-03-20 22:16:58,284 [INFO]   Progression : 820/1219 (815 OK, 4 erreurs)
+2026-03-20 22:18:22,486 [INFO]   Progression : 830/1219 (825 OK, 4 erreurs)
+2026-03-20 22:19:34,457 [INFO]   Progression : 840/1219 (835 OK, 4 erreurs)
+2026-03-20 22:20:46,036 [INFO]   Progression : 850/1219 (845 OK, 4 erreurs)
+2026-03-20 22:23:28,513 [INFO]   Progression : 860/1219 (855 OK, 4 erreurs)
+2026-03-20 22:24:42,566 [INFO]   Progression : 870/1219 (865 OK, 4 erreurs)
+2026-03-20 22:26:44,365 [INFO]   Progression : 880/1219 (875 OK, 4 erreurs)
+2026-03-20 22:28:03,923 [INFO]     Retry joueur rofil/spieler/618898 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 22:30:52,816 [INFO]   Progression : 900/1219 (895 OK, 4 erreurs)
+2026-03-20 22:32:31,179 [INFO]   Progression : 910/1219 (905 OK, 4 erreurs)
+2026-03-20 22:33:50,144 [INFO]   Progression : 920/1219 (915 OK, 4 erreurs)
+2026-03-20 22:35:16,951 [INFO]   Progression : 930/1219 (925 OK, 4 erreurs)
+2026-03-20 22:37:28,894 [INFO]   Progression : 940/1219 (935 OK, 4 erreurs)
+2026-03-20 22:38:34,563 [INFO]   Progression : 950/1219 (945 OK, 4 erreurs)
+2026-03-20 22:39:56,767 [INFO]   Progression : 960/1219 (955 OK, 4 erreurs)
+2026-03-20 22:41:22,844 [INFO]   Progression : 970/1219 (965 OK, 4 erreurs)
+2026-03-20 22:44:01,546 [INFO]   Progression : 980/1219 (975 OK, 4 erreurs)
+2026-03-20 22:45:51,870 [INFO]   Progression : 990/1219 (985 OK, 4 erreurs)
+2026-03-20 22:47:48,093 [INFO]   Progression : 1000/1219 (995 OK, 4 erreurs)
+2026-03-20 22:50:04,552 [INFO]   Progression : 1010/1219 (1005 OK, 4 erreurs)
+2026-03-20 22:51:22,627 [INFO]   Progression : 1020/1219 (1015 OK, 4 erreurs)
+2026-03-20 22:52:39,971 [INFO]   Progression : 1030/1219 (1025 OK, 4 erreurs)
+2026-03-20 22:54:08,674 [INFO]   Progression : 1040/1219 (1035 OK, 4 erreurs)
+2026-03-20 22:55:49,662 [INFO]   Progression : 1050/1219 (1045 OK, 4 erreurs)
+2026-03-20 22:57:20,256 [INFO]   Progression : 1060/1219 (1055 OK, 4 erreurs)
+2026-03-20 22:59:55,688 [INFO]   Progression : 1070/1219 (1065 OK, 4 erreurs)
+2026-03-20 23:01:10,053 [INFO]   Progression : 1080/1219 (1075 OK, 4 erreurs)
+2026-03-20 23:02:39,707 [INFO]   Progression : 1090/1219 (1085 OK, 4 erreurs)
+2026-03-20 23:03:53,613 [INFO]   Progression : 1100/1219 (1095 OK, 4 erreurs)
+2026-03-20 23:05:15,864 [INFO]   Progression : 1110/1219 (1105 OK, 4 erreurs)
+2026-03-20 23:06:24,460 [INFO]   Progression : 1120/1219 (1115 OK, 4 erreurs)
+2026-03-20 23:07:41,598 [INFO]   Progression : 1130/1219 (1125 OK, 4 erreurs)
+2026-03-20 23:11:04,598 [INFO]   Progression : 1150/1219 (1145 OK, 4 erreurs)
+2026-03-20 23:12:18,414 [INFO]   Progression : 1160/1219 (1155 OK, 4 erreurs)
+2026-03-20 23:13:59,005 [INFO]   Progression : 1170/1219 (1165 OK, 4 erreurs)
+2026-03-20 23:15:07,781 [INFO]   Progression : 1180/1219 (1175 OK, 4 erreurs)
+2026-03-20 23:17:16,317 [INFO]   Progression : 1190/1219 (1185 OK, 4 erreurs)
+2026-03-20 23:19:02,793 [INFO]   Progression : 1200/1219 (1195 OK, 4 erreurs)
+2026-03-20 23:20:08,305 [INFO]   Progression : 1210/1219 (1205 OK, 4 erreurs)
+2026-03-20 23:21:30,566 [INFO]   Ligue terminee : 1215 OK, 4 erreurs
+2026-03-20 23:21:30,590 [INFO]   Pause 28.5s avant la ligue suivante...
+2026-03-20 23:21:59,085 [INFO] 
+=======================================================
+2026-03-20 23:21:59,085 [INFO] === Ligue : Italy Serie A ===
+2026-03-20 23:21:59,086 [INFO] =======================================================
+2026-03-20 23:21:59,086 [INFO]   Recuperation des liens joueurs...
+2026-03-20 23:25:38,747 [INFO]   1601 joueurs trouves dans Italy Serie A
+2026-03-20 23:25:38,748 [INFO]   Progression : 1/1601 (0 OK, 0 erreurs)
+2026-03-20 23:26:47,868 [INFO]   Progression : 10/1601 (9 OK, 0 erreurs)
+2026-03-20 23:29:23,853 [INFO]   Progression : 20/1601 (19 OK, 0 erreurs)
+2026-03-20 23:30:42,252 [INFO]   Progression : 30/1601 (29 OK, 0 erreurs)
+2026-03-20 23:33:20,217 [INFO]   Progression : 50/1601 (49 OK, 0 erreurs)
+2026-03-20 23:35:40,365 [INFO]   Progression : 60/1601 (59 OK, 0 erreurs)
+2026-03-20 23:37:02,032 [INFO]     Retry joueur rofil/spieler/972475 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 23:37:55,198 [INFO]   Progression : 70/1601 (69 OK, 0 erreurs)
+2026-03-20 23:39:31,238 [INFO]     Retry joueur rlauf/spieler/625202 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 23:39:39,125 [WARNING]     Joueur ignore : https://www.transfermarkt.us/lautaro-valenti/marktwertverlauf/spieler/625202 -> 'NoneType' object has no attribute 'text'
+2026-03-20 23:40:15,188 [INFO]   Progression : 80/1601 (78 OK, 1 erreurs)
+2026-03-20 23:42:21,374 [INFO]   Progression : 90/1601 (88 OK, 1 erreurs)
+2026-03-20 23:43:35,894 [INFO]   Progression : 100/1601 (98 OK, 1 erreurs)
+2026-03-20 23:44:45,857 [INFO]   Progression : 110/1601 (108 OK, 1 erreurs)
+2026-03-20 23:46:38,052 [INFO]   Progression : 120/1601 (118 OK, 1 erreurs)
+2026-03-20 23:47:55,894 [INFO]   Progression : 130/1601 (128 OK, 1 erreurs)
+2026-03-20 23:49:57,340 [INFO]   Progression : 140/1601 (138 OK, 1 erreurs)
+2026-03-20 23:52:28,536 [INFO]   Progression : 150/1601 (148 OK, 1 erreurs)
+2026-03-20 23:54:17,444 [INFO]   Progression : 160/1601 (158 OK, 1 erreurs)
+2026-03-20 23:54:49,304 [INFO]     Retry joueur rlauf/spieler/206050 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-20 23:54:58,873 [WARNING]     Joueur ignore : https://www.transfermarkt.us/paulo-dybala/marktwertverlauf/spieler/206050 -> 'NoneType' object has no attribute 'text'
+2026-03-20 23:56:01,286 [INFO]   Progression : 170/1601 (167 OK, 2 erreurs)
+2026-03-20 23:57:24,895 [INFO]   Progression : 180/1601 (177 OK, 2 erreurs)
+2026-03-21 00:00:14,622 [INFO]   Progression : 190/1601 (187 OK, 2 erreurs)
+2026-03-21 00:01:47,014 [INFO]   Progression : 200/1601 (197 OK, 2 erreurs)
+2026-03-21 00:03:01,237 [INFO]   Progression : 210/1601 (207 OK, 2 erreurs)
+2026-03-21 00:04:40,325 [INFO]   Progression : 220/1601 (217 OK, 2 erreurs)
+2026-03-21 00:06:12,091 [INFO]   Progression : 230/1601 (227 OK, 2 erreurs)
+2026-03-21 00:07:39,089 [INFO]   Progression : 240/1601 (237 OK, 2 erreurs)
+2026-03-21 00:09:56,777 [INFO]   Progression : 250/1601 (247 OK, 2 erreurs)
+2026-03-21 00:12:40,861 [INFO]   Progression : 260/1601 (257 OK, 2 erreurs)
+2026-03-21 00:14:11,612 [INFO]     Retry joueur rlauf/spieler/176139 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 00:14:19,566 [WARNING]     Joueur ignore : https://www.transfermarkt.us/mattia-bani/marktwertverlauf/spieler/176139 -> 'NoneType' object has no attribute 'text'
+2026-03-21 00:14:33,593 [INFO]   Progression : 270/1601 (266 OK, 3 erreurs)
+2026-03-21 00:15:55,789 [INFO]   Progression : 280/1601 (276 OK, 3 erreurs)
+2026-03-21 00:19:45,410 [INFO]   Progression : 300/1601 (296 OK, 3 erreurs)
+2026-03-21 00:21:02,859 [INFO]   Progression : 310/1601 (306 OK, 3 erreurs)
+2026-03-21 00:24:05,357 [INFO]     Retry joueur rlauf/spieler/564792 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 00:24:16,306 [WARNING]     Joueur ignore : https://www.transfermarkt.us/giovanni-garofani/marktwertverlauf/spieler/564792 -> 'NoneType' object has no attribute 'text'
+2026-03-21 00:24:25,409 [INFO]     Retry joueur rofil/spieler/210178 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 00:25:08,235 [INFO]   Progression : 320/1601 (315 OK, 4 erreurs)
+2026-03-21 00:25:54,796 [INFO]     Retry joueur rlauf/spieler/282388 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 00:26:02,644 [WARNING]     Joueur ignore : https://www.transfermarkt.us/giovanni-simeone/marktwertverlauf/spieler/282388 -> 'NoneType' object has no attribute 'text'
+2026-03-21 00:27:09,142 [INFO]   Progression : 330/1601 (324 OK, 5 erreurs)
+2026-03-21 00:27:48,653 [INFO]     Retry joueur erlauf/spieler/95736 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 00:28:01,409 [WARNING]     Joueur ignore : https://www.transfermarkt.us/leandro-chichizola/marktwertverlauf/spieler/95736 -> 'NoneType' object has no attribute 'text'
+2026-03-21 00:28:44,796 [INFO]   Progression : 340/1601 (333 OK, 6 erreurs)
+2026-03-21 00:31:08,786 [INFO]   Progression : 350/1601 (343 OK, 6 erreurs)
+2026-03-21 00:32:29,597 [INFO]   Progression : 360/1601 (353 OK, 6 erreurs)
+2026-03-21 00:34:16,652 [INFO]   Progression : 370/1601 (363 OK, 6 erreurs)
+2026-03-21 00:35:51,033 [INFO]   Progression : 380/1601 (373 OK, 6 erreurs)
+2026-03-21 00:38:00,810 [INFO]   Progression : 390/1601 (383 OK, 6 erreurs)
+2026-03-21 00:39:26,827 [INFO]   Progression : 400/1601 (393 OK, 6 erreurs)
+2026-03-21 00:41:03,018 [INFO]   Progression : 410/1601 (403 OK, 6 erreurs)
+2026-03-21 00:42:37,417 [INFO]   Progression : 420/1601 (413 OK, 6 erreurs)
+2026-03-21 00:46:13,906 [INFO]   Progression : 440/1601 (433 OK, 6 erreurs)
+2026-03-21 00:48:47,714 [INFO]   Progression : 450/1601 (443 OK, 6 erreurs)
+2026-03-21 00:50:56,150 [INFO]   Progression : 460/1601 (453 OK, 6 erreurs)
+2026-03-21 00:52:16,228 [INFO]   Progression : 470/1601 (463 OK, 6 erreurs)
+2026-03-21 00:53:46,128 [INFO]   Progression : 480/1601 (473 OK, 6 erreurs)
+2026-03-21 00:55:34,487 [INFO]   Progression : 490/1601 (483 OK, 6 erreurs)
+2026-03-21 00:57:28,563 [INFO]   Progression : 500/1601 (493 OK, 6 erreurs)
+2026-03-21 00:58:31,266 [INFO]   Progression : 510/1601 (503 OK, 6 erreurs)
+2026-03-21 01:00:06,068 [INFO]   Progression : 520/1601 (513 OK, 6 erreurs)
+2026-03-21 01:01:47,494 [INFO]   Progression : 530/1601 (523 OK, 6 erreurs)
+2026-03-21 01:03:11,810 [INFO]   Progression : 540/1601 (533 OK, 6 erreurs)
+2026-03-21 01:04:22,206 [INFO]   Progression : 550/1601 (543 OK, 6 erreurs)
+2026-03-21 01:05:58,306 [INFO]   Progression : 560/1601 (553 OK, 6 erreurs)
+2026-03-21 01:07:45,520 [INFO]   Progression : 570/1601 (563 OK, 6 erreurs)
+2026-03-21 01:09:30,422 [INFO]   Progression : 580/1601 (573 OK, 6 erreurs)
+2026-03-21 01:10:54,794 [INFO]   Progression : 590/1601 (583 OK, 6 erreurs)
+2026-03-21 01:12:24,012 [INFO]   Progression : 600/1601 (593 OK, 6 erreurs)
+2026-03-21 01:13:52,380 [INFO]   Progression : 610/1601 (603 OK, 6 erreurs)
+2026-03-21 01:16:04,088 [INFO]   Progression : 620/1601 (613 OK, 6 erreurs)
+2026-03-21 01:17:37,906 [INFO]   Progression : 630/1601 (623 OK, 6 erreurs)
+2026-03-21 01:19:18,756 [INFO]   Progression : 640/1601 (633 OK, 6 erreurs)
+2026-03-21 01:20:37,867 [INFO]   Progression : 650/1601 (643 OK, 6 erreurs)
+2026-03-21 01:22:37,427 [INFO]   Progression : 660/1601 (653 OK, 6 erreurs)
+2026-03-21 01:24:17,580 [INFO]   Progression : 670/1601 (663 OK, 6 erreurs)
+2026-03-21 01:26:23,251 [INFO]   Progression : 680/1601 (673 OK, 6 erreurs)
+2026-03-21 01:27:49,726 [INFO]   Progression : 690/1601 (683 OK, 6 erreurs)
+2026-03-21 01:29:26,113 [INFO]   Progression : 700/1601 (693 OK, 6 erreurs)
+2026-03-21 01:30:56,304 [INFO]   Progression : 710/1601 (703 OK, 6 erreurs)
+2026-03-21 01:34:02,312 [INFO]   Progression : 720/1601 (713 OK, 6 erreurs)
+2026-03-21 01:35:10,167 [INFO]   Progression : 730/1601 (723 OK, 6 erreurs)
+2026-03-21 01:36:21,490 [INFO]   Progression : 740/1601 (733 OK, 6 erreurs)
+2026-03-21 01:37:20,568 [INFO]   Progression : 750/1601 (743 OK, 6 erreurs)
+2026-03-21 01:38:47,264 [INFO]   Progression : 760/1601 (753 OK, 6 erreurs)
+2026-03-21 01:42:27,842 [INFO]   Progression : 780/1601 (773 OK, 6 erreurs)
+2026-03-21 01:44:36,297 [INFO]   Progression : 790/1601 (783 OK, 6 erreurs)
+2026-03-21 01:45:59,592 [INFO]   Progression : 800/1601 (793 OK, 6 erreurs)
+2026-03-21 01:47:18,262 [INFO]   Progression : 810/1601 (803 OK, 6 erreurs)
+2026-03-21 01:48:52,153 [INFO]   Progression : 820/1601 (813 OK, 6 erreurs)
+2026-03-21 01:51:35,681 [INFO]   Progression : 830/1601 (823 OK, 6 erreurs)
+2026-03-21 01:54:24,129 [INFO]   Progression : 840/1601 (833 OK, 6 erreurs)
+2026-03-21 01:56:02,994 [INFO]   Progression : 850/1601 (843 OK, 6 erreurs)
+2026-03-21 01:57:14,103 [INFO]   Progression : 860/1601 (853 OK, 6 erreurs)
+2026-03-21 01:59:15,624 [INFO]   Progression : 870/1601 (863 OK, 6 erreurs)
+2026-03-21 02:00:49,210 [INFO]   Progression : 880/1601 (873 OK, 6 erreurs)
+2026-03-21 02:03:12,618 [INFO]   Progression : 890/1601 (883 OK, 6 erreurs)
+2026-03-21 02:04:48,630 [INFO]   Progression : 900/1601 (893 OK, 6 erreurs)
+2026-03-21 02:06:07,982 [INFO]   Progression : 910/1601 (903 OK, 6 erreurs)
+2026-03-21 02:07:30,615 [INFO]   Progression : 920/1601 (913 OK, 6 erreurs)
+2026-03-21 02:10:06,030 [INFO]   Progression : 930/1601 (923 OK, 6 erreurs)
+2026-03-21 02:11:35,759 [INFO]   Progression : 940/1601 (933 OK, 6 erreurs)
+2026-03-21 02:14:01,695 [INFO]   Progression : 950/1601 (943 OK, 6 erreurs)
+2026-03-21 02:15:28,337 [INFO]   Progression : 960/1601 (953 OK, 6 erreurs)
+2026-03-21 02:16:52,307 [INFO]   Progression : 970/1601 (963 OK, 6 erreurs)
+2026-03-21 02:18:22,200 [INFO]   Progression : 980/1601 (973 OK, 6 erreurs)
+2026-03-21 02:20:41,725 [INFO]   Progression : 990/1601 (983 OK, 6 erreurs)
+2026-03-21 02:22:11,879 [INFO]   Progression : 1000/1601 (993 OK, 6 erreurs)
+2026-03-21 02:24:17,984 [INFO]   Progression : 1010/1601 (1003 OK, 6 erreurs)
+2026-03-21 02:26:33,073 [INFO]   Progression : 1020/1601 (1013 OK, 6 erreurs)
+2026-03-21 02:27:32,361 [INFO]     Retry joueur erlauf/spieler/85528 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 02:27:40,273 [WARNING]     Joueur ignore : https://www.transfermarkt.us/marco-silvestri/marktwertverlauf/spieler/85528 -> 'NoneType' object has no attribute 'text'
+2026-03-21 02:28:47,313 [INFO]   Progression : 1030/1601 (1022 OK, 7 erreurs)
+2026-03-21 02:29:53,491 [INFO]   Progression : 1040/1601 (1032 OK, 7 erreurs)
+2026-03-21 02:31:17,781 [INFO]   Progression : 1050/1601 (1042 OK, 7 erreurs)
+2026-03-21 02:32:30,929 [INFO]   Progression : 1060/1601 (1052 OK, 7 erreurs)
+2026-03-21 02:33:23,434 [INFO]     Retry joueur rlauf/spieler/562049 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 02:33:45,067 [INFO]   Progression : 1070/1601 (1062 OK, 7 erreurs)
+2026-03-21 02:34:53,412 [INFO]   Progression : 1080/1601 (1072 OK, 7 erreurs)
+2026-03-21 02:36:02,792 [INFO]   Progression : 1090/1601 (1082 OK, 7 erreurs)
+2026-03-21 02:37:18,862 [INFO]   Progression : 1100/1601 (1092 OK, 7 erreurs)
+2026-03-21 02:38:33,269 [INFO]   Progression : 1110/1601 (1102 OK, 7 erreurs)
+2026-03-21 02:43:00,488 [INFO]   Progression : 1130/1601 (1122 OK, 7 erreurs)
+2026-03-21 02:44:32,938 [INFO]   Progression : 1140/1601 (1132 OK, 7 erreurs)
+2026-03-21 02:45:44,665 [INFO]   Progression : 1150/1601 (1142 OK, 7 erreurs)
+2026-03-21 02:46:54,170 [INFO]   Progression : 1160/1601 (1152 OK, 7 erreurs)
+2026-03-21 02:48:05,594 [INFO]   Progression : 1170/1601 (1162 OK, 7 erreurs)
+2026-03-21 02:50:11,656 [INFO]   Progression : 1190/1601 (1182 OK, 7 erreurs)
+2026-03-21 02:51:26,979 [INFO]   Progression : 1200/1601 (1192 OK, 7 erreurs)
+2026-03-21 02:52:51,647 [INFO]   Progression : 1210/1601 (1202 OK, 7 erreurs)
+2026-03-21 02:54:07,480 [INFO]   Progression : 1220/1601 (1212 OK, 7 erreurs)
+2026-03-21 02:55:26,168 [INFO]   Progression : 1230/1601 (1222 OK, 7 erreurs)
+2026-03-21 02:57:08,921 [INFO]     Retry joueur rlauf/spieler/507486 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 02:57:15,372 [WARNING]     Joueur ignore : https://www.transfermarkt.us/simon-sohm/marktwertverlauf/spieler/507486 -> 'NoneType' object has no attribute 'text'
+2026-03-21 02:57:49,027 [INFO]   Progression : 1240/1601 (1231 OK, 8 erreurs)
+2026-03-21 02:59:41,786 [INFO]   Progression : 1250/1601 (1241 OK, 8 erreurs)
+2026-03-21 03:00:50,684 [INFO]   Progression : 1260/1601 (1251 OK, 8 erreurs)
+2026-03-21 03:02:00,218 [INFO]   Progression : 1270/1601 (1261 OK, 8 erreurs)
+2026-03-21 03:02:56,215 [INFO]   Progression : 1280/1601 (1271 OK, 8 erreurs)
+2026-03-21 03:04:32,969 [INFO]   Progression : 1290/1601 (1281 OK, 8 erreurs)
+2026-03-21 03:05:27,313 [INFO]   Progression : 1300/1601 (1291 OK, 8 erreurs)
+2026-03-21 03:06:42,241 [INFO]   Progression : 1310/1601 (1301 OK, 8 erreurs)
+2026-03-21 03:07:56,110 [INFO]   Progression : 1320/1601 (1311 OK, 8 erreurs)
+2026-03-21 03:09:01,947 [INFO]   Progression : 1330/1601 (1321 OK, 8 erreurs)
+2026-03-21 03:10:29,229 [INFO]   Progression : 1340/1601 (1331 OK, 8 erreurs)
+2026-03-21 03:11:41,444 [INFO]   Progression : 1350/1601 (1341 OK, 8 erreurs)
+2026-03-21 03:12:46,739 [INFO]   Progression : 1360/1601 (1351 OK, 8 erreurs)
+2026-03-21 03:14:32,308 [INFO]   Progression : 1370/1601 (1361 OK, 8 erreurs)
+2026-03-21 03:15:46,224 [INFO]   Progression : 1380/1601 (1371 OK, 8 erreurs)
+2026-03-21 03:16:49,903 [INFO]   Progression : 1390/1601 (1381 OK, 8 erreurs)
+2026-03-21 03:17:49,672 [INFO]   Progression : 1400/1601 (1391 OK, 8 erreurs)
+2026-03-21 03:19:02,597 [INFO]   Progression : 1410/1601 (1401 OK, 8 erreurs)
+2026-03-21 03:19:39,392 [INFO]     Retry joueur profil/spieler/99232 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 03:20:31,771 [INFO]   Progression : 1420/1601 (1411 OK, 8 erreurs)
+2026-03-21 03:21:42,327 [INFO]   Progression : 1430/1601 (1421 OK, 8 erreurs)
+2026-03-21 03:23:10,125 [INFO]   Progression : 1440/1601 (1431 OK, 8 erreurs)
+2026-03-21 03:24:50,591 [INFO]   Progression : 1450/1601 (1441 OK, 8 erreurs)
+2026-03-21 03:26:32,453 [INFO]   Progression : 1460/1601 (1451 OK, 8 erreurs)
+2026-03-21 03:27:31,506 [INFO]   Progression : 1470/1601 (1461 OK, 8 erreurs)
+2026-03-21 03:31:27,546 [INFO]   Progression : 1490/1601 (1481 OK, 8 erreurs)
+2026-03-21 03:32:34,837 [INFO]   Progression : 1500/1601 (1491 OK, 8 erreurs)
+2026-03-21 03:33:55,774 [INFO]   Progression : 1510/1601 (1501 OK, 8 erreurs)
+2026-03-21 03:35:18,157 [INFO]   Progression : 1520/1601 (1511 OK, 8 erreurs)
+2026-03-21 03:36:43,108 [INFO]   Progression : 1530/1601 (1521 OK, 8 erreurs)
+2026-03-21 03:37:50,385 [INFO]   Progression : 1540/1601 (1531 OK, 8 erreurs)
+2026-03-21 03:40:10,946 [INFO]   Progression : 1550/1601 (1541 OK, 8 erreurs)
+2026-03-21 03:41:31,343 [INFO]   Progression : 1560/1601 (1551 OK, 8 erreurs)
+2026-03-21 03:42:39,324 [INFO]   Progression : 1570/1601 (1561 OK, 8 erreurs)
+2026-03-21 03:44:02,110 [INFO]   Progression : 1580/1601 (1571 OK, 8 erreurs)
+2026-03-21 03:45:40,152 [INFO]   Progression : 1590/1601 (1581 OK, 8 erreurs)
+2026-03-21 03:47:21,365 [INFO]   Progression : 1600/1601 (1591 OK, 8 erreurs)
+2026-03-21 03:47:38,329 [INFO]   Ligue terminee : 1593 OK, 8 erreurs
+2026-03-21 03:47:38,349 [INFO]   Pause 19.5s avant la ligue suivante...
+2026-03-21 03:47:57,819 [INFO] 
+=======================================================
+2026-03-21 03:47:57,820 [INFO] === Ligue : Netherlands Eredivisie ===
+2026-03-21 03:47:57,820 [INFO] =======================================================
+2026-03-21 03:47:57,820 [INFO]   Recuperation des liens joueurs...
+2026-03-21 03:50:09,324 [INFO]   1245 joueurs trouves dans Netherlands Eredivisie
+2026-03-21 03:50:09,325 [INFO]   Progression : 1/1245 (0 OK, 0 erreurs)
+2026-03-21 03:51:06,540 [INFO]   Progression : 10/1245 (9 OK, 0 erreurs)
+2026-03-21 03:52:14,725 [INFO]   Progression : 20/1245 (19 OK, 0 erreurs)
+2026-03-21 03:53:25,050 [INFO]   Progression : 30/1245 (29 OK, 0 erreurs)
+2026-03-21 03:55:23,838 [INFO]   Progression : 40/1245 (39 OK, 0 erreurs)
+2026-03-21 03:57:07,872 [INFO]   Progression : 50/1245 (49 OK, 0 erreurs)
+2026-03-21 03:58:07,911 [INFO]   Progression : 60/1245 (59 OK, 0 erreurs)
+2026-03-21 04:00:27,063 [INFO]   Progression : 70/1245 (69 OK, 0 erreurs)
+2026-03-21 04:03:10,883 [INFO]   Progression : 90/1245 (89 OK, 0 erreurs)
+2026-03-21 04:04:31,198 [INFO]   Progression : 100/1245 (99 OK, 0 erreurs)
+2026-03-21 04:05:51,818 [INFO]   Progression : 110/1245 (109 OK, 0 erreurs)
+2026-03-21 04:07:11,375 [INFO]   Progression : 120/1245 (119 OK, 0 erreurs)
+2026-03-21 04:08:36,628 [INFO]   Progression : 130/1245 (129 OK, 0 erreurs)
+2026-03-21 04:10:17,690 [INFO]   Progression : 140/1245 (139 OK, 0 erreurs)
+2026-03-21 04:11:56,906 [INFO]   Progression : 150/1245 (149 OK, 0 erreurs)
+2026-03-21 04:13:15,890 [INFO]   Progression : 160/1245 (159 OK, 0 erreurs)
+2026-03-21 04:14:56,177 [INFO]   Progression : 170/1245 (169 OK, 0 erreurs)
+2026-03-21 04:15:52,483 [INFO]   Progression : 180/1245 (179 OK, 0 erreurs)
+2026-03-21 04:18:32,607 [INFO]   Progression : 190/1245 (189 OK, 0 erreurs)
+2026-03-21 04:19:44,070 [INFO]   Progression : 200/1245 (199 OK, 0 erreurs)
+2026-03-21 04:20:47,577 [INFO]   Progression : 210/1245 (209 OK, 0 erreurs)
+2026-03-21 04:22:02,065 [INFO]   Progression : 220/1245 (219 OK, 0 erreurs)
+2026-03-21 04:24:09,205 [INFO]   Progression : 230/1245 (229 OK, 0 erreurs)
+2026-03-21 04:25:38,626 [INFO]   Progression : 240/1245 (239 OK, 0 erreurs)
+2026-03-21 04:28:09,093 [INFO]   Progression : 250/1245 (249 OK, 0 erreurs)
+2026-03-21 04:29:45,763 [INFO]   Progression : 260/1245 (259 OK, 0 erreurs)
+2026-03-21 04:30:55,448 [INFO]   Progression : 270/1245 (269 OK, 0 erreurs)
+2026-03-21 04:32:26,692 [INFO]   Progression : 280/1245 (279 OK, 0 erreurs)
+2026-03-21 04:33:34,155 [INFO]   Progression : 290/1245 (289 OK, 0 erreurs)
+2026-03-21 04:34:50,845 [INFO]   Progression : 300/1245 (299 OK, 0 erreurs)
+2026-03-21 04:36:06,381 [INFO]   Progression : 310/1245 (309 OK, 0 erreurs)
+2026-03-21 04:37:02,799 [INFO]   Progression : 320/1245 (319 OK, 0 erreurs)
+2026-03-21 04:37:52,229 [INFO]   Progression : 330/1245 (329 OK, 0 erreurs)
+2026-03-21 04:39:28,685 [INFO]   Progression : 340/1245 (339 OK, 0 erreurs)
+2026-03-21 04:40:50,565 [INFO]   Progression : 350/1245 (349 OK, 0 erreurs)
+2026-03-21 04:42:00,305 [INFO]   Progression : 360/1245 (359 OK, 0 erreurs)
+2026-03-21 04:43:32,653 [INFO]   Progression : 370/1245 (369 OK, 0 erreurs)
+2026-03-21 04:44:48,405 [INFO]   Progression : 380/1245 (379 OK, 0 erreurs)
+2026-03-21 04:46:16,262 [INFO]   Progression : 390/1245 (389 OK, 0 erreurs)
+2026-03-21 04:47:29,776 [INFO]   Progression : 400/1245 (399 OK, 0 erreurs)
+2026-03-21 04:48:41,900 [INFO]   Progression : 410/1245 (409 OK, 0 erreurs)
+2026-03-21 04:49:54,528 [INFO]   Progression : 420/1245 (419 OK, 0 erreurs)
+2026-03-21 04:51:01,653 [INFO]   Progression : 430/1245 (429 OK, 0 erreurs)
+2026-03-21 04:54:24,970 [INFO]   Progression : 450/1245 (449 OK, 0 erreurs)
+2026-03-21 04:56:27,750 [INFO]   Progression : 460/1245 (459 OK, 0 erreurs)
+2026-03-21 04:57:42,190 [INFO]   Progression : 470/1245 (469 OK, 0 erreurs)
+2026-03-21 05:00:24,959 [INFO]   Progression : 480/1245 (479 OK, 0 erreurs)
+2026-03-21 05:01:53,627 [INFO]   Progression : 490/1245 (489 OK, 0 erreurs)
+2026-03-21 05:03:16,593 [INFO]   Progression : 500/1245 (499 OK, 0 erreurs)
+2026-03-21 05:04:26,969 [INFO]   Progression : 510/1245 (509 OK, 0 erreurs)
+2026-03-21 05:05:36,801 [INFO]   Progression : 520/1245 (519 OK, 0 erreurs)
+2026-03-21 05:06:50,696 [INFO]   Progression : 530/1245 (529 OK, 0 erreurs)
+2026-03-21 05:08:16,758 [INFO]   Progression : 540/1245 (539 OK, 0 erreurs)
+2026-03-21 05:09:32,706 [INFO]   Progression : 550/1245 (549 OK, 0 erreurs)
+2026-03-21 05:10:39,427 [INFO]   Progression : 560/1245 (559 OK, 0 erreurs)
+2026-03-21 05:11:53,691 [INFO]   Progression : 570/1245 (569 OK, 0 erreurs)
+2026-03-21 05:13:03,644 [INFO]   Progression : 580/1245 (579 OK, 0 erreurs)
+2026-03-21 05:14:24,293 [INFO]   Progression : 590/1245 (589 OK, 0 erreurs)
+2026-03-21 05:16:39,082 [INFO]   Progression : 600/1245 (599 OK, 0 erreurs)
+2026-03-21 05:18:33,895 [INFO]   Progression : 610/1245 (609 OK, 0 erreurs)
+2026-03-21 05:19:33,572 [INFO]   Progression : 620/1245 (619 OK, 0 erreurs)
+2026-03-21 05:21:04,967 [INFO]   Progression : 630/1245 (629 OK, 0 erreurs)
+2026-03-21 05:22:07,347 [INFO]   Progression : 640/1245 (639 OK, 0 erreurs)
+2026-03-21 05:23:30,962 [INFO]   Progression : 650/1245 (649 OK, 0 erreurs)
+2026-03-21 05:25:10,429 [INFO]   Progression : 660/1245 (659 OK, 0 erreurs)
+2026-03-21 05:26:33,995 [INFO]   Progression : 670/1245 (669 OK, 0 erreurs)
+2026-03-21 05:27:51,620 [INFO]   Progression : 680/1245 (679 OK, 0 erreurs)
+2026-03-21 05:29:10,579 [INFO]   Progression : 690/1245 (689 OK, 0 erreurs)
+2026-03-21 05:30:21,862 [INFO]   Progression : 700/1245 (699 OK, 0 erreurs)
+2026-03-21 05:31:42,270 [INFO]   Progression : 710/1245 (709 OK, 0 erreurs)
+2026-03-21 05:34:05,372 [INFO]   Progression : 720/1245 (719 OK, 0 erreurs)
+2026-03-21 05:35:12,322 [INFO]   Progression : 730/1245 (729 OK, 0 erreurs)
+2026-03-21 05:36:22,056 [INFO]   Progression : 740/1245 (739 OK, 0 erreurs)
+2026-03-21 05:37:58,349 [INFO]   Progression : 750/1245 (749 OK, 0 erreurs)
+2026-03-21 05:39:38,871 [INFO]   Progression : 760/1245 (759 OK, 0 erreurs)
+2026-03-21 05:41:12,629 [INFO]   Progression : 770/1245 (769 OK, 0 erreurs)
+2026-03-21 05:43:00,310 [INFO]   Progression : 780/1245 (779 OK, 0 erreurs)
+2026-03-21 05:46:12,313 [INFO]   Progression : 800/1245 (799 OK, 0 erreurs)
+2026-03-21 05:47:31,738 [INFO]   Progression : 810/1245 (809 OK, 0 erreurs)
+2026-03-21 05:48:46,420 [INFO]   Progression : 820/1245 (819 OK, 0 erreurs)
+2026-03-21 05:49:50,197 [INFO]   Progression : 830/1245 (829 OK, 0 erreurs)
+2026-03-21 05:51:04,164 [INFO]   Progression : 840/1245 (839 OK, 0 erreurs)
+2026-03-21 05:52:08,311 [INFO]   Progression : 850/1245 (849 OK, 0 erreurs)
+2026-03-21 05:53:15,690 [INFO]   Progression : 860/1245 (859 OK, 0 erreurs)
+2026-03-21 05:54:27,577 [INFO]   Progression : 870/1245 (869 OK, 0 erreurs)
+2026-03-21 05:55:43,272 [INFO]   Progression : 880/1245 (879 OK, 0 erreurs)
+2026-03-21 05:58:30,466 [INFO]   Progression : 890/1245 (889 OK, 0 erreurs)
+2026-03-21 05:59:45,841 [INFO]   Progression : 900/1245 (899 OK, 0 erreurs)
+2026-03-21 06:01:06,873 [INFO]   Progression : 910/1245 (909 OK, 0 erreurs)
+2026-03-21 06:03:06,139 [INFO]   Progression : 920/1245 (919 OK, 0 erreurs)
+2026-03-21 06:04:44,306 [INFO]   Progression : 930/1245 (929 OK, 0 erreurs)
+2026-03-21 06:05:51,618 [INFO]   Progression : 940/1245 (939 OK, 0 erreurs)
+2026-03-21 06:07:41,757 [INFO]   Progression : 950/1245 (949 OK, 0 erreurs)
+2026-03-21 06:08:49,367 [INFO]   Progression : 960/1245 (959 OK, 0 erreurs)
+2026-03-21 06:10:07,169 [INFO]   Progression : 970/1245 (969 OK, 0 erreurs)
+2026-03-21 06:11:17,909 [INFO]   Progression : 980/1245 (979 OK, 0 erreurs)
+2026-03-21 06:12:59,054 [INFO]   Progression : 990/1245 (989 OK, 0 erreurs)
+2026-03-21 06:14:37,013 [INFO]   Progression : 1000/1245 (999 OK, 0 erreurs)
+2026-03-21 06:15:48,797 [INFO]   Progression : 1010/1245 (1009 OK, 0 erreurs)
+2026-03-21 06:17:01,036 [INFO]   Progression : 1020/1245 (1019 OK, 0 erreurs)
+2026-03-21 06:18:14,653 [INFO]   Progression : 1030/1245 (1029 OK, 0 erreurs)
+2026-03-21 06:20:01,673 [INFO]   Progression : 1040/1245 (1039 OK, 0 erreurs)
+2026-03-21 06:21:38,949 [INFO]   Progression : 1050/1245 (1049 OK, 0 erreurs)
+2026-03-21 06:22:43,760 [INFO]   Progression : 1060/1245 (1059 OK, 0 erreurs)
+2026-03-21 06:23:33,037 [INFO]   Progression : 1070/1245 (1069 OK, 0 erreurs)
+2026-03-21 06:24:50,402 [INFO]   Progression : 1080/1245 (1079 OK, 0 erreurs)
+2026-03-21 06:26:09,056 [INFO]   Progression : 1090/1245 (1089 OK, 0 erreurs)
+2026-03-21 06:27:45,484 [INFO]   Progression : 1100/1245 (1099 OK, 0 erreurs)
+2026-03-21 06:29:28,935 [INFO]   Progression : 1110/1245 (1109 OK, 0 erreurs)
+2026-03-21 06:30:47,976 [INFO]   Progression : 1120/1245 (1119 OK, 0 erreurs)
+2026-03-21 06:31:54,486 [INFO]   Progression : 1130/1245 (1129 OK, 0 erreurs)
+2026-03-21 06:33:13,232 [INFO]   Progression : 1140/1245 (1139 OK, 0 erreurs)
+2026-03-21 06:34:39,576 [INFO]   Progression : 1150/1245 (1149 OK, 0 erreurs)
+2026-03-21 06:37:57,240 [INFO]   Progression : 1170/1245 (1169 OK, 0 erreurs)
+2026-03-21 06:39:05,291 [INFO]   Progression : 1180/1245 (1179 OK, 0 erreurs)
+2026-03-21 06:40:18,846 [INFO]   Progression : 1190/1245 (1189 OK, 0 erreurs)
+2026-03-21 06:41:28,768 [INFO]   Progression : 1200/1245 (1199 OK, 0 erreurs)
+2026-03-21 06:42:51,417 [INFO]   Progression : 1210/1245 (1209 OK, 0 erreurs)
+2026-03-21 06:44:20,359 [INFO]   Progression : 1220/1245 (1219 OK, 0 erreurs)
+2026-03-21 06:45:58,328 [INFO]   Progression : 1230/1245 (1229 OK, 0 erreurs)
+2026-03-21 06:47:24,073 [INFO]   Progression : 1240/1245 (1239 OK, 0 erreurs)
+2026-03-21 06:48:22,619 [INFO]   Ligue terminee : 1245 OK, 0 erreurs
+2026-03-21 06:48:22,657 [INFO]   Pause 27.0s avant la ligue suivante...
+2026-03-21 06:48:49,687 [INFO] 
+=======================================================
+2026-03-21 06:48:49,687 [INFO] === Ligue : Portugal Primeira Liga ===
+2026-03-21 06:48:49,687 [INFO] =======================================================
+2026-03-21 06:48:49,687 [INFO]   Recuperation des liens joueurs...
+2026-03-21 06:51:05,328 [INFO]   1304 joueurs trouves dans Portugal Primeira Liga
+2026-03-21 06:51:05,329 [INFO]   Progression : 1/1304 (0 OK, 0 erreurs)
+2026-03-21 06:53:40,588 [INFO]   Progression : 10/1304 (9 OK, 0 erreurs)
+2026-03-21 06:55:24,999 [INFO]   Progression : 20/1304 (19 OK, 0 erreurs)
+2026-03-21 06:56:51,677 [INFO]   Progression : 30/1304 (29 OK, 0 erreurs)
+2026-03-21 06:59:08,555 [INFO]   Progression : 40/1304 (39 OK, 0 erreurs)
+2026-03-21 07:00:23,402 [INFO]   Progression : 50/1304 (49 OK, 0 erreurs)
+2026-03-21 07:01:39,501 [INFO]   Progression : 60/1304 (59 OK, 0 erreurs)
+2026-03-21 07:02:57,852 [INFO]   Progression : 70/1304 (69 OK, 0 erreurs)
+2026-03-21 07:04:08,200 [INFO]   Progression : 80/1304 (79 OK, 0 erreurs)
+2026-03-21 07:06:28,281 [INFO]   Progression : 100/1304 (99 OK, 0 erreurs)
+2026-03-21 07:07:46,645 [INFO]   Progression : 110/1304 (109 OK, 0 erreurs)
+2026-03-21 07:09:19,574 [INFO]   Progression : 120/1304 (119 OK, 0 erreurs)
+2026-03-21 07:11:05,009 [INFO]   Progression : 130/1304 (129 OK, 0 erreurs)
+2026-03-21 07:12:25,482 [INFO]   Progression : 140/1304 (139 OK, 0 erreurs)
+2026-03-21 07:13:47,230 [INFO]   Progression : 150/1304 (149 OK, 0 erreurs)
+2026-03-21 07:15:08,451 [INFO]   Progression : 160/1304 (159 OK, 0 erreurs)
+2026-03-21 07:16:05,711 [INFO]   Progression : 170/1304 (169 OK, 0 erreurs)
+2026-03-21 07:17:59,140 [INFO]   Progression : 180/1304 (179 OK, 0 erreurs)
+2026-03-21 07:19:08,779 [INFO]   Progression : 190/1304 (189 OK, 0 erreurs)
+2026-03-21 07:20:27,117 [INFO]   Progression : 200/1304 (199 OK, 0 erreurs)
+2026-03-21 07:21:43,644 [INFO]   Progression : 210/1304 (209 OK, 0 erreurs)
+2026-03-21 07:23:32,111 [INFO]   Progression : 220/1304 (219 OK, 0 erreurs)
+2026-03-21 07:25:01,165 [INFO]   Progression : 230/1304 (229 OK, 0 erreurs)
+2026-03-21 07:27:07,414 [INFO]   Progression : 240/1304 (239 OK, 0 erreurs)
+2026-03-21 07:29:04,104 [INFO]   Progression : 250/1304 (249 OK, 0 erreurs)
+2026-03-21 07:31:13,199 [INFO]   Progression : 260/1304 (259 OK, 0 erreurs)
+2026-03-21 07:31:51,925 [INFO]     Retry joueur rofil/spieler/529730 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 07:32:24,182 [INFO]     Retry joueur rofil/spieler/367652 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 07:32:31,965 [WARNING]     Joueur ignore : https://www.transfermarkt.us/rodrigo-abascal/profil/spieler/367652 -> 'NoneType' object has no attribute 'text'
+2026-03-21 07:34:06,169 [INFO]   Progression : 270/1304 (268 OK, 1 erreurs)
+2026-03-21 07:37:27,671 [INFO]   Progression : 280/1304 (278 OK, 1 erreurs)
+2026-03-21 07:39:29,839 [INFO]   Progression : 290/1304 (288 OK, 1 erreurs)
+2026-03-21 07:39:36,274 [INFO]     Retry joueur rofil/spieler/594561 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 07:41:55,479 [INFO]   Progression : 300/1304 (298 OK, 1 erreurs)
+2026-03-21 07:42:59,598 [INFO]     Retry joueur rofil/spieler/429070 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 07:44:08,113 [INFO]   Progression : 310/1304 (308 OK, 1 erreurs)
+2026-03-21 07:45:48,548 [INFO]   Progression : 320/1304 (318 OK, 1 erreurs)
+2026-03-21 07:48:51,378 [INFO]   Progression : 330/1304 (328 OK, 1 erreurs)
+2026-03-21 07:51:25,222 [INFO]   Progression : 340/1304 (338 OK, 1 erreurs)
+2026-03-21 07:53:11,033 [INFO]   Progression : 350/1304 (348 OK, 1 erreurs)
+2026-03-21 07:54:58,550 [INFO]   Progression : 360/1304 (358 OK, 1 erreurs)
+2026-03-21 07:58:11,698 [INFO]   Progression : 370/1304 (368 OK, 1 erreurs)
+2026-03-21 08:00:46,982 [INFO]   Progression : 380/1304 (378 OK, 1 erreurs)
+2026-03-21 08:03:14,446 [INFO]   Progression : 400/1304 (398 OK, 1 erreurs)
+2026-03-21 08:04:25,649 [INFO]   Progression : 410/1304 (408 OK, 1 erreurs)
+2026-03-21 08:06:30,804 [INFO]   Progression : 420/1304 (418 OK, 1 erreurs)
+2026-03-21 08:08:03,104 [INFO]   Progression : 430/1304 (428 OK, 1 erreurs)
+2026-03-21 08:09:02,872 [INFO]     Retry joueur rlauf/spieler/720518 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 08:11:25,577 [INFO]   Progression : 440/1304 (438 OK, 1 erreurs)
+2026-03-21 08:12:58,115 [INFO]   Progression : 450/1304 (448 OK, 1 erreurs)
+2026-03-21 08:15:06,073 [INFO]   Progression : 460/1304 (458 OK, 1 erreurs)
+2026-03-21 08:16:30,053 [INFO]   Progression : 470/1304 (468 OK, 1 erreurs)
+2026-03-21 08:17:44,988 [INFO]   Progression : 480/1304 (478 OK, 1 erreurs)
+2026-03-21 08:19:17,463 [INFO]   Progression : 490/1304 (488 OK, 1 erreurs)
+2026-03-21 08:20:42,342 [INFO]   Progression : 500/1304 (498 OK, 1 erreurs)
+2026-03-21 08:22:06,289 [INFO]   Progression : 510/1304 (508 OK, 1 erreurs)
+2026-03-21 08:23:24,075 [INFO]   Progression : 520/1304 (518 OK, 1 erreurs)
+2026-03-21 08:24:30,859 [INFO]   Progression : 530/1304 (528 OK, 1 erreurs)
+2026-03-21 08:25:54,132 [INFO]   Progression : 540/1304 (538 OK, 1 erreurs)
+2026-03-21 08:26:57,005 [INFO]   Progression : 550/1304 (548 OK, 1 erreurs)
+2026-03-21 08:28:42,618 [INFO]   Progression : 560/1304 (558 OK, 1 erreurs)
+2026-03-21 08:29:51,825 [INFO]   Progression : 570/1304 (568 OK, 1 erreurs)
+2026-03-21 08:31:02,454 [INFO]   Progression : 580/1304 (578 OK, 1 erreurs)
+2026-03-21 08:32:18,220 [INFO]   Progression : 590/1304 (588 OK, 1 erreurs)
+2026-03-21 08:34:07,974 [INFO]   Progression : 600/1304 (598 OK, 1 erreurs)
+2026-03-21 08:35:26,988 [INFO]   Progression : 610/1304 (608 OK, 1 erreurs)
+2026-03-21 08:37:04,813 [INFO]   Progression : 620/1304 (618 OK, 1 erreurs)
+2026-03-21 08:37:28,271 [INFO]     Retry joueur rlauf/spieler/284701 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 08:37:33,620 [WARNING]     Joueur ignore : https://www.transfermarkt.us/samuel-portugal/marktwertverlauf/spieler/284701 -> 'NoneType' object has no attribute 'text'
+2026-03-21 08:39:40,371 [INFO]   Progression : 630/1304 (627 OK, 2 erreurs)
+2026-03-21 08:41:05,976 [INFO]   Progression : 640/1304 (637 OK, 2 erreurs)
+2026-03-21 08:43:00,138 [INFO]   Progression : 650/1304 (647 OK, 2 erreurs)
+2026-03-21 08:44:25,694 [INFO]   Progression : 660/1304 (657 OK, 2 erreurs)
+2026-03-21 08:46:24,601 [INFO]   Progression : 670/1304 (667 OK, 2 erreurs)
+2026-03-21 08:47:30,341 [INFO]   Progression : 680/1304 (677 OK, 2 erreurs)
+2026-03-21 08:48:43,218 [INFO]   Progression : 690/1304 (687 OK, 2 erreurs)
+2026-03-21 08:50:05,262 [INFO]   Progression : 700/1304 (697 OK, 2 erreurs)
+2026-03-21 08:51:23,071 [INFO]   Progression : 710/1304 (707 OK, 2 erreurs)
+2026-03-21 08:52:26,659 [INFO]   Progression : 720/1304 (717 OK, 2 erreurs)
+2026-03-21 08:54:05,807 [INFO]   Progression : 730/1304 (727 OK, 2 erreurs)
+2026-03-21 08:56:42,290 [INFO]   Progression : 740/1304 (737 OK, 2 erreurs)
+2026-03-21 08:59:00,781 [INFO]   Progression : 750/1304 (747 OK, 2 erreurs)
+2026-03-21 09:00:07,051 [INFO]   Progression : 760/1304 (757 OK, 2 erreurs)
+2026-03-21 09:01:19,124 [INFO]   Progression : 770/1304 (767 OK, 2 erreurs)
+2026-03-21 09:03:25,146 [INFO]   Progression : 780/1304 (777 OK, 2 erreurs)
+2026-03-21 09:05:00,387 [INFO]   Progression : 790/1304 (787 OK, 2 erreurs)
+2026-03-21 09:06:41,439 [INFO]   Progression : 800/1304 (797 OK, 2 erreurs)
+2026-03-21 09:08:55,638 [INFO]   Progression : 820/1304 (817 OK, 2 erreurs)
+2026-03-21 09:10:05,030 [INFO]   Progression : 830/1304 (827 OK, 2 erreurs)
+2026-03-21 09:11:28,384 [INFO]   Progression : 840/1304 (837 OK, 2 erreurs)
+2026-03-21 09:12:43,454 [INFO]   Progression : 850/1304 (847 OK, 2 erreurs)
+2026-03-21 09:14:15,091 [INFO]   Progression : 860/1304 (857 OK, 2 erreurs)
+2026-03-21 09:16:09,240 [INFO]   Progression : 870/1304 (867 OK, 2 erreurs)
+2026-03-21 09:17:15,985 [INFO]     Retry joueur rofil/spieler/575716 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 09:17:23,489 [WARNING]     Joueur ignore : https://www.transfermarkt.us/vasco-sousa/profil/spieler/575716 -> 'NoneType' object has no attribute 'text'
+2026-03-21 09:17:28,587 [INFO]   Progression : 880/1304 (876 OK, 3 erreurs)
+2026-03-21 09:18:56,949 [INFO]   Progression : 890/1304 (886 OK, 3 erreurs)
+2026-03-21 09:20:02,096 [INFO]   Progression : 900/1304 (896 OK, 3 erreurs)
+2026-03-21 09:21:46,129 [INFO]   Progression : 910/1304 (906 OK, 3 erreurs)
+2026-03-21 09:23:03,678 [INFO]   Progression : 920/1304 (916 OK, 3 erreurs)
+2026-03-21 09:24:08,628 [INFO]   Progression : 930/1304 (926 OK, 3 erreurs)
+2026-03-21 09:25:17,355 [INFO]   Progression : 940/1304 (936 OK, 3 erreurs)
+2026-03-21 09:26:42,013 [INFO]   Progression : 950/1304 (946 OK, 3 erreurs)
+2026-03-21 09:28:58,599 [INFO]   Progression : 960/1304 (956 OK, 3 erreurs)
+2026-03-21 09:30:33,239 [INFO]   Progression : 970/1304 (966 OK, 3 erreurs)
+2026-03-21 09:31:46,454 [INFO]   Progression : 980/1304 (976 OK, 3 erreurs)
+2026-03-21 09:33:52,514 [INFO]   Progression : 990/1304 (986 OK, 3 erreurs)
+2026-03-21 09:34:59,958 [INFO]   Progression : 1000/1304 (996 OK, 3 erreurs)
+2026-03-21 09:36:27,691 [INFO]   Progression : 1010/1304 (1006 OK, 3 erreurs)
+2026-03-21 09:39:28,039 [INFO]   Progression : 1030/1304 (1026 OK, 3 erreurs)
+2026-03-21 09:41:13,874 [INFO]   Progression : 1040/1304 (1036 OK, 3 erreurs)
+2026-03-21 09:42:36,132 [INFO]   Progression : 1050/1304 (1046 OK, 3 erreurs)
+2026-03-21 09:43:47,434 [INFO]   Progression : 1060/1304 (1056 OK, 3 erreurs)
+2026-03-21 09:45:07,278 [INFO]   Progression : 1070/1304 (1066 OK, 3 erreurs)
+2026-03-21 09:46:30,695 [INFO]   Progression : 1080/1304 (1076 OK, 3 erreurs)
+2026-03-21 09:47:41,821 [INFO]   Progression : 1090/1304 (1086 OK, 3 erreurs)
+2026-03-21 09:48:51,215 [INFO]   Progression : 1100/1304 (1096 OK, 3 erreurs)
+2026-03-21 09:49:57,652 [INFO]   Progression : 1110/1304 (1106 OK, 3 erreurs)
+2026-03-21 09:50:57,500 [INFO]   Progression : 1120/1304 (1116 OK, 3 erreurs)
+2026-03-21 09:52:11,066 [INFO]   Progression : 1130/1304 (1126 OK, 3 erreurs)
+2026-03-21 09:53:10,060 [INFO]   Progression : 1140/1304 (1136 OK, 3 erreurs)
+2026-03-21 09:55:04,612 [INFO]   Progression : 1150/1304 (1146 OK, 3 erreurs)
+2026-03-21 09:56:15,529 [INFO]   Progression : 1160/1304 (1156 OK, 3 erreurs)
+2026-03-21 09:58:02,125 [INFO]   Progression : 1170/1304 (1166 OK, 3 erreurs)
+2026-03-21 09:59:33,205 [INFO]   Progression : 1180/1304 (1176 OK, 3 erreurs)
+2026-03-21 10:00:52,931 [INFO]   Progression : 1190/1304 (1186 OK, 3 erreurs)
+2026-03-21 10:02:39,217 [INFO]   Progression : 1200/1304 (1196 OK, 3 erreurs)
+2026-03-21 10:03:49,913 [INFO]   Progression : 1210/1304 (1206 OK, 3 erreurs)
+2026-03-21 10:04:56,329 [INFO]   Progression : 1220/1304 (1216 OK, 3 erreurs)
+2026-03-21 10:06:26,071 [INFO]   Progression : 1230/1304 (1226 OK, 3 erreurs)
+2026-03-21 10:08:01,525 [INFO]     Retry joueur rofil/spieler/258005 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 10:08:09,960 [WARNING]     Joueur ignore : https://www.transfermarkt.us/joao-carvalho/profil/spieler/258005 -> 'NoneType' object has no attribute 'text'
+2026-03-21 10:08:34,018 [INFO]   Progression : 1240/1304 (1235 OK, 4 erreurs)
+2026-03-21 10:10:33,588 [INFO]   Progression : 1260/1304 (1255 OK, 4 erreurs)
+2026-03-21 10:12:44,332 [INFO]   Progression : 1270/1304 (1265 OK, 4 erreurs)
+2026-03-21 10:13:59,263 [INFO]   Progression : 1280/1304 (1275 OK, 4 erreurs)
+2026-03-21 10:15:05,473 [INFO]   Progression : 1290/1304 (1285 OK, 4 erreurs)
+2026-03-21 10:16:32,787 [INFO]   Progression : 1300/1304 (1295 OK, 4 erreurs)
+2026-03-21 10:17:46,566 [INFO]   Ligue terminee : 1300 OK, 4 erreurs
+2026-03-21 10:17:46,616 [INFO]   Pause 20.2s avant la ligue suivante...
+2026-03-21 10:18:06,774 [INFO] 
+=======================================================
+2026-03-21 10:18:06,775 [INFO] === Ligue : Scotland Premier League ===
+2026-03-21 10:18:06,775 [INFO] =======================================================
+2026-03-21 10:18:06,775 [INFO]   Recuperation des liens joueurs...
+2026-03-21 10:19:35,844 [INFO]   863 joueurs trouves dans Scotland Premier League
+2026-03-21 10:19:35,845 [INFO]   Progression : 1/863 (0 OK, 0 erreurs)
+2026-03-21 10:20:54,915 [INFO]   Progression : 10/863 (9 OK, 0 erreurs)
+2026-03-21 10:22:11,580 [INFO]   Progression : 20/863 (19 OK, 0 erreurs)
+2026-03-21 10:23:52,173 [INFO]   Progression : 30/863 (29 OK, 0 erreurs)
+2026-03-21 10:27:09,834 [INFO]   Progression : 50/863 (49 OK, 0 erreurs)
+2026-03-21 10:30:39,201 [INFO]   Progression : 70/863 (69 OK, 0 erreurs)
+2026-03-21 10:32:07,970 [INFO]   Progression : 80/863 (79 OK, 0 erreurs)
+2026-03-21 10:34:35,566 [INFO]   Progression : 90/863 (89 OK, 0 erreurs)
+2026-03-21 10:35:42,729 [INFO]   Progression : 100/863 (99 OK, 0 erreurs)
+2026-03-21 10:35:51,162 [INFO]     Retry joueur rlauf/spieler/385412 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 10:35:59,786 [WARNING]     Joueur ignore : https://www.transfermarkt.us/jordan-amissah/marktwertverlauf/spieler/385412 -> 'NoneType' object has no attribute 'text'
+2026-03-21 10:37:04,882 [INFO]   Progression : 110/863 (108 OK, 1 erreurs)
+2026-03-21 10:38:12,836 [INFO]   Progression : 120/863 (118 OK, 1 erreurs)
+2026-03-21 10:39:26,154 [INFO]   Progression : 130/863 (128 OK, 1 erreurs)
+2026-03-21 10:41:32,390 [INFO]   Progression : 140/863 (138 OK, 1 erreurs)
+2026-03-21 10:42:42,133 [INFO]   Progression : 150/863 (148 OK, 1 erreurs)
+2026-03-21 10:44:02,565 [INFO]   Progression : 160/863 (158 OK, 1 erreurs)
+2026-03-21 10:46:43,424 [INFO]   Progression : 170/863 (168 OK, 1 erreurs)
+2026-03-21 10:48:27,042 [INFO]   Progression : 180/863 (178 OK, 1 erreurs)
+2026-03-21 10:49:43,073 [INFO]   Progression : 190/863 (188 OK, 1 erreurs)
+2026-03-21 10:50:44,473 [INFO]   Progression : 200/863 (198 OK, 1 erreurs)
+2026-03-21 10:52:42,392 [INFO]   Progression : 210/863 (208 OK, 1 erreurs)
+2026-03-21 10:54:24,776 [INFO]   Progression : 220/863 (218 OK, 1 erreurs)
+2026-03-21 10:56:38,237 [INFO]   Progression : 230/863 (228 OK, 1 erreurs)
+2026-03-21 10:58:15,418 [INFO]   Progression : 240/863 (238 OK, 1 erreurs)
+2026-03-21 10:59:33,071 [INFO]   Progression : 250/863 (248 OK, 1 erreurs)
+2026-03-21 11:01:22,706 [INFO]   Progression : 260/863 (258 OK, 1 erreurs)
+2026-03-21 11:02:49,278 [INFO]   Progression : 270/863 (268 OK, 1 erreurs)
+2026-03-21 11:04:22,244 [INFO]   Progression : 280/863 (278 OK, 1 erreurs)
+2026-03-21 11:05:31,477 [INFO]   Progression : 290/863 (288 OK, 1 erreurs)
+2026-03-21 11:06:53,930 [INFO]   Progression : 300/863 (298 OK, 1 erreurs)
+2026-03-21 11:07:59,000 [INFO]   Progression : 310/863 (308 OK, 1 erreurs)
+2026-03-21 11:09:48,069 [INFO]   Progression : 320/863 (318 OK, 1 erreurs)
+2026-03-21 11:12:08,844 [INFO]   Progression : 330/863 (328 OK, 1 erreurs)
+2026-03-21 11:15:26,547 [INFO]   Progression : 340/863 (338 OK, 1 erreurs)
+2026-03-21 11:16:44,106 [INFO]   Progression : 350/863 (348 OK, 1 erreurs)
+2026-03-21 11:18:17,239 [INFO]   Progression : 360/863 (358 OK, 1 erreurs)
+2026-03-21 11:19:29,459 [INFO]   Progression : 370/863 (368 OK, 1 erreurs)
+2026-03-21 11:20:54,547 [INFO]     Retry joueur ofil/spieler/1289495 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 11:21:09,718 [INFO]   Progression : 380/863 (378 OK, 1 erreurs)
+2026-03-21 11:22:39,132 [INFO]   Progression : 390/863 (388 OK, 1 erreurs)
+2026-03-21 11:23:51,422 [INFO]   Progression : 400/863 (398 OK, 1 erreurs)
+2026-03-21 11:25:15,767 [INFO]   Progression : 410/863 (408 OK, 1 erreurs)
+2026-03-21 11:27:32,690 [INFO]   Progression : 420/863 (418 OK, 1 erreurs)
+2026-03-21 11:28:57,098 [INFO]   Progression : 430/863 (428 OK, 1 erreurs)
+2026-03-21 11:31:22,440 [INFO]   Progression : 440/863 (438 OK, 1 erreurs)
+2026-03-21 11:33:36,417 [INFO]     Retry joueur rlauf/spieler/258912 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 11:33:43,987 [WARNING]     Joueur ignore : https://www.transfermarkt.us/luke-amos/marktwertverlauf/spieler/258912 -> 'NoneType' object has no attribute 'text'
+2026-03-21 11:33:50,418 [INFO]   Progression : 450/863 (447 OK, 2 erreurs)
+2026-03-21 11:36:18,979 [INFO]   Progression : 460/863 (457 OK, 2 erreurs)
+2026-03-21 11:39:02,288 [INFO]   Progression : 470/863 (467 OK, 2 erreurs)
+2026-03-21 11:40:45,078 [INFO]   Progression : 480/863 (477 OK, 2 erreurs)
+2026-03-21 11:41:30,941 [INFO]     Retry joueur rlauf/spieler/185342 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 11:41:37,686 [WARNING]     Joueur ignore : https://www.transfermarkt.us/joe-newell/marktwertverlauf/spieler/185342 -> 'NoneType' object has no attribute 'text'
+2026-03-21 11:42:39,536 [INFO]   Progression : 490/863 (486 OK, 3 erreurs)
+2026-03-21 11:43:26,811 [INFO]     Retry joueur rofil/spieler/192364 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 11:45:22,126 [INFO]   Progression : 500/863 (496 OK, 3 erreurs)
+2026-03-21 11:46:57,785 [INFO]   Progression : 510/863 (506 OK, 3 erreurs)
+2026-03-21 11:48:35,280 [INFO]   Progression : 520/863 (516 OK, 3 erreurs)
+2026-03-21 11:51:05,872 [INFO]   Progression : 530/863 (526 OK, 3 erreurs)
+2026-03-21 11:52:46,631 [INFO]   Progression : 540/863 (536 OK, 3 erreurs)
+2026-03-21 11:55:12,957 [INFO]   Progression : 550/863 (546 OK, 3 erreurs)
+2026-03-21 11:56:16,104 [INFO]   Progression : 560/863 (556 OK, 3 erreurs)
+2026-03-21 11:57:36,635 [INFO]   Progression : 570/863 (566 OK, 3 erreurs)
+2026-03-21 11:58:48,362 [INFO]   Progression : 580/863 (576 OK, 3 erreurs)
+2026-03-21 12:00:26,497 [INFO]   Progression : 590/863 (586 OK, 3 erreurs)
+2026-03-21 12:01:56,411 [INFO]   Progression : 600/863 (596 OK, 3 erreurs)
+2026-03-21 12:03:17,536 [INFO]   Progression : 610/863 (606 OK, 3 erreurs)
+2026-03-21 12:04:49,758 [INFO]   Progression : 620/863 (616 OK, 3 erreurs)
+2026-03-21 12:06:15,974 [INFO]   Progression : 630/863 (626 OK, 3 erreurs)
+2026-03-21 12:07:41,460 [INFO]   Progression : 640/863 (636 OK, 3 erreurs)
+2026-03-21 12:10:03,247 [INFO]   Progression : 650/863 (646 OK, 3 erreurs)
+2026-03-21 12:11:34,691 [INFO]   Progression : 660/863 (656 OK, 3 erreurs)
+2026-03-21 12:12:49,693 [INFO]     Retry joueur rofil/spieler/181714 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 12:12:58,146 [WARNING]     Joueur ignore : https://www.transfermarkt.us/sven-sprangler/profil/spieler/181714 -> 'NoneType' object has no attribute 'text'
+2026-03-21 12:14:28,930 [INFO]   Progression : 670/863 (665 OK, 4 erreurs)
+2026-03-21 12:16:41,806 [INFO]   Progression : 680/863 (675 OK, 4 erreurs)
+2026-03-21 12:18:53,705 [INFO]   Progression : 690/863 (685 OK, 4 erreurs)
+2026-03-21 12:20:37,229 [INFO]   Progression : 700/863 (695 OK, 4 erreurs)
+2026-03-21 12:22:01,458 [INFO]   Progression : 710/863 (705 OK, 4 erreurs)
+2026-03-21 12:23:57,450 [INFO]   Progression : 720/863 (715 OK, 4 erreurs)
+2026-03-21 12:25:25,669 [INFO]   Progression : 730/863 (725 OK, 4 erreurs)
+2026-03-21 12:29:00,781 [INFO]   Progression : 740/863 (735 OK, 4 erreurs)
+2026-03-21 12:32:32,665 [INFO]   Progression : 750/863 (745 OK, 4 erreurs)
+2026-03-21 12:34:33,305 [INFO]   Progression : 760/863 (755 OK, 4 erreurs)
+2026-03-21 12:36:09,099 [INFO]   Progression : 770/863 (765 OK, 4 erreurs)
+2026-03-21 12:37:25,016 [INFO]   Progression : 780/863 (775 OK, 4 erreurs)
+2026-03-21 12:39:31,999 [INFO]   Progression : 790/863 (785 OK, 4 erreurs)
+2026-03-21 12:41:00,354 [INFO]   Progression : 800/863 (795 OK, 4 erreurs)
+2026-03-21 12:42:29,021 [INFO]   Progression : 810/863 (805 OK, 4 erreurs)
+2026-03-21 12:43:54,367 [INFO]   Progression : 820/863 (815 OK, 4 erreurs)
+2026-03-21 12:45:27,512 [INFO]   Progression : 830/863 (825 OK, 4 erreurs)
+2026-03-21 12:46:52,930 [INFO]   Progression : 840/863 (835 OK, 4 erreurs)
+2026-03-21 12:48:26,120 [INFO]   Progression : 850/863 (845 OK, 4 erreurs)
+2026-03-21 12:49:57,962 [INFO]   Progression : 860/863 (855 OK, 4 erreurs)
+2026-03-21 12:50:39,131 [INFO]   Ligue terminee : 859 OK, 4 erreurs
+2026-03-21 12:50:39,181 [INFO]   Pause 28.8s avant la ligue suivante...
+2026-03-21 12:51:07,967 [INFO] 
+=======================================================
+2026-03-21 12:51:07,968 [INFO] === Ligue : Spain La Liga ===
+2026-03-21 12:51:07,968 [INFO] =======================================================
+2026-03-21 12:51:07,969 [INFO]   Recuperation des liens joueurs...
+2026-03-21 12:55:33,049 [INFO]   1490 joueurs trouves dans Spain La Liga
+2026-03-21 12:57:48,078 [INFO]   Progression : 20/1490 (19 OK, 0 erreurs)
+2026-03-21 12:59:08,716 [INFO]   Progression : 30/1490 (29 OK, 0 erreurs)
+2026-03-21 13:01:35,468 [INFO]   Progression : 50/1490 (49 OK, 0 erreurs)
+2026-03-21 13:02:33,275 [INFO]   Progression : 60/1490 (59 OK, 0 erreurs)
+2026-03-21 13:03:50,192 [INFO]   Progression : 70/1490 (69 OK, 0 erreurs)
+2026-03-21 13:05:46,773 [INFO]   Progression : 80/1490 (79 OK, 0 erreurs)
+2026-03-21 13:06:48,606 [INFO]   Progression : 90/1490 (89 OK, 0 erreurs)
+2026-03-21 13:08:02,586 [INFO]   Progression : 100/1490 (99 OK, 0 erreurs)
+2026-03-21 13:08:59,230 [INFO]   Progression : 110/1490 (109 OK, 0 erreurs)
+2026-03-21 13:09:55,088 [INFO]   Progression : 120/1490 (119 OK, 0 erreurs)
+2026-03-21 13:11:08,879 [INFO]   Progression : 130/1490 (129 OK, 0 erreurs)
+2026-03-21 13:12:18,663 [INFO]   Progression : 140/1490 (139 OK, 0 erreurs)
+2026-03-21 13:14:44,891 [INFO]   Progression : 160/1490 (159 OK, 0 erreurs)
+2026-03-21 13:16:12,054 [INFO]   Progression : 170/1490 (169 OK, 0 erreurs)
+2026-03-21 13:17:18,044 [INFO]   Progression : 180/1490 (179 OK, 0 erreurs)
+2026-03-21 13:19:00,674 [INFO]   Progression : 190/1490 (189 OK, 0 erreurs)
+2026-03-21 13:20:32,216 [INFO]   Progression : 200/1490 (199 OK, 0 erreurs)
+2026-03-21 13:22:06,871 [INFO]   Progression : 210/1490 (209 OK, 0 erreurs)
+2026-03-21 13:23:01,998 [INFO]   Progression : 220/1490 (219 OK, 0 erreurs)
+2026-03-21 13:24:36,280 [INFO]   Progression : 230/1490 (229 OK, 0 erreurs)
+2026-03-21 13:25:59,025 [INFO]   Progression : 240/1490 (239 OK, 0 erreurs)
+2026-03-21 13:27:43,418 [INFO]     Retry joueur rlauf/spieler/257376 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 13:28:18,477 [INFO]   Progression : 250/1490 (249 OK, 0 erreurs)
+2026-03-21 13:30:27,967 [INFO]   Progression : 260/1490 (259 OK, 0 erreurs)
+2026-03-21 13:31:51,189 [INFO]   Progression : 270/1490 (269 OK, 0 erreurs)
+2026-03-21 13:33:18,753 [INFO]   Progression : 280/1490 (279 OK, 0 erreurs)
+2026-03-21 13:37:53,474 [INFO]   Progression : 310/1490 (309 OK, 0 erreurs)
+2026-03-21 13:39:03,425 [INFO]   Progression : 320/1490 (319 OK, 0 erreurs)
+2026-03-21 13:40:28,314 [INFO]   Progression : 330/1490 (329 OK, 0 erreurs)
+2026-03-21 13:41:40,485 [INFO]   Progression : 340/1490 (339 OK, 0 erreurs)
+2026-03-21 13:42:53,958 [INFO]   Progression : 350/1490 (349 OK, 0 erreurs)
+2026-03-21 13:44:10,589 [INFO]   Progression : 360/1490 (359 OK, 0 erreurs)
+2026-03-21 13:45:17,169 [INFO]   Progression : 370/1490 (369 OK, 0 erreurs)
+2026-03-21 13:46:31,746 [INFO]   Progression : 380/1490 (379 OK, 0 erreurs)
+2026-03-21 13:48:10,670 [INFO]   Progression : 390/1490 (389 OK, 0 erreurs)
+2026-03-21 13:49:39,041 [INFO]   Progression : 400/1490 (399 OK, 0 erreurs)
+2026-03-21 13:51:28,948 [INFO]   Progression : 410/1490 (409 OK, 0 erreurs)
+2026-03-21 13:53:24,554 [INFO]   Progression : 420/1490 (419 OK, 0 erreurs)
+2026-03-21 13:54:55,096 [INFO]   Progression : 430/1490 (429 OK, 0 erreurs)
+2026-03-21 13:57:16,566 [INFO]   Progression : 440/1490 (439 OK, 0 erreurs)
+2026-03-21 13:59:01,908 [INFO]   Progression : 450/1490 (449 OK, 0 erreurs)
+2026-03-21 14:00:03,464 [INFO]   Progression : 460/1490 (459 OK, 0 erreurs)
+2026-03-21 14:01:47,892 [INFO]   Progression : 470/1490 (469 OK, 0 erreurs)
+2026-03-21 14:03:17,521 [INFO]   Progression : 480/1490 (479 OK, 0 erreurs)
+2026-03-21 14:04:40,930 [INFO]   Progression : 490/1490 (489 OK, 0 erreurs)
+2026-03-21 14:06:44,700 [INFO]   Progression : 500/1490 (499 OK, 0 erreurs)
+2026-03-21 14:09:33,592 [INFO]   Progression : 510/1490 (509 OK, 0 erreurs)
+2026-03-21 14:10:52,285 [INFO]   Progression : 520/1490 (519 OK, 0 erreurs)
+2026-03-21 14:12:28,268 [INFO]   Progression : 530/1490 (529 OK, 0 erreurs)
+2026-03-21 14:13:41,599 [INFO]   Progression : 540/1490 (539 OK, 0 erreurs)
+2026-03-21 14:14:47,511 [INFO]   Progression : 550/1490 (549 OK, 0 erreurs)
+2026-03-21 14:15:45,198 [INFO]   Progression : 560/1490 (559 OK, 0 erreurs)
+2026-03-21 14:17:26,295 [INFO]   Progression : 570/1490 (569 OK, 0 erreurs)
+2026-03-21 14:18:44,402 [INFO]   Progression : 580/1490 (579 OK, 0 erreurs)
+2026-03-21 14:20:17,572 [INFO]   Progression : 590/1490 (589 OK, 0 erreurs)
+2026-03-21 14:21:40,645 [INFO]   Progression : 600/1490 (599 OK, 0 erreurs)
+2026-03-21 14:22:47,128 [INFO]     Retry joueur rlauf/spieler/397676 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 14:24:04,201 [INFO]   Progression : 610/1490 (609 OK, 0 erreurs)
+2026-03-21 14:25:08,565 [INFO]   Progression : 620/1490 (619 OK, 0 erreurs)
+2026-03-21 14:27:17,505 [INFO]   Progression : 640/1490 (639 OK, 0 erreurs)
+2026-03-21 14:28:11,848 [INFO]   Progression : 650/1490 (649 OK, 0 erreurs)
+2026-03-21 14:29:38,138 [INFO]   Progression : 660/1490 (659 OK, 0 erreurs)
+2026-03-21 14:31:56,177 [INFO]   Progression : 680/1490 (679 OK, 0 erreurs)
+2026-03-21 14:33:22,594 [INFO]   Progression : 690/1490 (689 OK, 0 erreurs)
+2026-03-21 14:36:09,119 [INFO]   Progression : 700/1490 (699 OK, 0 erreurs)
+2026-03-21 14:39:25,781 [INFO]   Progression : 710/1490 (709 OK, 0 erreurs)
+2026-03-21 14:41:04,166 [INFO]   Progression : 720/1490 (719 OK, 0 erreurs)
+2026-03-21 14:43:01,047 [INFO]   Progression : 730/1490 (729 OK, 0 erreurs)
+2026-03-21 14:44:13,324 [INFO]   Progression : 740/1490 (739 OK, 0 erreurs)
+2026-03-21 14:45:26,417 [INFO]   Progression : 750/1490 (749 OK, 0 erreurs)
+2026-03-21 14:46:42,575 [INFO]   Progression : 760/1490 (759 OK, 0 erreurs)
+2026-03-21 14:48:09,234 [INFO]   Progression : 770/1490 (769 OK, 0 erreurs)
+2026-03-21 14:49:35,596 [INFO]   Progression : 780/1490 (779 OK, 0 erreurs)
+2026-03-21 14:51:19,729 [INFO]   Progression : 790/1490 (789 OK, 0 erreurs)
+2026-03-21 14:53:35,801 [INFO]   Progression : 800/1490 (799 OK, 0 erreurs)
+2026-03-21 14:54:54,935 [INFO]   Progression : 810/1490 (809 OK, 0 erreurs)
+2026-03-21 14:55:59,576 [INFO]   Progression : 820/1490 (819 OK, 0 erreurs)
+2026-03-21 14:57:36,882 [INFO]   Progression : 830/1490 (829 OK, 0 erreurs)
+2026-03-21 14:59:25,135 [INFO]   Progression : 840/1490 (839 OK, 0 erreurs)
+2026-03-21 15:01:00,352 [INFO]   Progression : 850/1490 (849 OK, 0 erreurs)
+2026-03-21 15:02:15,547 [INFO]   Progression : 860/1490 (859 OK, 0 erreurs)
+2026-03-21 15:03:24,767 [INFO]   Progression : 870/1490 (869 OK, 0 erreurs)
+2026-03-21 15:04:58,110 [INFO]   Progression : 880/1490 (879 OK, 0 erreurs)
+2026-03-21 15:06:38,921 [INFO]   Progression : 890/1490 (889 OK, 0 erreurs)
+2026-03-21 15:08:26,245 [INFO]   Progression : 900/1490 (899 OK, 0 erreurs)
+2026-03-21 15:10:24,749 [INFO]   Progression : 910/1490 (909 OK, 0 erreurs)
+2026-03-21 15:11:23,506 [INFO]   Progression : 920/1490 (919 OK, 0 erreurs)
+2026-03-21 15:12:37,599 [INFO]   Progression : 930/1490 (929 OK, 0 erreurs)
+2026-03-21 15:13:51,189 [INFO]   Progression : 940/1490 (939 OK, 0 erreurs)
+2026-03-21 15:15:03,855 [INFO]   Progression : 950/1490 (949 OK, 0 erreurs)
+2026-03-21 15:16:16,519 [INFO]   Progression : 960/1490 (959 OK, 0 erreurs)
+2026-03-21 15:17:31,409 [INFO]   Progression : 970/1490 (969 OK, 0 erreurs)
+2026-03-21 15:18:38,256 [INFO]   Progression : 980/1490 (979 OK, 0 erreurs)
+2026-03-21 15:19:52,555 [INFO]   Progression : 990/1490 (989 OK, 0 erreurs)
+2026-03-21 15:21:08,135 [INFO]   Progression : 1000/1490 (999 OK, 0 erreurs)
+2026-03-21 15:22:39,273 [INFO]   Progression : 1010/1490 (1009 OK, 0 erreurs)
+2026-03-21 15:25:11,507 [INFO]   Progression : 1020/1490 (1019 OK, 0 erreurs)
+2026-03-21 15:27:30,037 [INFO]   Progression : 1030/1490 (1029 OK, 0 erreurs)
+2026-03-21 15:29:29,596 [INFO]   Progression : 1040/1490 (1039 OK, 0 erreurs)
+2026-03-21 15:30:27,465 [INFO]   Progression : 1050/1490 (1049 OK, 0 erreurs)
+2026-03-21 15:31:31,132 [INFO]   Progression : 1060/1490 (1059 OK, 0 erreurs)
+2026-03-21 15:32:30,148 [INFO]   Progression : 1070/1490 (1069 OK, 0 erreurs)
+2026-03-21 15:33:35,582 [INFO]   Progression : 1080/1490 (1079 OK, 0 erreurs)
+2026-03-21 15:34:45,783 [INFO]   Progression : 1090/1490 (1089 OK, 0 erreurs)
+2026-03-21 15:36:43,318 [INFO]   Progression : 1100/1490 (1099 OK, 0 erreurs)
+2026-03-21 15:38:49,718 [INFO]   Progression : 1110/1490 (1109 OK, 0 erreurs)
+2026-03-21 15:40:06,077 [INFO]   Progression : 1120/1490 (1119 OK, 0 erreurs)
+2026-03-21 15:41:28,570 [INFO]   Progression : 1130/1490 (1129 OK, 0 erreurs)
+2026-03-21 15:42:56,727 [INFO]   Progression : 1140/1490 (1139 OK, 0 erreurs)
+2026-03-21 15:44:52,008 [INFO]   Progression : 1150/1490 (1149 OK, 0 erreurs)
+2026-03-21 15:46:10,556 [INFO]   Progression : 1160/1490 (1159 OK, 0 erreurs)
+2026-03-21 15:46:47,270 [INFO]     Retry joueur ofil/spieler/1032280 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 15:48:44,484 [INFO]     Retry joueur rlauf/spieler/170472 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 15:48:53,036 [WARNING]     Joueur ignore : https://www.transfermarkt.us/dimitri-foulquier/marktwertverlauf/spieler/170472 -> 'NoneType' object has no attribute 'text'
+2026-03-21 15:50:06,645 [INFO]   Progression : 1190/1490 (1188 OK, 1 erreurs)
+2026-03-21 15:51:09,017 [INFO]   Progression : 1200/1490 (1198 OK, 1 erreurs)
+2026-03-21 15:52:17,978 [INFO]   Progression : 1210/1490 (1208 OK, 1 erreurs)
+2026-03-21 15:53:32,736 [INFO]   Progression : 1220/1490 (1218 OK, 1 erreurs)
+2026-03-21 15:55:07,075 [INFO]   Progression : 1230/1490 (1228 OK, 1 erreurs)
+2026-03-21 15:56:42,448 [INFO]   Progression : 1240/1490 (1238 OK, 1 erreurs)
+2026-03-21 15:58:15,793 [INFO]   Progression : 1250/1490 (1248 OK, 1 erreurs)
+2026-03-21 15:59:11,890 [INFO]   Progression : 1260/1490 (1258 OK, 1 erreurs)
+2026-03-21 16:00:41,827 [INFO]   Progression : 1270/1490 (1268 OK, 1 erreurs)
+2026-03-21 16:02:09,582 [INFO]   Progression : 1280/1490 (1278 OK, 1 erreurs)
+2026-03-21 16:03:21,451 [INFO]   Progression : 1290/1490 (1288 OK, 1 erreurs)
+2026-03-21 16:04:13,905 [INFO]   Progression : 1300/1490 (1298 OK, 1 erreurs)
+2026-03-21 16:05:31,706 [INFO]   Progression : 1310/1490 (1308 OK, 1 erreurs)
+2026-03-21 16:06:41,794 [INFO]   Progression : 1320/1490 (1318 OK, 1 erreurs)
+2026-03-21 16:08:36,085 [INFO]   Progression : 1330/1490 (1328 OK, 1 erreurs)
+2026-03-21 16:09:55,029 [INFO]   Progression : 1340/1490 (1338 OK, 1 erreurs)
+2026-03-21 16:11:33,034 [INFO]   Progression : 1350/1490 (1348 OK, 1 erreurs)
+2026-03-21 16:13:49,465 [INFO]   Progression : 1360/1490 (1358 OK, 1 erreurs)
+2026-03-21 16:15:02,239 [INFO]   Progression : 1370/1490 (1368 OK, 1 erreurs)
+2026-03-21 16:16:03,241 [INFO]   Progression : 1380/1490 (1378 OK, 1 erreurs)
+2026-03-21 16:19:05,375 [INFO]   Progression : 1400/1490 (1398 OK, 1 erreurs)
+2026-03-21 16:21:14,600 [INFO]   Progression : 1410/1490 (1408 OK, 1 erreurs)
+2026-03-21 16:25:03,719 [INFO]   Progression : 1430/1490 (1428 OK, 1 erreurs)
+2026-03-21 16:26:40,073 [INFO]   Progression : 1440/1490 (1438 OK, 1 erreurs)
+2026-03-21 16:28:02,288 [INFO]   Progression : 1450/1490 (1448 OK, 1 erreurs)
+2026-03-21 16:30:00,650 [INFO]   Progression : 1460/1490 (1458 OK, 1 erreurs)
+2026-03-21 16:31:43,042 [INFO]   Progression : 1470/1490 (1468 OK, 1 erreurs)
+2026-03-21 16:33:44,663 [INFO]   Progression : 1480/1490 (1478 OK, 1 erreurs)
+2026-03-21 16:34:51,274 [INFO]   Progression : 1490/1490 (1488 OK, 1 erreurs)
+2026-03-21 16:35:00,363 [INFO]   Ligue terminee : 1489 OK, 1 erreurs
+2026-03-21 16:35:00,437 [INFO]   Pause 25.9s avant la ligue suivante...
+2026-03-21 16:35:26,333 [INFO] 
+=======================================================
+2026-03-21 16:35:26,334 [INFO] === Ligue : Turkiye Super Lig ===
+2026-03-21 16:35:26,334 [INFO] =======================================================
+2026-03-21 16:35:26,334 [INFO]   Recuperation des liens joueurs...
+2026-03-21 16:36:44,297 [INFO]   1414 joueurs trouves dans Turkiye Super Lig
+2026-03-21 16:36:44,299 [INFO]   Progression : 1/1414 (0 OK, 0 erreurs)
+2026-03-21 16:37:47,046 [INFO]   Progression : 10/1414 (9 OK, 0 erreurs)
+2026-03-21 16:38:53,580 [INFO]   Progression : 20/1414 (19 OK, 0 erreurs)
+2026-03-21 16:40:07,610 [INFO]   Progression : 30/1414 (29 OK, 0 erreurs)
+2026-03-21 16:42:29,800 [INFO]   Progression : 40/1414 (39 OK, 0 erreurs)
+2026-03-21 16:44:12,085 [INFO]   Progression : 50/1414 (49 OK, 0 erreurs)
+2026-03-21 16:46:14,004 [INFO]   Progression : 60/1414 (59 OK, 0 erreurs)
+2026-03-21 16:47:38,166 [INFO]   Progression : 70/1414 (69 OK, 0 erreurs)
+2026-03-21 16:49:05,590 [INFO]   Progression : 80/1414 (79 OK, 0 erreurs)
+2026-03-21 16:50:20,871 [INFO]   Progression : 90/1414 (89 OK, 0 erreurs)
+2026-03-21 16:51:18,502 [INFO]   Progression : 100/1414 (99 OK, 0 erreurs)
+2026-03-21 16:52:30,897 [INFO]   Progression : 110/1414 (109 OK, 0 erreurs)
+2026-03-21 16:53:56,154 [INFO]   Progression : 120/1414 (119 OK, 0 erreurs)
+2026-03-21 16:55:46,585 [INFO]   Progression : 130/1414 (129 OK, 0 erreurs)
+2026-03-21 16:57:39,792 [INFO]   Progression : 140/1414 (139 OK, 0 erreurs)
+2026-03-21 16:59:39,465 [INFO]   Progression : 150/1414 (149 OK, 0 erreurs)
+2026-03-21 17:00:49,434 [INFO]   Progression : 160/1414 (159 OK, 0 erreurs)
+2026-03-21 17:01:50,849 [INFO]   Progression : 170/1414 (169 OK, 0 erreurs)
+2026-03-21 17:02:45,571 [INFO]   Progression : 180/1414 (179 OK, 0 erreurs)
+2026-03-21 17:04:02,641 [INFO]   Progression : 190/1414 (189 OK, 0 erreurs)
+2026-03-21 17:05:19,308 [INFO]   Progression : 200/1414 (199 OK, 0 erreurs)
+2026-03-21 17:06:22,838 [INFO]   Progression : 210/1414 (209 OK, 0 erreurs)
+2026-03-21 17:07:40,410 [INFO]   Progression : 220/1414 (219 OK, 0 erreurs)
+2026-03-21 17:08:54,737 [INFO]   Progression : 230/1414 (229 OK, 0 erreurs)
+2026-03-21 17:10:09,818 [INFO]   Progression : 240/1414 (239 OK, 0 erreurs)
+2026-03-21 17:13:05,889 [INFO]   Progression : 250/1414 (249 OK, 0 erreurs)
+2026-03-21 17:14:48,718 [INFO]   Progression : 260/1414 (259 OK, 0 erreurs)
+2026-03-21 17:16:24,726 [INFO]   Progression : 270/1414 (269 OK, 0 erreurs)
+2026-03-21 17:17:26,933 [INFO]   Progression : 280/1414 (279 OK, 0 erreurs)
+2026-03-21 17:18:42,497 [INFO]   Progression : 290/1414 (289 OK, 0 erreurs)
+2026-03-21 17:19:48,854 [INFO]   Progression : 300/1414 (299 OK, 0 erreurs)
+2026-03-21 17:21:04,839 [INFO]   Progression : 310/1414 (309 OK, 0 erreurs)
+2026-03-21 17:23:03,434 [INFO]   Progression : 320/1414 (319 OK, 0 erreurs)
+2026-03-21 17:24:21,241 [INFO]   Progression : 330/1414 (329 OK, 0 erreurs)
+2026-03-21 17:25:30,995 [INFO]   Progression : 340/1414 (339 OK, 0 erreurs)
+2026-03-21 17:26:25,848 [INFO]   Progression : 350/1414 (349 OK, 0 erreurs)
+2026-03-21 17:27:48,547 [INFO]   Progression : 360/1414 (359 OK, 0 erreurs)
+2026-03-21 17:29:24,018 [INFO]   Progression : 370/1414 (369 OK, 0 erreurs)
+2026-03-21 17:31:43,572 [INFO]   Progression : 380/1414 (379 OK, 0 erreurs)
+2026-03-21 17:33:02,749 [INFO]   Progression : 390/1414 (389 OK, 0 erreurs)
+2026-03-21 17:34:21,674 [INFO]   Progression : 400/1414 (399 OK, 0 erreurs)
+2026-03-21 17:35:19,716 [INFO]     Retry joueur erlauf/spieler/87854 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 17:35:26,248 [WARNING]     Joueur ignore : https://www.transfermarkt.us/fredy/marktwertverlauf/spieler/87854 -> 'NoneType' object has no attribute 'text'
+2026-03-21 17:35:49,063 [INFO]   Progression : 410/1414 (408 OK, 1 erreurs)
+2026-03-21 17:37:19,735 [INFO]   Progression : 420/1414 (418 OK, 1 erreurs)
+2026-03-21 17:38:38,870 [INFO]   Progression : 430/1414 (428 OK, 1 erreurs)
+2026-03-21 17:39:51,956 [INFO]   Progression : 440/1414 (438 OK, 1 erreurs)
+2026-03-21 17:41:30,742 [INFO]   Progression : 450/1414 (448 OK, 1 erreurs)
+2026-03-21 17:42:51,888 [INFO]   Progression : 460/1414 (458 OK, 1 erreurs)
+2026-03-21 17:44:12,388 [INFO]   Progression : 470/1414 (468 OK, 1 erreurs)
+2026-03-21 17:45:35,558 [INFO]   Progression : 480/1414 (478 OK, 1 erreurs)
+2026-03-21 17:46:57,196 [INFO]   Progression : 490/1414 (488 OK, 1 erreurs)
+2026-03-21 17:48:06,754 [INFO]   Progression : 500/1414 (498 OK, 1 erreurs)
+2026-03-21 17:50:24,489 [INFO]   Progression : 510/1414 (508 OK, 1 erreurs)
+2026-03-21 17:51:45,395 [INFO]   Progression : 520/1414 (518 OK, 1 erreurs)
+2026-03-21 17:52:59,225 [INFO]   Progression : 530/1414 (528 OK, 1 erreurs)
+2026-03-21 17:55:13,021 [INFO]   Progression : 550/1414 (548 OK, 1 erreurs)
+2026-03-21 17:56:29,355 [INFO]   Progression : 560/1414 (558 OK, 1 erreurs)
+2026-03-21 17:57:44,513 [INFO]   Progression : 570/1414 (568 OK, 1 erreurs)
+2026-03-21 17:59:14,235 [INFO]   Progression : 580/1414 (578 OK, 1 erreurs)
+2026-03-21 18:00:49,027 [INFO]   Progression : 590/1414 (588 OK, 1 erreurs)
+2026-03-21 18:03:35,105 [INFO]   Progression : 600/1414 (598 OK, 1 erreurs)
+2026-03-21 18:04:50,414 [INFO]   Progression : 610/1414 (608 OK, 1 erreurs)
+2026-03-21 18:05:57,665 [INFO]   Progression : 620/1414 (618 OK, 1 erreurs)
+2026-03-21 18:07:05,176 [INFO]   Progression : 630/1414 (628 OK, 1 erreurs)
+2026-03-21 18:08:03,858 [INFO]   Progression : 640/1414 (638 OK, 1 erreurs)
+2026-03-21 18:09:13,722 [INFO]   Progression : 650/1414 (648 OK, 1 erreurs)
+2026-03-21 18:10:11,594 [INFO]   Progression : 660/1414 (658 OK, 1 erreurs)
+2026-03-21 18:11:32,560 [INFO]   Progression : 670/1414 (668 OK, 1 erreurs)
+2026-03-21 18:13:29,864 [INFO]   Progression : 680/1414 (678 OK, 1 erreurs)
+2026-03-21 18:14:47,347 [INFO]   Progression : 690/1414 (688 OK, 1 erreurs)
+2026-03-21 18:16:43,249 [INFO]   Progression : 700/1414 (698 OK, 1 erreurs)
+2026-03-21 18:17:57,553 [INFO]   Progression : 710/1414 (708 OK, 1 erreurs)
+2026-03-21 18:19:10,904 [INFO]   Progression : 720/1414 (718 OK, 1 erreurs)
+2026-03-21 18:20:51,415 [INFO]   Progression : 730/1414 (728 OK, 1 erreurs)
+2026-03-21 18:22:09,292 [INFO]   Progression : 740/1414 (738 OK, 1 erreurs)
+2026-03-21 18:23:31,788 [INFO]   Progression : 750/1414 (748 OK, 1 erreurs)
+2026-03-21 18:25:00,493 [INFO]   Progression : 760/1414 (758 OK, 1 erreurs)
+2026-03-21 18:26:22,579 [INFO]   Progression : 770/1414 (768 OK, 1 erreurs)
+2026-03-21 18:27:56,615 [INFO]   Progression : 780/1414 (778 OK, 1 erreurs)
+2026-03-21 18:29:21,548 [INFO]   Progression : 790/1414 (788 OK, 1 erreurs)
+2026-03-21 18:30:36,854 [INFO]   Progression : 800/1414 (798 OK, 1 erreurs)
+2026-03-21 18:33:24,983 [INFO]   Progression : 810/1414 (808 OK, 1 erreurs)
+2026-03-21 18:35:09,473 [INFO]   Progression : 820/1414 (818 OK, 1 erreurs)
+2026-03-21 18:38:01,922 [INFO]   Progression : 840/1414 (838 OK, 1 erreurs)
+2026-03-21 18:39:31,239 [INFO]   Progression : 850/1414 (848 OK, 1 erreurs)
+2026-03-21 18:40:57,907 [INFO]   Progression : 860/1414 (858 OK, 1 erreurs)
+2026-03-21 18:42:20,028 [INFO]   Progression : 870/1414 (868 OK, 1 erreurs)
+2026-03-21 18:43:35,850 [INFO]   Progression : 880/1414 (878 OK, 1 erreurs)
+2026-03-21 18:46:03,150 [INFO]   Progression : 890/1414 (888 OK, 1 erreurs)
+2026-03-21 18:47:45,403 [INFO]   Progression : 900/1414 (898 OK, 1 erreurs)
+2026-03-21 18:48:57,479 [INFO]   Progression : 910/1414 (908 OK, 1 erreurs)
+2026-03-21 18:50:44,358 [INFO]   Progression : 920/1414 (918 OK, 1 erreurs)
+2026-03-21 18:51:50,625 [INFO]   Progression : 930/1414 (928 OK, 1 erreurs)
+2026-03-21 18:53:19,481 [INFO]   Progression : 940/1414 (938 OK, 1 erreurs)
+2026-03-21 18:54:27,823 [INFO]   Progression : 950/1414 (948 OK, 1 erreurs)
+2026-03-21 18:55:47,083 [INFO]   Progression : 960/1414 (958 OK, 1 erreurs)
+2026-03-21 18:57:08,936 [INFO]   Progression : 970/1414 (968 OK, 1 erreurs)
+2026-03-21 18:58:17,474 [INFO]   Progression : 980/1414 (978 OK, 1 erreurs)
+2026-03-21 19:01:38,486 [INFO]   Progression : 990/1414 (988 OK, 1 erreurs)
+2026-03-21 19:03:09,813 [INFO]   Progression : 1000/1414 (998 OK, 1 erreurs)
+2026-03-21 19:06:01,017 [INFO]   Progression : 1010/1414 (1008 OK, 1 erreurs)
+2026-03-21 19:07:12,010 [INFO]   Progression : 1020/1414 (1018 OK, 1 erreurs)
+2026-03-21 19:08:26,508 [INFO]   Progression : 1030/1414 (1028 OK, 1 erreurs)
+2026-03-21 19:10:41,903 [INFO]   Progression : 1040/1414 (1038 OK, 1 erreurs)
+2026-03-21 19:12:14,905 [INFO]   Progression : 1050/1414 (1048 OK, 1 erreurs)
+2026-03-21 19:14:15,607 [INFO]   Progression : 1060/1414 (1058 OK, 1 erreurs)
+2026-03-21 19:16:16,938 [INFO]   Progression : 1070/1414 (1068 OK, 1 erreurs)
+2026-03-21 19:17:59,263 [INFO]   Progression : 1080/1414 (1078 OK, 1 erreurs)
+2026-03-21 19:19:07,761 [INFO]   Progression : 1090/1414 (1088 OK, 1 erreurs)
+2026-03-21 19:20:05,871 [INFO]   Progression : 1100/1414 (1098 OK, 1 erreurs)
+2026-03-21 19:21:14,779 [INFO]   Progression : 1110/1414 (1108 OK, 1 erreurs)
+2026-03-21 19:23:36,015 [INFO]   Progression : 1130/1414 (1128 OK, 1 erreurs)
+2026-03-21 19:25:04,280 [INFO]   Progression : 1140/1414 (1138 OK, 1 erreurs)
+2026-03-21 19:25:23,888 [INFO]     Retry joueur rlauf/spieler/566355 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 19:25:32,309 [WARNING]     Joueur ignore : https://www.transfermarkt.us/jan-bieganski/marktwertverlauf/spieler/566355 -> 'NoneType' object has no attribute 'text'
+2026-03-21 19:26:18,441 [INFO]     Retry joueur rofil/spieler/440653 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 19:27:51,432 [INFO]   Progression : 1150/1414 (1147 OK, 2 erreurs)
+2026-03-21 19:32:25,744 [INFO]   Progression : 1160/1414 (1157 OK, 2 erreurs)
+2026-03-21 19:33:37,081 [INFO]     Retry joueur rofil/spieler/159908 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 19:34:45,752 [INFO]   Progression : 1170/1414 (1167 OK, 2 erreurs)
+2026-03-21 19:39:19,762 [INFO]   Progression : 1190/1414 (1187 OK, 2 erreurs)
+2026-03-21 19:40:59,852 [INFO]   Progression : 1200/1414 (1197 OK, 2 erreurs)
+2026-03-21 19:43:16,234 [INFO]   Progression : 1210/1414 (1207 OK, 2 erreurs)
+2026-03-21 19:45:10,380 [INFO]   Progression : 1220/1414 (1217 OK, 2 erreurs)
+2026-03-21 19:46:26,909 [INFO]   Progression : 1230/1414 (1227 OK, 2 erreurs)
+2026-03-21 19:49:35,289 [INFO]   Progression : 1240/1414 (1237 OK, 2 erreurs)
+2026-03-21 19:53:22,186 [INFO]   Progression : 1260/1414 (1257 OK, 2 erreurs)
+2026-03-21 19:54:43,003 [INFO]   Progression : 1270/1414 (1267 OK, 2 erreurs)
+2026-03-21 19:56:08,151 [INFO]   Progression : 1280/1414 (1277 OK, 2 erreurs)
+2026-03-21 19:58:45,591 [INFO]   Progression : 1290/1414 (1287 OK, 2 erreurs)
+2026-03-21 19:59:27,942 [INFO]     Retry joueur lauf/spieler/1050797 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 20:00:48,992 [INFO]   Progression : 1300/1414 (1297 OK, 2 erreurs)
+2026-03-21 20:02:15,153 [INFO]   Progression : 1310/1414 (1307 OK, 2 erreurs)
+2026-03-21 20:03:24,393 [INFO]   Progression : 1320/1414 (1317 OK, 2 erreurs)
+2026-03-21 20:05:42,855 [INFO]   Progression : 1330/1414 (1327 OK, 2 erreurs)
+2026-03-21 20:07:58,050 [INFO]   Progression : 1340/1414 (1337 OK, 2 erreurs)
+2026-03-21 20:09:25,000 [INFO]   Progression : 1350/1414 (1347 OK, 2 erreurs)
+2026-03-21 20:10:50,876 [INFO]   Progression : 1360/1414 (1357 OK, 2 erreurs)
+2026-03-21 20:13:15,325 [INFO]   Progression : 1370/1414 (1367 OK, 2 erreurs)
+2026-03-21 20:15:36,290 [INFO]     Retry joueur rofil/spieler/283223 (tentative 1) : 'NoneType' object has no attribute 'text'
+2026-03-21 20:16:16,478 [INFO]   Progression : 1380/1414 (1377 OK, 2 erreurs)
+2026-03-21 20:18:07,475 [INFO]   Progression : 1390/1414 (1387 OK, 2 erreurs)
+2026-03-21 20:21:03,745 [INFO]   Progression : 1400/1414 (1397 OK, 2 erreurs)
+2026-03-21 20:22:24,351 [INFO]   Progression : 1410/1414 (1407 OK, 2 erreurs)
+2026-03-21 20:23:04,944 [INFO]   Ligue terminee : 1412 OK, 2 erreurs
+2026-03-21 20:23:04,977 [INFO]   Pause 26.8s avant la ligue suivante...
+2026-03-21 20:23:31,758 [INFO] [SKIP] USA MLS deja traite
+2026-03-21 20:23:31,759 [INFO] 
+=======================================================
+2026-03-21 20:23:31,759 [INFO] Ligues terminees : 13/13
+2026-03-21 20:23:31,759 [WARNING] Joueurs en erreur : 71 (voir data\transfermarkt\players_errors.csv)
+2026-03-21 20:23:31,883 [INFO] Total : 18209 joueurs dans data\transfermarkt\players_all.csv
+2026-03-21 20:23:31,883 [INFO] Colonnes : ['Name', 'ID', 'Value', 'Value last updated', 'DOB', 'Age', 'Height (m)', 'Nationality', 'Citizenship', 'Position', 'Other positions', 'Team', 'Last club', 'Since', 'Joined', 'Contract expiration', 'Market value history', 'Transfer history', 'player_url', 'league', 'scraped_at']
