@@ -1,6 +1,6 @@
 # Projet 3 — Analyse de données football
 
-Pipeline complet de collecte, fusion et nettoyage de données sur les joueurs de football professionnel, à partir de 8 sources hétérogènes.
+Pipeline complet de collecte, fusion, nettoyage et stockage de données sur les joueurs de football professionnel, à partir de 8 sources hétérogènes. Livrable final : une application Streamlit d'aide à la décision pour les clubs (mercato) et les annonceurs (notoriété).
 
 ---
 
@@ -22,22 +22,22 @@ Pipeline complet de collecte, fusion et nettoyage de données sur les joueurs de
 ## Structure du projet
 
 ```
-projet3/
-├── data/                                        # Fichiers CSV (non versionnés)
+Projet3_Football/
+├── data/                                        # Fichiers CSV (non versionnés — voir .gitignore)
 │   └── transfermarkt/                           # Sous-dossier Transfermarkt + enriched
 ├── Collecte_API_Football_joueurs.py             # Collecte API-Football joueurs
 ├── Collecte_API-FB_leages.py                    # Collecte championnats
 ├── Collecte_API-FB_team.py                      # Collecte équipes et compositions
 ├── Collecte_ESPN_AF_stats.py                    # Collecte ESPN (effectifs) + API-Football (stats par ligue)
-├── Convert_players_to_ESPN_AF_stats.py          # Conversion players.csv → ESPN_AF_stats.csv (si applicable)
-├── Fix_ESPN_AF_espn_id.py                       # Renommage colonne espn_id → id dans ESPN_AF_stats.csv
 ├── Collecte_monScraperFC.py                     # Scraping Transfermarkt
 ├── Collecte_monScraperFC_enriched.py            # Enrichissement Capology + Sofascore
 ├── Collecte_TheSportsDB.py                      # Collecte TheSportsDB
 ├── Merge_joueurs.py                             # Fusion des 8 sources → recap_joueurs.csv
-├── Nettoyage_joueurs.py                         # Consolidation → recap_joueurs_clean.csv
-├── Inspect_recap_clean.py                       # Rapport dtype / taux de remplissage par colonne
+├── Nettoyage_joueurs.py                         # Consolidation + league → recap_joueurs_clean.csv
+├── init_db.sql                                  # DDL MySQL — création des 7 tables
+├── import_mysql.py                              # Import recap_joueurs_clean.csv → MySQL
 ├── requirements.txt
+├── .env                                         # Credentials locaux (non versionné)
 └── README.md
 ```
 
@@ -71,17 +71,43 @@ python Nettoyage_joueurs.py
 ```
 Produit `data/recap_joueurs_clean.csv` — **16 946 joueurs × 210 colonnes**.
 
-Consolide 7 colonnes unifiées (les colonnes sources correspondantes sont supprimées du fichier final) :
+Consolide 8 colonnes unifiées (les colonnes sources correspondantes sont supprimées du fichier final) :
 
 | Colonne | Taux de remplissage |
 |---|---|
-| `birth_date` | ~99,5 % |
-| `nationality` | ~98,9 % |
-| `position` | ~96,4 % |
-| `position_detail` | ~94,8 % |
-| `height_cm` | ~89,4 % |
-| `club` | ~69,8 % |
-| `weight_kg` | ~54,2 % |
+| `birth_date` | 99,5 % |
+| `nationality` | 98,9 % |
+| `position` | 96,4 % |
+| `position_detail` | 94,8 % |
+| `league` | 94,9 % |
+| `height_cm` | 89,4 % |
+| `club` | 69,8 % |
+| `weight_kg` | 54,2 % |
+
+`league` est consolidée avec la priorité `tm_league → tsdb_league_name → espn_league`, normalisée vers des noms courts standard (`Premier League`, `Ligue 1`, `La Liga`…).
+
+### Phase 4 — Base de données MySQL
+```bash
+# 1. Créer la base et les tables (une seule fois)
+mysql -u root -p < init_db.sql
+
+# 2. Importer les données
+python import_mysql.py
+```
+
+Alimente les 7 tables du schéma en étoile depuis `recap_joueurs_clean.csv` :
+
+| Table | Source principale | Couverture |
+|---|---|---|
+| `joueurs` (centrale) | Toutes sources — nom unifié | 16 946 joueurs |
+| `profil` | TheSportsDB, API-Football | ~89 % |
+| `clubs` | Transfermarkt, ESPN, apife | ~70 % |
+| `valeur_marchande` | Transfermarkt | ~57 % |
+| `contrats` | Capology, Transfermarkt | ~55 % |
+| `performances` | Sofascore (32 %) + ESPN (22 %) | ~54 % |
+| `notoriete` | TheSportsDB | ~60 % |
+
+Voir `README_db.md` pour les instructions détaillées de mise en place.
 
 ---
 
@@ -89,8 +115,8 @@ Consolide 7 colonnes unifiées (les colonnes sources correspondantes sont suppri
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/TON_USERNAME/TON_REPO.git
-cd TON_REPO
+git clone https://github.com/dominiquerigault66-droid/Projet3_Football.git
+cd Projet3_Football
 
 # Créer et activer l'environnement virtuel
 python -m venv .venv
@@ -108,7 +134,11 @@ Créer un fichier `.env` à la racine du projet :
 
 ```
 API_FOOTBALL_KEY=ta_clé_api_football
-THESPORTSDB_API_KEY=ta_clé_thesportsdb
+DB_USER=root
+DB_PASS=ton_mot_de_passe
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=football_db
 ```
 
 ---
@@ -117,4 +147,5 @@ THESPORTSDB_API_KEY=ta_clé_thesportsdb
 
 - Python 3.x
 - Windows / Git Bash
-- MySQL (phases suivantes)
+- MySQL 8.0 (phases 4+)
+- Orchestration : Prefect (`@flow` / `@task`)

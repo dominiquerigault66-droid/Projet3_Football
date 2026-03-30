@@ -27,6 +27,8 @@ DROP_AFTER_CONSOLIDATION = [
     "apif_position", "apife_player_pos", "tm_Other positions",
     # club
     "tm_Team", "apife_team_name", "espn_club", "fbref_Club",
+    # league (sources remplacées par league consolidée)
+    "tm_league", "tsdb_league_name", "espn_league",
 ]
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -258,11 +260,72 @@ filled = recap["club"].notna().sum()
 print(f"[club]        {filled} / {len(recap)} renseignés ({100*filled/len(recap):.1f}%)")
 
 # ══════════════════════════════════════════════════════════════════════════════
+# 6bis. LIGUE — consolidation multi-sources
+# ══════════════════════════════════════════════════════════════════════════════
+# Priorité : tm_league (13 ligues, noms verbeux) → tsdb_league_name (15 ligues)
+#            → espn_league (6 ligues, noms courts)
+# Les noms sont normalisés vers un format court standard (ex: "Premier League").
+
+LEAGUE_NORM = {
+    # tm_league → forme courte
+    "Argentina Liga Profesional":  "Liga Profesional",
+    "Belgium Pro League":          "Pro League",
+    "Brazil Serie A":              "Série A",
+    "England Premier League":      "Premier League",
+    "France Ligue 1":              "Ligue 1",
+    "Germany Bundesliga":          "Bundesliga",
+    "Italy Serie A":               "Serie A",
+    "Netherlands Eredivisie":      "Eredivisie",
+    "Portugal Primeira Liga":      "Primeira Liga",
+    "Scotland Premier League":     "Scottish Premiership",
+    "Spain La Liga":               "La Liga",
+    "Turkiye Super Lig":           "Süper Lig",
+    "USA MLS":                     "MLS",
+    # tsdb_league_name → forme courte
+    "American Major League Soccer":   "MLS",
+    "Argentinian Primera Division":   "Liga Profesional",
+    "Belgian Pro League":             "Pro League",
+    "Brazilian Serie A":              "Série A",
+    "Croatian First Football League": "HNL",
+    "Dutch Eredivisie":               "Eredivisie",
+    "English Premier League":         "Premier League",
+    "French Ligue 1":                 "Ligue 1",
+    "German Bundesliga":              "Bundesliga",
+    "Italian Serie A":                "Serie A",
+    "Mexican Primera League":         "Liga MX",
+    "Portuguese Primeira Liga":       "Primeira Liga",
+    "Spanish La Liga":                "La Liga",
+    "Swiss Super League":             "Super League",
+    "Uruguayan Primera Division":     "Primera División",
+    # espn_league → forme courte (déjà courts, on garde)
+    "La Liga":        "La Liga",
+    "Serie A":        "Serie A",
+    "Premier League": "Premier League",
+    "Ligue 1":        "Ligue 1",
+    "Bundesliga":     "Bundesliga",
+    "Primeira Liga":  "Primeira Liga",
+}
+
+def normalize_league(s):
+    if pd.isna(s):
+        return np.nan
+    return LEAGUE_NORM.get(str(s).strip(), str(s).strip())
+
+lg_tm   = recap["tm_league"].map(normalize_league)        if "tm_league"        in recap.columns else pd.Series(np.nan, index=recap.index)
+lg_tsdb = recap["tsdb_league_name"].map(normalize_league) if "tsdb_league_name" in recap.columns else pd.Series(np.nan, index=recap.index)
+lg_espn = recap["espn_league"].map(normalize_league)      if "espn_league"      in recap.columns else pd.Series(np.nan, index=recap.index)
+
+recap["league"] = lg_tm.combine_first(lg_tsdb).combine_first(lg_espn)
+
+filled = recap["league"].notna().sum()
+print(f"[league]      {filled} / {len(recap)} renseignés ({100*filled/len(recap):.1f}%)")
+
+# ══════════════════════════════════════════════════════════════════════════════
 # 7. SUPPRESSION DES COLONNES SOURCES + EXPORT
 # ══════════════════════════════════════════════════════════════════════════════
 
 consolidated = ["birth_date", "height_cm", "weight_kg", "nationality",
-                "position", "position_detail", "club"]
+                "position", "position_detail", "club", "league"]
 
 # Suppression des colonnes sources recombinées
 cols_to_drop = [c for c in DROP_AFTER_CONSOLIDATION if c in recap.columns]

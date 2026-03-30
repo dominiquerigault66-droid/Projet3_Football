@@ -1,8 +1,10 @@
-Sauvegardes
-Documents
+Sauvegardes/
+__pycache__/
+Documents/
+.venv/
+data/
 .env
 util1.py
 util2.py
-info_df
-__pycache__/
 .venv/
+data/
