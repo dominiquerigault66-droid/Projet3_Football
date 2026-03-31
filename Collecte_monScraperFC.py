@@ -32,10 +32,11 @@ except Exception:
 from ScraperFC import Transfermarkt
 
 # ── Configuration ─────────────────────────────────────────────────────────────
-OUTPUT_DIR = Path(__file__).parent / "data" / "transfermarkt"
+OUTPUT_DIR      = Path(__file__).parent / "data" / "transfermarkt"
+DATA_DIR        = Path(__file__).parent / "data"
 CHECKPOINT_FILE = OUTPUT_DIR / "checkpoint.json"
-OUTPUT_FILE = OUTPUT_DIR / "players_all.csv"
-ERRORS_FILE = OUTPUT_DIR / "players_errors.csv"
+OUTPUT_FILE     = DATA_DIR   / "players_all.csv"      # CSV final dans data/
+ERRORS_FILE     = OUTPUT_DIR / "players_errors.csv"   # fichier intermédiaire dans data/transfermarkt/
 
 DELAY_BETWEEN_PLAYERS = (3, 8)    # secondes entre chaque joueur
 DELAY_BETWEEN_LEAGUES = (15, 30)  # secondes entre chaque ligue

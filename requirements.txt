@@ -127,3 +127,4 @@ wrapt==2.1.2
 wsproto==1.2.0
 zope.event==6.1
 zope.interface==8.2
+prefect==3.6.24

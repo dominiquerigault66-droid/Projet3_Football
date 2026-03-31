@@ -174,8 +174,19 @@ def insert_chunks(conn, table: str, records: list[dict], label: str):
 
 with engine.begin() as conn:
 
+    # ── 0. Vidage des tables (ordre inverse des FK) ───────────────────────────
+    # Les tables filles doivent être vidées avant la table centrale joueurs
+    # pour respecter les contraintes de clé étrangère.
+    print("[0/7] Vidage des tables existantes ...")
+    conn.execute(text("SET FOREIGN_KEY_CHECKS = 0"))
+    for tbl in ["profil", "clubs", "valeur_marchande", "contrats",
+                "performances", "notoriete", "joueurs"]:
+        conn.execute(text(f"TRUNCATE TABLE `{tbl}`"))
+        print(f"  TRUNCATE {tbl}")
+    conn.execute(text("SET FOREIGN_KEY_CHECKS = 1"))
+
     # ── 1. joueurs ────────────────────────────────────────────────────────────
-    print("\n[1/7] Table joueurs …")
+    print("\n[1/7] Table joueurs ...")
     joueurs_rows = []
     for _, r in df.iterrows():
         nom = safe_str(r.get("_nom"), 150)

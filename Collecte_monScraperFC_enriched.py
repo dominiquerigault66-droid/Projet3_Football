@@ -53,9 +53,10 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 # ── Configuration ──────────────────────────────────────────────────────────────
-OUTPUT_DIR = Path(__file__).parent / "data" / "transfermarkt"
-INPUT_FILE       = OUTPUT_DIR / "players_all.csv"
-OUTPUT_FILE      = OUTPUT_DIR / "players_enriched.csv"
+OUTPUT_DIR       = Path(__file__).parent / "data" / "transfermarkt"
+DATA_DIR         = Path(__file__).parent / "data"
+INPUT_FILE       = DATA_DIR   / "players_all.csv"        # CSV Transfermarkt dans data/
+OUTPUT_FILE      = DATA_DIR   / "players_enriched.csv"   # CSV enrichi dans data/
 CHECKPOINT_FILE  = OUTPUT_DIR / "checkpoint_enrichment.json"
 LOG_FILE         = OUTPUT_DIR / "scraper_enrichment.log"
 
