@@ -33,6 +33,14 @@ Projet3_Football/
 │   ├── players_enriched.csv                     # Produit par Collecte_monScraperFC_enriched.py
 │   ├── recap_joueurs.csv                        # Produit par Merge_joueurs.py
 │   └── recap_joueurs_clean.csv                  # Produit par Nettoyage_joueurs.py
+├── dbt_football/                                # Projet dbt Core — modèles analytiques
+│   ├── models/
+│   │   ├── staging/                             # stg_joueurs, stg_performances, stg_scores
+│   │   └── marts/                               # v_joueurs_complets, v_recrutement, v_marketing,
+│   │                                            # v_contrats_expiration, v_top_valeur_par_poste
+│   ├── dbt_project.yml
+│   ├── profiles.yml
+│   └── models/schema.yml
 ├── Collecte_API_Football_joueurs.py             # Collecte API-Football joueurs
 ├── Collecte_API-FB_leages.py                    # Collecte championnats
 ├── Collecte_API-FB_team.py                      # Collecte équipes et compositions
@@ -122,6 +130,39 @@ Alimente les 7 tables du schéma en étoile depuis `recap_joueurs_clean.csv`.
 
 Voir `README_db.md` pour les instructions détaillées de mise en place.
 
+### Phase 5 — Modèles dbt Core
+```bash
+cd dbt_football
+export $(grep -v '^#' ../.env | xargs)
+dbt run --profiles-dir .
+dbt test --profiles-dir .
+```
+
+Matérialise 8 modèles dans `football_db` à partir des 7 tables brutes :
+
+**Staging (vues)** — nettoyage et enrichissement :
+
+| Modèle | Description |
+|---|---|
+| `stg_joueurs` | Table joueurs typée, calcul de l'âge |
+| `stg_performances` | Métriques Sofascore + calculs /90 min (buts, assists, saves) |
+| `stg_scores` | Composantes brutes des scores sportif et marketing |
+
+**Marts (tables physiques)** — prêts pour Streamlit :
+
+| Modèle | Description |
+|---|---|
+| `v_joueurs_complets` | Vue centrale dénormalisée — toutes les tables jointes, scores S1-S10 et M1-M10 |
+| `v_recrutement` | Profil recruteur — performance, contrat, valeur marchande |
+| `v_marketing` | Profil annonceur — notoriété, réseaux sociaux, image |
+| `v_contrats_expiration` | Opportunités mercato — contrats expirant dans les 18 mois |
+| `v_top_valeur_par_poste` | Benchmark valeur marchande par poste et par ligue |
+
+**Scores calculés :**
+- `score_sport` / `score_sport_label` (S1–S10) : percentile par poste, pondération différenciée (Goalkeeper, Defender, Midfielder, Attacker)
+- `score_marketing` / `score_marketing_label` (M1–M10) : percentile global, basé sur `int_loved` (log), réseaux sociaux, ligue premium
+- Distribution uniforme garantie par `NTILE(10)` — ~1 229 joueurs par décile
+
 ---
 
 ## Orchestration Prefect
@@ -131,12 +172,12 @@ Le fichier `pipeline_flow.py` orchestre l'ensemble du pipeline via Prefect 3.
 ### Flows disponibles
 
 **`flow_hebdo`** — sources à mise à jour hebdomadaire :
-API-Football joueurs + équipes, ESPN+AF stats, TheSportsDB → merge → nettoyage → MySQL
+API-Football joueurs + équipes, ESPN+AF stats, TheSportsDB → merge → nettoyage → MySQL → dbt
 
 **`flow_mensuel`** — toutes les sources :
-idem + Transfermarkt + Capology/Sofascore → merge → nettoyage → MySQL
+idem + Transfermarkt + Capology/Sofascore → merge → nettoyage → MySQL → dbt
 
-Les collectes s'exécutent en parallèle, sauf `collecte_enriched` qui attend `collecte_transfermarkt` (elle lit `players_all.csv`). Le merge ne démarre qu'une fois toutes les collectes terminées.
+Les collectes s'exécutent séquentiellement. `collecte_enriched` s'exécute après `collecte_transfermarkt` (elle lit `players_all.csv`). `dbt_run` s'exécute en dernier, après `chargement_mysql`.
 
 ### Lancement manuel
 
@@ -159,7 +200,7 @@ if __name__ == "__main__":
 
 Tasks disponibles : `collecte_apif_joueurs`, `collecte_apif_teams`, `collecte_espn_af`,
 `collecte_thesportsdb`, `collecte_transfermarkt`, `collecte_enriched`,
-`merge_joueurs`, `nettoyage_joueurs`, `chargement_mysql`.
+`merge_joueurs`, `nettoyage_joueurs`, `chargement_mysql`, `dbt_run`.
 
 ### Contraintes par source
 
@@ -196,7 +237,7 @@ source .venv/Scripts/activate  # Git Bash / Windows
 pip install -r requirements.txt
 ```
 
-> `requirements.txt` inclut notamment : `pandas`, `requests`, `ScraperFC`, `sqlalchemy`, `pymysql`, `python-dotenv`, `prefect==3.6.24`.
+> `requirements.txt` inclut notamment : `pandas`, `requests`, `ScraperFC`, `sqlalchemy`, `pymysql`, `python-dotenv`, `prefect==3.6.24`, `dbt-mysql`.
 
 ---
 
@@ -220,5 +261,6 @@ DB_NAME=football_db
 
 - Python 3.13
 - Windows / Git Bash
-- MySQL 8.0 (phases 4+)
+- MySQL 8.0
+- dbt-mysql 1.7.0
 - Orchestration : Prefect 3.6.24 (`@flow` / `@task`, serveur éphémère local)
