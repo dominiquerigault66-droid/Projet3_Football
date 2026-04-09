@@ -62,11 +62,14 @@ Lancer les scripts de collecte indépendamment selon les sources souhaitées. Ch
 2. Stats API-Football chargées en cache par ligue (pas de requête individuelle)
 3. Complétion via endpoint ESPN stats pour les joueurs sans correspondance AF
 
+> ⚠️ La phase 3 (endpoint ESPN stats) est actuellement indisponible (HTTP 404).
+> Les stats de performance proviennent donc exclusivement de Sofascore via `Collecte_monScraperFC_enriched.py`.
+
 ### Phase 2 — Fusion
 ```bash
 python Merge_joueurs.py
 ```
-Produit `data/recap_joueurs.csv` — **12 959 joueurs × 238 colonnes**, zéro doublon.
+Produit `data/recap_joueurs.csv` — **12 290 joueurs × 238 colonnes**, zéro doublon.
 
 Stratégies de jointure :
 - Clé normalisée (minuscules, sans accents ni ponctuation) pour la majorité des sources
@@ -78,20 +81,20 @@ Stratégies de jointure :
 ```bash
 python Nettoyage_joueurs.py
 ```
-Produit `data/recap_joueurs_clean.csv` — **12 959 joueurs × 210 colonnes**.
+Produit `data/recap_joueurs_clean.csv` — **12 290 joueurs × 210 colonnes**.
 
 Consolide 8 colonnes unifiées (les colonnes sources correspondantes sont supprimées du fichier final) :
 
 | Colonne | Taux de remplissage |
 |---|---|
-| `birth_date` | 99,4 % |
-| `nationality` | 98,2 % |
-| `position` | 97,9 % |
-| `position_detail` | 92,8 % |
-| `league` | 92,9 % |
-| `height_cm` | 89,0 % |
-| `club` | 86,3 % |
-| `weight_kg` | 34,3 % |
+| `birth_date` | 99,3 % |
+| `nationality` | 98,0 % |
+| `position` | 98,5 % |
+| `position_detail` | 92,4 % |
+| `league` | 92,5 % |
+| `height_cm` | 88,7 % |
+| `club` | 91,2 % |
+| `weight_kg` | 29,8 % |
 
 `league` est consolidée avec la priorité `tm_league → tsdb_league_name → espn_league`, normalisée vers des noms courts standard (`Premier League`, `Ligue 1`, `La Liga`…).
 
@@ -109,13 +112,13 @@ Alimente les 7 tables du schéma en étoile depuis `recap_joueurs_clean.csv`.
 
 | Table | Source principale | Couverture |
 |---|---|---|
-| `joueurs` (centrale) | Toutes sources — nom unifié | 12 959 joueurs |
-| `profil` | TheSportsDB, API-Football | ~89 % |
-| `clubs` | Transfermarkt, ESPN, apife | ~86 % |
-| `valeur_marchande` | Transfermarkt | ~57 % |
-| `contrats` | Capology, Transfermarkt | ~55 % |
-| `performances` | Sofascore + ESPN | ~4 % (ligues couvertes uniquement) |
-| `notoriete` | TheSportsDB | ~98 % |
+| `joueurs` (centrale) | Toutes sources — nom unifié | 12 290 joueurs |
+| `profil` | TheSportsDB, API-Football | ~99 % |
+| `clubs` | Transfermarkt, ESPN, apife | ~99 % |
+| `valeur_marchande` | Transfermarkt | ~99 % |
+| `contrats` | Capology, Transfermarkt | ~99 % |
+| `performances` | Sofascore | ~45 % (ligues couvertes uniquement) |
+| `notoriete` | TheSportsDB | ~99 % |
 
 Voir `README_db.md` pour les instructions détaillées de mise en place.
 

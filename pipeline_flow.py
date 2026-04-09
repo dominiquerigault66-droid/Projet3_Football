@@ -89,44 +89,36 @@ def chargement_mysql():
     run_script("import_mysql.py")
 
 # ── Flow hebdomadaire ─────────────────────────────────────────────────────────
-#
-#   collecte_apif_joueurs --|
-#   collecte_apif_teams   --|
-#   collecte_espn_af      --|--> merge --> nettoyage --> mysql
-#   collecte_thesportsdb  --|
+# Exécution séquentielle (compatible Prefect 3 sans task runner asyncio) :
+#   apif_joueurs → apif_teams → espn_af → thesportsdb → merge → nettoyage → mysql
 
 @flow(name="Pipeline Football - Hebdomadaire")
 def flow_hebdo():
-    j1 = collecte_apif_joueurs.submit()
-    j2 = collecte_apif_teams.submit()
-    j3 = collecte_espn_af.submit()
-    j4 = collecte_thesportsdb.submit()
-
-    m = merge_joueurs.submit(wait_for=[j1, j2, j3, j4])
-    n = nettoyage_joueurs.submit(wait_for=[m])
-    chargement_mysql.submit(wait_for=[n])
+    collecte_apif_joueurs()
+    collecte_apif_teams()
+    collecte_espn_af()
+    collecte_thesportsdb()
+    merge_joueurs()
+    nettoyage_joueurs()
+    chargement_mysql()
 
 # ── Flow mensuel ──────────────────────────────────────────────────────────────
-#
-#   collecte_apif_joueurs  --|
-#   collecte_apif_teams    --|
-#   collecte_espn_af       --|
-#   collecte_thesportsdb   --|--> merge --> nettoyage --> mysql
-#   collecte_transfermarkt --|
-#   collecte_enriched      --|  (attend transfermarkt : lit players_all.csv)
+# Exécution séquentielle :
+#   apif_joueurs → apif_teams → espn_af → thesportsdb
+#   → transfermarkt → enriched (lit players_all.csv)
+#   → merge → nettoyage → mysql
 
 @flow(name="Pipeline Football - Mensuel")
 def flow_mensuel():
-    j1 = collecte_apif_joueurs.submit()
-    j2 = collecte_apif_teams.submit()
-    j3 = collecte_espn_af.submit()
-    j4 = collecte_thesportsdb.submit()
-    j5 = collecte_transfermarkt.submit()
-    j6 = collecte_enriched.submit(wait_for=[j5])
-
-    m = merge_joueurs.submit(wait_for=[j1, j2, j3, j4, j5, j6])
-    n = nettoyage_joueurs.submit(wait_for=[m])
-    chargement_mysql.submit(wait_for=[n])
+    collecte_apif_joueurs()
+    collecte_apif_teams()
+    collecte_espn_af()
+    collecte_thesportsdb()
+    collecte_transfermarkt()
+    collecte_enriched()
+    merge_joueurs()
+    nettoyage_joueurs()
+    chargement_mysql()
 
 # ── Point d'entrée ────────────────────────────────────────────────────────────
 #

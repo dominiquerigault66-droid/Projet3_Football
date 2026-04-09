@@ -29,7 +29,8 @@ API_KEY = os.getenv("API_FOOTBALL_KEY")
 
 DATA_DIR     = pathlib.Path(__file__).parent / "data"
 OUTPUT_FILE  = DATA_DIR / "ESPN_AF_stats.csv"
-BACKUP_FILE  = DATA_DIR / "ESPN_AF_stats_backup.json"
+BACKUP_FILE      = DATA_DIR / "ESPN_AF_stats_backup.json"
+CHECKPOINT_FILE  = DATA_DIR / "ESPN_AF_stats_checkpoint.json"
 
 ESPN_BASE    = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 ESPN_STATS   = "https://site.web.api.espn.com/apis/common/v3/sports/soccer"
@@ -341,25 +342,59 @@ def _fetch_espn_stats(espn_id: str, league_slug: str) -> dict | None:
 
 
 def enrich_with_espn_stats(players: list[dict]) -> tuple[int, int]:
-    """Appelle ESPN stats pour les joueurs encore sans stats."""
+    """Appelle ESPN stats pour les joueurs encore sans stats.
+    Checkpoint joueur par joueur — reprend apres interruption.
+    """
     targets = [p for p in players if not _has_stats(p)]
     found = empty = 0
 
-    print(f"\n   📡 ESPN stats — {len(targets)} joueurs à compléter")
+    # Charger le checkpoint si existant
+    done_ids = set()
+    if CHECKPOINT_FILE.exists():
+        with open(CHECKPOINT_FILE, encoding="utf-8") as f:
+            done_ids = set(json.load(f))
+        print(f"   Reprise checkpoint : {len(done_ids)} joueurs deja traites")
+
+    print(f"\n   ESPN stats — {len(targets)} joueurs a completer")
 
     for i, p in enumerate(targets, 1):
+        pid = str(p["espn_id"])
+
+        # Skip si deja traite
+        if pid in done_ids:
+            if _has_stats(p):
+                found += 1
+            else:
+                empty += 1
+            continue
+
         stats = _fetch_espn_stats(p["espn_id"], p["league_slug"])
         if stats:
             p.update(stats)
             p["stats_source"] = "espn_stats"
             found += 1
-            print(f"   [{i}/{len(targets)}] ✅ {p['name']} — goals={p.get('goals')} rating={p.get('rating')}")
+            print(f"   [{i}/{len(targets)}] OK {p['name']} — goals={p.get('goals')}")
         else:
             empty += 1
-            print(f"   [{i}/{len(targets)}] ⚠️  {p['name']} — sans stats ESPN")
+            print(f"   [{i}/{len(targets)}] sans stats {p['name']}")
+
+        done_ids.add(pid)
+
+        # Sauvegarder checkpoint toutes les 50 joueurs
+        if i % 50 == 0:
+            with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
+                json.dump(list(done_ids), f)
+            # Sauvegarder aussi l'etat des players
+            with open(BACKUP_FILE, "w", encoding="utf-8") as f:
+                json.dump({"phase": 2, "players": players}, f, ensure_ascii=False)
+
         time.sleep(1)
 
-    print(f"   ✅ ESPN stats : {found} enrichis | {empty} sans données")
+    # Checkpoint final
+    with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
+        json.dump(list(done_ids), f)
+
+    print(f"   ESPN stats : {found} enrichis | {empty} sans donnees")
     return found, empty
 
 
@@ -416,50 +451,70 @@ def print_fill_rates(players: list[dict]):
 # ══════════════════════════════════════════════════════════════════
 if __name__ == "__main__":
 
-    print("\n" + "═" * 55)
+    print("\n" + "=" * 55)
     print("  COLLECTE ESPN + API-FOOTBALL STATS")
-    print("═" * 55)
+    print("=" * 55)
 
     # Diagnostic
-    print("\n🔬 Diagnostic API-Football...")
+    print("\nDiagnostic API-Football...")
     diagnostique_af()
 
-    # ── Phase 1 : effectifs ESPN ──────────────────────────────────
-    print("\n🚀 PHASE 1 — Effectifs ESPN\n")
-    players = collect_espn_rosters()
+    # ── Reprise depuis backup si phases 1+2 déjà complètes ────────────────────
+    players = None
+    if BACKUP_FILE.exists():
+        with open(BACKUP_FILE, encoding="utf-8") as f:
+            backup = json.load(f)
+        backup_phase = backup.get("phase", 0) if isinstance(backup, dict) else 0
+        if backup_phase >= 2:
+            # Phases 1+2 complètes — reprise directe avant phase 3
+            players = backup["players"]
+            print(f"\nBackup phase {backup_phase} trouvé — {len(players)} joueurs chargés")
+            print("  Phases 1 et 2 ignorées, reprise à la phase 3")
+        else:
+            # Backup incomplet (phase 1 seulement) — on repart de zéro
+            print(f"\nBackup incomplet (phase {backup_phase}) détecté — suppression et relance complète")
+            BACKUP_FILE.unlink()
 
-    # Backup JSON après phase 1
-    with open(BACKUP_FILE, "w", encoding="utf-8") as f:
-        json.dump(players, f, ensure_ascii=False, indent=2)
-    print(f"   💾 Backup phase 1 → {BACKUP_FILE}")
+    if players is None:
+        # Phase 1 : effectifs ESPN
+        print("\nPHASE 1 - Effectifs ESPN\n")
+        players = collect_espn_rosters()
 
-    # ── Phase 2 : stats API-Football (cache par ligue) ────────────
-    print("\n🚀 PHASE 2 — Stats API-Football (cache par ligue)\n")
-    enrich_with_af(players)
+        # Backup JSON après phase 1 (marqué phase=1 — incomplet, ne pas réutiliser)
+        with open(BACKUP_FILE, "w", encoding="utf-8") as f:
+            json.dump({"phase": 1, "players": players}, f, ensure_ascii=False, indent=2)
+        print(f"  Backup phase 1 -> {BACKUP_FILE}")
 
-    # Backup JSON après phase 2
-    with open(BACKUP_FILE, "w", encoding="utf-8") as f:
-        json.dump(players, f, ensure_ascii=False, indent=2)
-    print(f"   💾 Backup phase 2 → {BACKUP_FILE}")
+        # Phase 2 : stats API-Football (cache par ligue)
+        print("\nPHASE 2 - Stats API-Football (cache par ligue)\n")
+        enrich_with_af(players)
 
-    # ── Phase 3 : complétion ESPN stats ──────────────────────────
-    print("\n🚀 PHASE 3 — Complétion ESPN stats endpoint\n")
+        # Backup JSON après phase 2 (marqué phase=2 — utilisable pour reprise phase 3)
+        with open(BACKUP_FILE, "w", encoding="utf-8") as f:
+            json.dump({"phase": 2, "players": players}, f, ensure_ascii=False, indent=2)
+        print(f"  Backup phase 2 -> {BACKUP_FILE}")
+
+    # Phase 3 : completion ESPN stats (avec checkpoint)
+    print("\nPHASE 3 - Completion ESPN stats endpoint\n")
     enrich_with_espn_stats(players)
 
-    # ── Export CSV ────────────────────────────────────────────────
+    # Nettoyage checkpoints une fois terminé
+    if CHECKPOINT_FILE.exists():
+        CHECKPOINT_FILE.unlink()
+    if BACKUP_FILE.exists():
+        BACKUP_FILE.unlink()
+
+    # Export CSV
     df = pd.DataFrame(players)
-
-    # Suppression de la colonne interne league_slug (non utile en aval)
     df = df.drop(columns=["league_slug"], errors="ignore")
-
     df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
 
-    # ── Rapport final ─────────────────────────────────────────────
-    print(f"\n{'═'*55}")
-    print(f"  RÉSULTAT FINAL")
-    print(f"{'═'*55}")
-    print(f"  Joueurs collectés : {len(df)}")
+    # Rapport final
+    print(f"\n{'='*55}")
+    print(f"  RESULTAT FINAL")
+    print(f"{'='*55}")
+    print(f"  Joueurs collectes : {len(df)}")
     print(f"  Colonnes          : {len(df.columns)}")
     print(f"  Fichier           : {OUTPUT_FILE}")
     print_fill_rates(players)
-    print(f"\n🎉 Terminé !\n")
+    print(f"\nTermine !\n")

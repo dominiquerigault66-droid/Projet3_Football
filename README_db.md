@@ -52,15 +52,18 @@ python import_mysql.py
 
 Le script lit `data/recap_joueurs_clean.csv` et insère les données dans cet ordre :
 
-| Étape | Table             | Source principale            | Couverture |
-|-------|-------------------|------------------------------|------------|
-| 1     | `joueurs`         | Toutes sources (nom unifié)  | 16 946     |
-| 2     | `profil`          | TheSportsDB, API-Football    | ~89%       |
-| 3     | `clubs`           | Transfermarkt, ESPN, apife   | ~70%       |
-| 4     | `valeur_marchande`| Transfermarkt                | ~57%       |
-| 5     | `contrats`        | Capology, Transfermarkt      | ~55%       |
-| 6     | `performances`    | Sofascore (32%) + ESPN (22%) | ~54%       |
-| 7     | `notoriete`       | TheSportsDB                  | ~60%       |
+| Étape | Table              | Source principale              | Couverture                        |
+|-------|--------------------|--------------------------------|-----------------------------------|
+| 1     | `joueurs`          | Toutes sources (nom unifié)    | 12 290                            |
+| 2     | `profil`           | TheSportsDB, API-Football      | ~99 %                             |
+| 3     | `clubs`            | Transfermarkt, ESPN, apife     | ~99 %                             |
+| 4     | `valeur_marchande` | Transfermarkt                  | ~99 %                             |
+| 5     | `contrats`         | Capology, Transfermarkt        | ~99 %                             |
+| 6     | `performances`     | Sofascore (45 %)               | ~45 % (ligues couvertes seulement)|
+| 7     | `notoriete`        | TheSportsDB                    | ~99 %                             |
+
+> **Note performances** : l'endpoint ESPN stats est actuellement indisponible (HTTP 404).
+> Les stats de performance proviennent exclusivement de Sofascore via `Collecte_monScraperFC_enriched.py`.
 
 Durée estimée : **3 à 8 minutes** selon les performances de ta machine.
 
@@ -70,9 +73,9 @@ Durée estimée : **3 à 8 minutes** selon les performances de ta machine.
 
 ```sql
 USE football_db;
-SELECT COUNT(*) FROM joueurs;          -- doit être ~16 946
-SELECT COUNT(*) FROM performances;    -- doit être ~7 000-9 000
-SELECT COUNT(*) FROM notoriete;       -- doit être ~16 946
+SELECT COUNT(*) FROM joueurs;          -- doit être ~12 290
+SELECT COUNT(*) FROM performances;    -- doit être ~5 500
+SELECT COUNT(*) FROM notoriete;       -- doit être ~12 167
 
 -- Test rapide : top 10 joueurs par valeur marchande
 SELECT j.nom, j.club, j.league, vm.valeur_texte, vm.valeur_eur
@@ -109,13 +112,14 @@ Tables satellites reliées par `joueur_id` (FOREIGN KEY)
 ```
 Projet3_Football/
 ├── data/
-│   ├── recap_joueurs.csv          # produit par Merge_joueurs.py
-│   └── recap_joueurs_clean.csv    # produit par Nettoyage_joueurs.py
-├── init_db.sql                    # DDL — crée les tables
-├── import_mysql.py                # Import CSV → MySQL
-├── Nettoyage_joueurs.py           # Nettoyage + consolidation league
-├── .env                           # ⚠️ NON commité (credentials locaux)
-└── .gitignore                     # doit contenir : .env, data/*.csv
+│   ├── transfermarkt/                 # Fichiers intermédiaires (checkpoint, log, errors)
+│   ├── recap_joueurs.csv              # Produit par Merge_joueurs.py
+│   └── recap_joueurs_clean.csv        # Produit par Nettoyage_joueurs.py
+├── init_db.sql                        # DDL — crée les tables
+├── import_mysql.py                    # Import CSV → MySQL
+├── Nettoyage_joueurs.py               # Nettoyage + consolidation league
+├── .env                               # ⚠️ NON commité (credentials locaux)
+└── .gitignore                         # doit contenir : .env, data/*.csv
 ```
 
 ---
@@ -130,8 +134,9 @@ Projet3_Football/
 priorité `tm_league → tsdb_league_name → espn_league`, normalisée vers des
 noms courts standard (`Premier League`, `Ligue 1`, etc.).
 
-**`INSERT IGNORE`** : le script est idempotent — on peut le relancer sans
-créer de doublons (les lignes existantes sont ignorées).
+**`TRUNCATE` avant insertion** : le script vide toutes les tables avant chaque
+import puis réinsère l'intégralité des données — pas d'accumulation de doublons
+entre deux exécutions.
 
 **Réinitialisation complète** (si besoin de repartir de zéro) :
 ```bash

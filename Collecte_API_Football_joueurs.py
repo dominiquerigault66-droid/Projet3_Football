@@ -18,9 +18,10 @@ import pathlib
 DATA_DIR = pathlib.Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 CSV_FILE = DATA_DIR / "API_F_Joueurs.csv"
-START_PAGE          = 250     # à modifier pour reprendre après interruption
+START_PAGE          = 1       # repart toujours de la page 1
 MAX_REQUESTS        = 2600    # quota dispo pour cette session
-DELAY_SECONDS       = 2     # 6s entre requêtes ≈ 10 req/min
+MAX_PAGE_FREE_PLAN  = 3       # plan gratuit limite a 3 pages sur /players/profiles
+DELAY_SECONDS       = 2       # delai entre requetes
 
 FIELDNAMES = [
     "id", "name", "firstname", "lastname",
@@ -78,14 +79,10 @@ players_init = init_data.get("response", [])
 print(f"  {len(players_init)} joueurs — total pages : {total_pages}")
 
 # ── Ouverture du CSV ─────────────────────────────────────────────────────────
-file_exists = os.path.isfile(CSV_FILE)
-
-with open(CSV_FILE, mode="a", newline="", encoding="utf-8") as f:
+with open(CSV_FILE, mode="w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=FIELDNAMES, extrasaction="ignore")
 
-    if not file_exists:
-        writer.writeheader()
-
+    writer.writeheader()
     write_players(players_init, writer)
     requests_used = 1
 
@@ -93,8 +90,8 @@ with open(CSV_FILE, mode="a", newline="", encoding="utf-8") as f:
     for page in range(START_PAGE + 1, total_pages + 1):
 
         if requests_used >= MAX_REQUESTS:
-            print(f"\n⛔ Limite de {MAX_REQUESTS} requêtes atteinte.")
-            print(f"   → Relancez avec START_PAGE = {page}")
+            print(f"\n Limite de {MAX_REQUESTS} requetes atteinte.")
+            print(f"   Relancez avec START_PAGE = {page}")
             break
 
         time.sleep(DELAY_SECONDS)
@@ -104,9 +101,19 @@ with open(CSV_FILE, mode="a", newline="", encoding="utf-8") as f:
 
         if data is None:
             continue
+        
+        if not isinstance(data, dict):
+            print(f"  Page {page} : réponse inattendue ({type(data).__name__}), ignorée")
+            continue
 
-        players = data.get("response", [])
-        print(f"  {len(players)} joueurs | requêtes restantes : {MAX_REQUESTS - requests_used}")
+        # Detection de la limite du plan gratuit
+        if isinstance(data, dict) and isinstance(data.get("errors"), dict) and data["errors"].get("plan"):
+            print(f"\n Limite du plan detectee a la page {page} : {data['errors']['plan']}")
+            print(f"   Collecte arretee proprement — {requests_used} requetes consommees.")
+            break
+
+        players = data.get("response", []) if isinstance(data, dict) else []
+        print(f"  {len(players)} joueurs | requetes restantes : {MAX_REQUESTS - requests_used}")
         write_players(players, writer)
 
 print(f"\n✔ Session terminée — {requests_used} requête(s), données dans '{CSV_FILE}'")
