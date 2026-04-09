@@ -1,0 +1,12 @@
+football_db:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: "{{ env_var('DB_HOST', 'localhost') }}"
+      port: "{{ env_var('DB_PORT', '3306') | int }}"
+      database: "{{ env_var('DB_NAME', 'football_db') }}"
+      schema: "{{ env_var('DB_NAME', 'football_db') }}"
+      username: "{{ env_var('DB_USER', 'root') }}"
+      password: "{{ env_var('DB_PASS', '') }}"
+      charset: utf8mb4

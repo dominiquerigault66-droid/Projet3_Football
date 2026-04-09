@@ -1,0 +1,80 @@
+version: 2
+
+models:
+
+  # ── Staging ────────────────────────────────────────────────────────────────
+
+  - name: stg_joueurs
+    description: "Staging table joueurs — sélection et typage, calcul de l'âge"
+    columns:
+      - name: joueur_id
+        description: "Clé primaire"
+        tests:
+          - unique
+          - not_null
+      - name: nom
+        tests:
+          - not_null
+      - name: position
+        tests:
+          - accepted_values:
+              values: ['Attacker', 'Midfielder', 'Defender', 'Goalkeeper']
+
+  - name: stg_performances
+    description: "Staging performances — métriques Sofascore + calculs /90 min"
+    columns:
+      - name: joueur_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_scores
+    description: "Composantes brutes des scores sportif et marketing avant percentiles"
+    columns:
+      - name: joueur_id
+        tests:
+          - unique
+          - not_null
+
+  # ── Marts ──────────────────────────────────────────────────────────────────
+
+  - name: v_joueurs_complets
+    description: >
+      Vue centrale dénormalisée — jointure de toutes les tables satellites.
+      Contient les scores S1-S10 (sportif par poste en percentile) et
+      M1-M10 (marketing en percentile). Base de 95% des requêtes Streamlit.
+    columns:
+      - name: joueur_id
+        tests:
+          - unique
+          - not_null
+      - name: score_sport
+        description: "Score sportif S1-S10 (percentile par poste). NULL si pas de données Sofascore."
+      - name: score_sport_label
+        description: "Label affiché : 'S1' à 'S10'. NULL si pas de données Sofascore."
+      - name: score_marketing
+        description: "Score marketing M1-M10 (percentile global)."
+      - name: score_marketing_label
+        description: "Label affiché : 'M1' à 'M10'."
+
+  - name: v_recrutement
+    description: >
+      Vue profil recruteur — colonnes mercato et performance.
+      Exclut les colonnes notoriété/réseaux sociaux.
+      Filtrée sur les joueurs avec position renseignée.
+
+  - name: v_marketing
+    description: >
+      Vue profil annonceur — notoriété, réseaux sociaux, image du joueur.
+      Exclut les stats de performance détaillées.
+
+  - name: v_contrats_expiration
+    description: >
+      Opportunités mercato — joueurs dont le contrat expire dans les 18 mois.
+      Triée par date d'expiration croissante.
+
+  - name: v_top_valeur_par_poste
+    description: >
+      Benchmark valeur marchande — top joueurs par poste et par ligue.
+      Contient les rangs intra-poste et intra-poste/ligue.
+      Utile pour les visualisations comparatives Streamlit.
