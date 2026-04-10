@@ -51,6 +51,14 @@ Projet3_Football/
 ├── Merge_joueurs.py                             # Fusion des 8 sources → data/recap_joueurs.csv
 ├── Nettoyage_joueurs.py                         # Consolidation → data/recap_joueurs_clean.csv
 ├── pipeline_flow.py                             # Orchestration Prefect — flows hebdo et mensuel
+├── streamlit_app/                               # Application Streamlit — livrable final
+│   ├── app.py                                   # Point d'entrée — navigation + test connexion MySQL
+│   ├── db.py                                    # Connexion SQLAlchemy + fonctions utilitaires + cache
+│   └── pages/
+│       ├── 1_Accueil.py                         # KPIs globaux + 4 graphiques Plotly
+│       ├── 2_Recherche.py                       # Filtres multi-critères + tableau + export CSV
+│       ├── 3_Score.py                           # Score Sportif /10 + Score Marketing /10 + radars
+│       └── 4_Fiche_joueur.py                    # Profil complet : stats, finances, notoriété
 ├── init_db.sql                                  # DDL MySQL — création des 7 tables
 ├── import_mysql.py                              # Import recap_joueurs_clean.csv → MySQL (TRUNCATE + INSERT)
 ├── requirements.txt
@@ -221,6 +229,51 @@ Tasks disponibles : `collecte_apif_joueurs`, `collecte_apif_teams`, `collecte_es
 | `flow_mensuel` | `0 3 1 * *` | 1er de chaque mois à 03h00 |
 
 ---
+
+---
+
+## Phase 6 — Application Streamlit
+
+L'application est le livrable final du projet. Elle se connecte directement à MySQL via la vue dbt `v_joueurs_complets` et s'adresse à deux profils : clubs (recrutement/mercato) et annonceurs (notoriété/partenariats).
+
+### Lancement
+
+```bash
+cd streamlit_app
+python -m streamlit run app.py
+```
+
+> **Important :** utiliser `python -m streamlit` et non `streamlit` directement sous Windows/Git Bash pour garantir l'utilisation du Python du `.venv`.
+
+### Pages
+
+| Page | Fichier | Description |
+|---|---|---|
+| Accueil | `pages/1_Accueil.py` | KPIs globaux (nb joueurs, ligues) + 4 graphiques de distribution |
+| Recherche | `pages/2_Recherche.py` | Filtres multi-critères en sidebar, tableau de résultats, export CSV |
+| Score | `pages/3_Score.py` | Score Sportif /10 et Score Marketing /10 avec radars des composantes |
+| Fiche joueur | `pages/4_Fiche_joueur.py` | Profil complet : stats Sofascore, finances, notoriété, réseaux sociaux |
+
+### Architecture technique
+
+- **`db.py`** : connexion SQLAlchemy + PyMySQL, fonctions `run_query()` et helpers mis en cache (`@st.cache_data`, TTL 1h)
+- **Source principale** : vue dbt `v_joueurs_complets` (12 290 joueurs, toutes tables jointes, scores précalculés)
+- **Scores** : déciles `NTILE(10)` précalculés par dbt — aucun recalcul côté Streamlit
+  - `score_sport` (S1–S10) : percentile par poste, basé sur rating/contribution/régularité/âge
+  - `score_marketing` (M1–M10) : percentile global, basé sur intLoved (log), réseaux sociaux, ligue premium
+- **Navigation inter-pages** : `st.session_state["joueur_id_selected"]` permet la navigation Page 2 → Page 4
+
+### Dépendances supplémentaires
+
+```bash
+pip install streamlit plotly
+```
+
+### Notes
+
+- Le score marketing intègre un bonus ligue premium (15%) — un joueur sans réseaux sociaux mais dans une ligue premium peut atteindre M3. Ce comportement est documenté et affiché dans le détail des composantes.
+- La Page 2 exige au moins un filtre actif avant de lancer la requête (limitée à 200 résultats, triés par valeur marchande décroissante).
+
 
 ## Installation
 
