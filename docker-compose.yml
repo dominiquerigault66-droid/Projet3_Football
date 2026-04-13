@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: football_mysql
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: football_db
+      MYSQL_USER: football_user
+      MYSQL_PASSWORD: football_pass
+
+    ports:
+      - "3307:3306"
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init_db.sql:/docker-entrypoint-initdb.d/01_init_db.sql:ro
+
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+    networks:
+      - football_network
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: football_streamlit
+    restart: unless-stopped
+
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3307
+      DB_USER: football_user
+      DB_PASS: football_pass
+      DB_NAME: football_db
+    ports:
+      - "3007:3006"
+
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+    networks:
+      - football_network
+
+networks:
+  football_network:
+    driver: bridge
+
+volumes:
+  mysql_data:

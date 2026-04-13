@@ -10559,3 +10559,1743 @@ having count(*) > 1
 [0m16:51:53.636130 [debug] [MainThread]: Command `python -m dbt.cli.main test` succeeded at 16:51:53.635568 after 2.29 seconds
 [0m16:51:53.637275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC956E65D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC970F5A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC970F6FC0>]}
 [0m16:51:53.638310 [debug] [MainThread]: Flushing usage events
+[0m15:12:13.817001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CAD63C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CAD63BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CAD62240>]}
+
+
+============================== 15:12:13.817001 | 2787e230-7224-4416-85a6-ff18a70e0f76 ==============================
+[0m15:12:13.817001 [info ] [MainThread]: Running with dbt=1.7.19
+[0m15:12:13.817001 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\patri\\OneDrive\\Documentos\\Projet3_Football\\dbt_football\\logs', 'fail_fast': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:14.687860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB38F8F0>]}
+[0m15:12:14.825874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238C992CE00>]}
+[0m15:12:14.826396 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m15:12:14.842922 [debug] [MainThread]: checksum: a8d43cdff37d0f32d7fbe4c5c25bea4bb6c86e162f8ce8fdb1a38cdcf7495431, vars: {}, profile: , target: , version: 1.7.19
+[0m15:12:14.921653 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 10 files added, 9 files changed.
+[0m15:12:14.922662 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\unit.sql
+[0m15:12:14.922662 [debug] [MainThread]: Partial parsing: added file: dbt://macros\unit_test_sql\get_fixture_sql.sql
+[0m15:12:14.922662 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\equals.sql
+[0m15:12:14.922662 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\schema.sql
+[0m15:12:14.924709 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\aggregate.sql
+[0m15:12:14.925714 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\cast.sql
+[0m15:12:14.925714 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\date.sql
+[0m15:12:14.925714 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\scalar.sql
+[0m15:12:14.925714 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\helpers.sql
+[0m15:12:14.925714 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\function.sql
+[0m15:12:14.929575 [debug] [MainThread]: Partial parsing: updated file: football_db://models\schema.yml
+[0m15:12:14.929575 [debug] [MainThread]: Partial parsing: updated file: football_db://models\staging\stg_scores.sql
+[0m15:12:14.931592 [debug] [MainThread]: Partial parsing: updated file: football_db://models\marts\v_top_valeur_par_poste.sql
+[0m15:12:14.932599 [debug] [MainThread]: Partial parsing: updated file: football_db://models\staging\stg_joueurs.sql
+[0m15:12:14.932599 [debug] [MainThread]: Partial parsing: updated file: football_db://models\marts\v_recrutement.sql
+[0m15:12:14.932599 [debug] [MainThread]: Partial parsing: updated file: football_db://models\staging\stg_performances.sql
+[0m15:12:14.934652 [debug] [MainThread]: Partial parsing: updated file: football_db://models\marts\v_joueurs_complets.sql
+[0m15:12:14.934652 [debug] [MainThread]: Partial parsing: updated file: football_db://models\marts\v_marketing.sql
+[0m15:12:14.934652 [debug] [MainThread]: Partial parsing: updated file: football_db://models\marts\v_contrats_expiration.sql
+[0m15:12:15.657389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB9230E0>]}
+[0m15:12:15.679658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB5815E0>]}
+[0m15:12:15.679658 [info ] [MainThread]: Found 8 models, 10 tests, 0 sources, 0 exposures, 0 metrics, 414 macros, 0 groups, 0 semantic models
+[0m15:12:15.685212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB7A8290>]}
+[0m15:12:15.685212 [info ] [MainThread]: 
+[0m15:12:15.689728 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m15:12:15.689728 [debug] [ThreadPool]: Acquiring new mysql connection 'list_schemas'
+[0m15:12:15.792839 [debug] [ThreadPool]: Using mysql connection "list_schemas"
+[0m15:12:15.792839 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "connection_name": "list_schemas"} */
+select distinct schema_name
+        from information_schema.schemata
+[0m15:12:15.794938 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:15.936096 [debug] [ThreadPool]: SQL status: SUCCESS 11 in 0.0 seconds
+[0m15:12:15.939667 [debug] [ThreadPool]: On list_schemas: Close
+[0m15:12:15.945177 [debug] [ThreadPool]: Acquiring new mysql connection 'list_None_football_db'
+[0m15:12:15.952730 [debug] [ThreadPool]: Using mysql connection "list_None_football_db"
+[0m15:12:15.952730 [debug] [ThreadPool]: On list_None_football_db: BEGIN
+[0m15:12:15.952730 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:15.976695 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:15.976695 [debug] [ThreadPool]: Using mysql connection "list_None_football_db"
+[0m15:12:15.976695 [debug] [ThreadPool]: On list_None_football_db: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "connection_name": "list_None_football_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'football_db'
+  
+[0m15:12:16.019341 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.0 seconds
+[0m15:12:16.022806 [debug] [ThreadPool]: On list_None_football_db: ROLLBACK
+[0m15:12:16.022806 [debug] [ThreadPool]: On list_None_football_db: Close
+[0m15:12:16.032077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB9A3F20>]}
+[0m15:12:16.033204 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:16.033204 [debug] [MainThread]: On master: BEGIN
+[0m15:12:16.035776 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:12:16.053712 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.053712 [debug] [MainThread]: On master: COMMIT
+[0m15:12:16.053712 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:16.053712 [debug] [MainThread]: On master: COMMIT
+[0m15:12:16.053712 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.053712 [debug] [MainThread]: On master: Close
+[0m15:12:16.060027 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:12:16.060027 [info ] [MainThread]: 
+[0m15:12:16.067550 [debug] [Thread-1 (]: Began running node model.football_db.stg_joueurs
+[0m15:12:16.070060 [info ] [Thread-1 (]: 1 of 8 START sql view model football_db.stg_joueurs ............................ [RUN]
+[0m15:12:16.073097 [debug] [Thread-1 (]: Acquiring new mysql connection 'model.football_db.stg_joueurs'
+[0m15:12:16.073097 [debug] [Thread-1 (]: Began compiling node model.football_db.stg_joueurs
+[0m15:12:16.083017 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.stg_joueurs"
+[0m15:12:16.087969 [debug] [Thread-1 (]: Timing info for model.football_db.stg_joueurs (compile): 15:12:16.073097 => 15:12:16.087969
+[0m15:12:16.093043 [debug] [Thread-1 (]: Began executing node model.football_db.stg_joueurs
+[0m15:12:16.207053 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.stg_joueurs"
+[0m15:12:16.209064 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_joueurs"
+[0m15:12:16.209064 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: BEGIN
+[0m15:12:16.211086 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:12:16.219279 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.219279 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_joueurs"
+[0m15:12:16.222861 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_joueurs"} */
+
+  create view `football_db`.`stg_joueurs__dbt_tmp`
+    
+    
+  as (
+    -- models/staging/stg_joueurs.sql
+-- Staging : table joueurs — sélection et typage des colonnes utiles
+
+WITH source AS (
+    SELECT
+        joueur_id,
+        nom,
+        birth_date,
+        nationality,
+        position,
+        position_detail,
+        club,
+        league,
+        photo_url,
+        apif_id,
+        apife_player_id,
+        espn_id,
+        tm_id,
+        tsdb_id,
+        -- Âge calculé à la date du jour
+        TIMESTAMPDIFF(YEAR, birth_date, CURDATE()) AS age
+    FROM football_db.joueurs
+    WHERE nom IS NOT NULL
+)
+
+SELECT * FROM source
+  );
+[0m15:12:16.242652 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.257391 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_joueurs"
+[0m15:12:16.257391 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_joueurs"} */
+
+    drop view if exists `football_db`.`stg_joueurs` cascade
+  
+[0m15:12:16.257391 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.257391 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_joueurs"
+[0m15:12:16.257391 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_joueurs"} */
+
+    rename table `football_db`.`stg_joueurs__dbt_tmp` to `football_db`.`stg_joueurs`
+  
+[0m15:12:16.286281 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.303230 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: COMMIT
+[0m15:12:16.303230 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_joueurs"
+[0m15:12:16.303230 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: COMMIT
+[0m15:12:16.311123 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.313043 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_joueurs"
+[0m15:12:16.313043 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_joueurs"} */
+drop view if exists `football_db`.`stg_joueurs__dbt_backup`
+[0m15:12:16.321236 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.322747 [debug] [Thread-1 (]: Timing info for model.football_db.stg_joueurs (execute): 15:12:16.093043 => 15:12:16.322747
+[0m15:12:16.322747 [debug] [Thread-1 (]: On model.football_db.stg_joueurs: Close
+[0m15:12:16.322747 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB85E7B0>]}
+[0m15:12:16.322747 [info ] [Thread-1 (]: 1 of 8 OK created sql view model football_db.stg_joueurs ....................... [[32mSUCCESS 0[0m in 0.25s]
+[0m15:12:16.322747 [debug] [Thread-1 (]: Finished running node model.football_db.stg_joueurs
+[0m15:12:16.322747 [debug] [Thread-1 (]: Began running node model.football_db.stg_performances
+[0m15:12:16.322747 [info ] [Thread-1 (]: 2 of 8 START sql view model football_db.stg_performances ....................... [RUN]
+[0m15:12:16.330686 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_db.stg_joueurs, now model.football_db.stg_performances)
+[0m15:12:16.331828 [debug] [Thread-1 (]: Began compiling node model.football_db.stg_performances
+[0m15:12:16.332849 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.stg_performances"
+[0m15:12:16.332849 [debug] [Thread-1 (]: Timing info for model.football_db.stg_performances (compile): 15:12:16.331828 => 15:12:16.332849
+[0m15:12:16.332849 [debug] [Thread-1 (]: Began executing node model.football_db.stg_performances
+[0m15:12:16.342982 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.stg_performances"
+[0m15:12:16.342982 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_performances"
+[0m15:12:16.342982 [debug] [Thread-1 (]: On model.football_db.stg_performances: BEGIN
+[0m15:12:16.342982 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:16.347090 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.347090 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_performances"
+[0m15:12:16.347090 [debug] [Thread-1 (]: On model.football_db.stg_performances: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_performances"} */
+
+  create view `football_db`.`stg_performances__dbt_tmp`
+    
+    
+  as (
+    -- models/staging/stg_performances.sql
+-- Staging : performances — calcul des métriques par 90 minutes
+
+WITH source AS (
+    SELECT
+        joueur_id,
+        stats_source,
+        -- Sofascore — métriques brutes
+        sfs_rating,
+        sfs_appearances,
+        sfs_minutes_played,
+        sfs_goals,
+        sfs_assists,
+        sfs_saves,
+        sfs_clean_sheet,
+        sfs_key_passes,
+        sfs_successful_dribbles,
+        sfs_tackles,
+        sfs_interceptions,
+        sfs_yellow_cards,
+        sfs_red_cards,
+        sfs_expected_goals,
+        sfs_expected_assists,
+        -- Métriques /90 min (évite division par zéro)
+        CASE
+            WHEN sfs_minutes_played > 0
+            THEN ROUND((sfs_goals + sfs_assists) / sfs_minutes_played * 90, 3)
+            ELSE NULL
+        END AS goals_assists_p90,
+        CASE
+            WHEN sfs_minutes_played > 0
+            THEN ROUND(sfs_goals / sfs_minutes_played * 90, 3)
+            ELSE NULL
+        END AS goals_p90,
+        CASE
+            WHEN sfs_minutes_played > 0
+            THEN ROUND(sfs_assists / sfs_minutes_played * 90, 3)
+            ELSE NULL
+        END AS assists_p90,
+        CASE
+            WHEN sfs_minutes_played > 0
+            THEN ROUND(sfs_saves / sfs_minutes_played * 90, 3)
+            ELSE NULL
+        END AS saves_p90,
+        CASE
+            WHEN sfs_minutes_played > 0
+            THEN ROUND(sfs_key_passes / sfs_minutes_played * 90, 3)
+            ELSE NULL
+        END AS key_passes_p90,
+        -- ESPN fallback (colonnes moins riches)
+        espn_goals,
+        espn_assists,
+        espn_appearances,
+        espn_minutes_played,
+        espn_rating
+    FROM football_db.performances
+    WHERE sfs_minutes_played > 0
+       OR espn_minutes_played > 0
+)
+
+SELECT * FROM source
+  );
+[0m15:12:16.392836 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.405233 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_performances"
+[0m15:12:16.405233 [debug] [Thread-1 (]: On model.football_db.stg_performances: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_performances"} */
+
+    drop view if exists `football_db`.`stg_performances` cascade
+  
+[0m15:12:16.405233 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.405233 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_performances"
+[0m15:12:16.405233 [debug] [Thread-1 (]: On model.football_db.stg_performances: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_performances"} */
+
+    rename table `football_db`.`stg_performances__dbt_tmp` to `football_db`.`stg_performances`
+  
+[0m15:12:16.423694 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.423694 [debug] [Thread-1 (]: On model.football_db.stg_performances: COMMIT
+[0m15:12:16.423694 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_performances"
+[0m15:12:16.423694 [debug] [Thread-1 (]: On model.football_db.stg_performances: COMMIT
+[0m15:12:16.437685 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.442761 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_performances"
+[0m15:12:16.445441 [debug] [Thread-1 (]: On model.football_db.stg_performances: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_performances"} */
+drop view if exists `football_db`.`stg_performances__dbt_backup`
+[0m15:12:16.450017 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.454759 [debug] [Thread-1 (]: Timing info for model.football_db.stg_performances (execute): 15:12:16.332849 => 15:12:16.454759
+[0m15:12:16.454759 [debug] [Thread-1 (]: On model.football_db.stg_performances: Close
+[0m15:12:16.454759 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB82F560>]}
+[0m15:12:16.454759 [info ] [Thread-1 (]: 2 of 8 OK created sql view model football_db.stg_performances .................. [[32mSUCCESS 0[0m in 0.12s]
+[0m15:12:16.460119 [debug] [Thread-1 (]: Finished running node model.football_db.stg_performances
+[0m15:12:16.463086 [debug] [Thread-1 (]: Began running node model.football_db.stg_scores
+[0m15:12:16.463086 [info ] [Thread-1 (]: 3 of 8 START sql view model football_db.stg_scores ............................. [RUN]
+[0m15:12:16.463086 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_db.stg_performances, now model.football_db.stg_scores)
+[0m15:12:16.463086 [debug] [Thread-1 (]: Began compiling node model.football_db.stg_scores
+[0m15:12:16.472747 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.stg_scores"
+[0m15:12:16.472747 [debug] [Thread-1 (]: Timing info for model.football_db.stg_scores (compile): 15:12:16.467715 => 15:12:16.472747
+[0m15:12:16.472747 [debug] [Thread-1 (]: Began executing node model.football_db.stg_scores
+[0m15:12:16.489728 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.stg_scores"
+[0m15:12:16.495696 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_scores"
+[0m15:12:16.495696 [debug] [Thread-1 (]: On model.football_db.stg_scores: BEGIN
+[0m15:12:16.497723 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:16.521982 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.523121 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_scores"
+[0m15:12:16.525216 [debug] [Thread-1 (]: On model.football_db.stg_scores: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_scores"} */
+
+  create view `football_db`.`stg_scores__dbt_tmp`
+    
+    
+  as (
+    -- models/staging/stg_scores.sql
+-- Calcul des composantes brutes des scores sportif et marketing
+-- avant transformation en percentiles (effectuée dans marts/v_joueurs_complets)
+
+WITH joueurs AS (
+    SELECT * FROM `football_db`.`stg_joueurs`
+),
+
+perfs AS (
+    SELECT * FROM `football_db`.`stg_performances`
+),
+
+notoriete AS (
+    SELECT
+        joueur_id,
+        int_loved,
+        instagram,
+        twitter,
+        facebook
+    FROM football_db.notoriete
+),
+
+valeurs AS (
+    SELECT
+        joueur_id,
+        valeur_eur
+    FROM football_db.valeur_marchande
+),
+
+-- ── Composantes score sportif ──────────────────────────────────────────────────
+score_sport_raw AS (
+    SELECT
+        j.joueur_id,
+        j.position,
+        j.age,
+        p.sfs_rating,
+        p.goals_assists_p90,
+        p.saves_p90,
+        p.sfs_clean_sheet,
+        p.sfs_minutes_played,
+
+        -- Composante rating (commune à tous les postes) — normalisée 0-1
+        -- sfs_rating est entre ~5 et ~10 → on normalise sur cet intervalle
+        LEAST(GREATEST((COALESCE(p.sfs_rating, 0) - 5) / 5, 0), 1)
+            AS comp_rating,
+
+        -- Composante buts+assists/90 pondérée par poste
+        CASE j.position
+            WHEN 'Goalkeeper' THEN
+                -- Gardien : saves/90 + clean_sheets normalisés
+                LEAST(COALESCE(p.saves_p90, 0) / 5, 1) * 0.6
+                + LEAST(COALESCE(p.sfs_clean_sheet, 0) / 20, 1) * 0.4
+            WHEN 'Defender' THEN
+                LEAST(COALESCE(p.goals_assists_p90, 0) / 0.5, 1)
+            WHEN 'Midfielder' THEN
+                LEAST(COALESCE(p.goals_assists_p90, 0) / 0.8, 1)
+            WHEN 'Attacker' THEN
+                LEAST(COALESCE(p.goals_assists_p90, 0) / 1.2, 1)
+            ELSE
+                LEAST(COALESCE(p.goals_assists_p90, 0) / 0.8, 1)
+        END AS comp_contribution,
+
+        -- Composante régularité : minutes jouées normalisées (max ~3000 min/saison)
+        LEAST(COALESCE(p.sfs_minutes_played, 0) / 3000, 1)
+            AS comp_regularite,
+
+        -- Composante âge inversé : bonus jeunesse (< 23 ans = 1, > 33 ans = 0)
+        CASE
+            WHEN j.age IS NULL THEN 0.5
+            WHEN j.age <= 23    THEN 1.0
+            WHEN j.age >= 33    THEN 0.0
+            ELSE (33 - j.age) / 10.0
+        END AS comp_age
+
+    FROM joueurs j
+    LEFT JOIN perfs p ON j.joueur_id = p.joueur_id
+),
+
+-- ── Score sportif brut pondéré par poste ──────────────────────────────────────
+score_sport_weighted AS (
+    SELECT
+        joueur_id,
+        position,
+        comp_rating,
+        comp_contribution,
+        comp_regularite,
+        comp_age,
+        -- Pondération selon poste
+        CASE position
+            WHEN 'Goalkeeper' THEN
+                comp_rating      * 0.35
+                + comp_contribution * 0.30
+                + comp_regularite   * 0.20
+                + comp_age          * 0.15
+            WHEN 'Defender' THEN
+                comp_rating      * 0.55
+                + comp_contribution * 0.10
+                + comp_regularite   * 0.20
+                + comp_age          * 0.15
+            WHEN 'Midfielder' THEN
+                comp_rating      * 0.45
+                + comp_contribution * 0.20
+                + comp_regularite   * 0.20
+                + comp_age          * 0.15
+            WHEN 'Attacker' THEN
+                comp_rating      * 0.35
+                + comp_contribution * 0.30
+                + comp_regularite   * 0.20
+                + comp_age          * 0.15
+            ELSE
+                comp_rating      * 0.45
+                + comp_contribution * 0.20
+                + comp_regularite   * 0.20
+                + comp_age          * 0.15
+        END AS score_sport_brut,
+
+        -- Flag : score calculable (joueur avec données Sofascore)
+        CASE WHEN comp_rating > 0 OR comp_contribution > 0 THEN 1 ELSE 0 END
+            AS has_sport_data
+
+    FROM score_sport_raw
+),
+
+-- ── Composantes score marketing ───────────────────────────────────────────────
+score_marketing_raw AS (
+    SELECT
+        j.joueur_id,
+        j.league,
+        n.int_loved,
+
+        -- int_loved déconcentré via log (valeurs 0-15 → log(1-16))
+        LOG(COALESCE(n.int_loved, 0) + 1) / LOG(16)
+            AS comp_loved,
+
+        -- Réseaux sociaux : nombre de plateformes renseignées / 3
+        (
+            CASE WHEN n.instagram IS NOT NULL THEN 1 ELSE 0 END
+            + CASE WHEN n.twitter  IS NOT NULL THEN 1 ELSE 0 END
+            + CASE WHEN n.facebook IS NOT NULL THEN 1 ELSE 0 END
+        ) / 3.0 AS comp_reseaux,
+
+        -- Ligue premium (top 5 européennes + Champions League)
+        CASE
+            WHEN j.league IN (
+                'Premier League', 'La Liga', 'Serie A',
+                'Bundesliga', 'Ligue 1', 'Champions League'
+            ) THEN 1.0
+            ELSE 0.0
+        END AS comp_ligue
+
+    FROM joueurs j
+    LEFT JOIN notoriete n ON j.joueur_id = n.joueur_id
+),
+
+-- ── Score marketing brut ──────────────────────────────────────────────────────
+score_marketing_weighted AS (
+    SELECT
+        joueur_id,
+        comp_loved,
+        comp_reseaux,
+        comp_ligue,
+        -- Pondération : int_loved 55%, réseaux 30%, ligue 15%
+        comp_loved   * 0.55
+        + comp_reseaux * 0.30
+        + comp_ligue   * 0.15 AS score_marketing_brut
+    FROM score_marketing_raw
+)
+
+-- ── Assemblage final ──────────────────────────────────────────────────────────
+SELECT
+    sw.joueur_id,
+    sw.position,
+    sw.score_sport_brut,
+    sw.has_sport_data,
+    sw.comp_rating,
+    sw.comp_contribution,
+    sw.comp_regularite,
+    sw.comp_age,
+    mw.score_marketing_brut,
+    mw.comp_loved,
+    mw.comp_reseaux,
+    mw.comp_ligue
+FROM score_sport_weighted sw
+LEFT JOIN score_marketing_weighted mw ON sw.joueur_id = mw.joueur_id
+  );
+[0m15:12:16.563734 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.580115 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_scores"
+[0m15:12:16.582649 [debug] [Thread-1 (]: On model.football_db.stg_scores: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_scores"} */
+
+    drop view if exists `football_db`.`stg_scores` cascade
+  
+[0m15:12:16.590050 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.594976 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_scores"
+[0m15:12:16.597139 [debug] [Thread-1 (]: On model.football_db.stg_scores: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_scores"} */
+
+    rename table `football_db`.`stg_scores__dbt_tmp` to `football_db`.`stg_scores`
+  
+[0m15:12:16.605091 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.611710 [debug] [Thread-1 (]: On model.football_db.stg_scores: COMMIT
+[0m15:12:16.612723 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_scores"
+[0m15:12:16.612723 [debug] [Thread-1 (]: On model.football_db.stg_scores: COMMIT
+[0m15:12:16.612723 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.612723 [debug] [Thread-1 (]: Using mysql connection "model.football_db.stg_scores"
+[0m15:12:16.618359 [debug] [Thread-1 (]: On model.football_db.stg_scores: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.stg_scores"} */
+drop view if exists `football_db`.`stg_scores__dbt_backup`
+[0m15:12:16.618359 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.618359 [debug] [Thread-1 (]: Timing info for model.football_db.stg_scores (execute): 15:12:16.478813 => 15:12:16.618359
+[0m15:12:16.618359 [debug] [Thread-1 (]: On model.football_db.stg_scores: Close
+[0m15:12:16.625463 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB83B4D0>]}
+[0m15:12:16.625463 [info ] [Thread-1 (]: 3 of 8 OK created sql view model football_db.stg_scores ........................ [[32mSUCCESS 0[0m in 0.16s]
+[0m15:12:16.626722 [debug] [Thread-1 (]: Finished running node model.football_db.stg_scores
+[0m15:12:16.628592 [debug] [Thread-1 (]: Began running node model.football_db.v_joueurs_complets
+[0m15:12:16.630100 [info ] [Thread-1 (]: 4 of 8 START sql table model football_db.v_joueurs_complets .................... [RUN]
+[0m15:12:16.630100 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_db.stg_scores, now model.football_db.v_joueurs_complets)
+[0m15:12:16.634797 [debug] [Thread-1 (]: Began compiling node model.football_db.v_joueurs_complets
+[0m15:12:16.634797 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.v_joueurs_complets"
+[0m15:12:16.634797 [debug] [Thread-1 (]: Timing info for model.football_db.v_joueurs_complets (compile): 15:12:16.634797 => 15:12:16.634797
+[0m15:12:16.634797 [debug] [Thread-1 (]: Began executing node model.football_db.v_joueurs_complets
+[0m15:12:16.677877 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.v_joueurs_complets"
+[0m15:12:16.677877 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_joueurs_complets"
+[0m15:12:16.677877 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: BEGIN
+[0m15:12:16.677877 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:16.694568 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:16.694568 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_joueurs_complets"
+[0m15:12:16.694568 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_joueurs_complets"} */
+
+  
+    
+
+  create  table
+    `football_db`.`v_joueurs_complets__dbt_tmp`
+    
+    
+      as
+    
+    (
+      -- models/marts/v_joueurs_complets.sql
+-- Vue centrale dénormalisée — base de toutes les requêtes Streamlit
+-- Contient les scores S1-S10 (sportif) et M1-M10 (marketing) en percentiles
+
+WITH joueurs AS (
+    SELECT * FROM `football_db`.`stg_joueurs`
+),
+
+perfs AS (
+    SELECT * FROM `football_db`.`stg_performances`
+),
+
+scores_raw AS (
+    SELECT * FROM `football_db`.`stg_scores`
+),
+
+profil AS (
+    SELECT
+        joueur_id,
+        height_cm,
+        weight_kg,
+        pied_fort,
+        apif_photo,
+        apife_photo,
+        espn_photo,
+        tsdb_thumb,
+        tsdb_cutout,
+        apife_team_logo,
+        fbref_url
+    FROM football_db.profil
+),
+
+clubs AS (
+    SELECT
+        joueur_id,
+        team_name,
+        league_name,
+        apife_team_id,
+        team_logo,
+        player_number
+    FROM football_db.clubs
+),
+
+valeur AS (
+    SELECT
+        joueur_id,
+        valeur_eur,
+        valeur_texte,
+        last_club,
+        joined_date,
+        tm_player_url
+    FROM football_db.valeur_marchande
+),
+
+contrats AS (
+    SELECT
+        joueur_id,
+        contrat_expiration,
+        contrat_expiration_date,
+        salaire_brut_semaine_eur,
+        salaire_brut_annuel_eur,
+        cap_position,
+        cap_club
+    FROM football_db.contrats
+),
+
+notoriete AS (
+    SELECT
+        joueur_id,
+        instagram,
+        twitter,
+        facebook,
+        int_loved,
+        description_en,
+        description_fr,
+        tsdb_gender,
+        tsdb_signing,
+        tsdb_wage
+    FROM football_db.notoriete
+),
+
+-- ── Percentiles scores sportifs (joueurs avec données uniquement) ─────────────
+sport_percentiles AS (
+    SELECT
+        joueur_id,
+        score_sport_brut,
+        has_sport_data,
+        -- Rang percentile 0-1 parmi les joueurs avec données, par poste
+        PERCENT_RANK() OVER (
+            PARTITION BY position
+            ORDER BY score_sport_brut
+        ) AS pct_sport
+    FROM scores_raw
+    WHERE has_sport_data = 1
+),
+
+-- ── NTILE scores marketing (tous joueurs) — distribution uniforme ─────────────
+marketing_percentiles AS (
+    SELECT
+        joueur_id,
+        score_marketing_brut,
+        NTILE(10) OVER (
+            ORDER BY score_marketing_brut
+        ) AS ntile_marketing
+    FROM scores_raw
+),
+
+-- ── Conversion percentiles → échelle S1-S10 / M1-M10 ─────────────────────────
+scores_finaux AS (
+    SELECT
+        sp.joueur_id,
+        -- Score sportif : NULL si pas de données Sofascore
+        CASE
+            WHEN sp.pct_sport IS NOT NULL
+            THEN LEAST(FLOOR(sp.pct_sport * 10) + 1, 10)
+            ELSE NULL
+        END AS score_sport,
+        CASE
+            WHEN sp.pct_sport IS NOT NULL
+            THEN CONCAT('S', LEAST(FLOOR(sp.pct_sport * 10) + 1, 10))
+            ELSE NULL
+        END AS score_sport_label,
+        -- Score marketing : tous joueurs
+        mp.ntile_marketing AS score_marketing,
+        CONCAT('M', mp.ntile_marketing) AS score_marketing_label
+    FROM sport_percentiles sp
+    LEFT JOIN marketing_percentiles mp ON sp.joueur_id = mp.joueur_id
+
+    UNION ALL
+
+    -- Joueurs sans données sportives : score_sport NULL, marketing calculé
+    SELECT
+        mp.joueur_id,
+        NULL AS score_sport,
+        NULL AS score_sport_label,
+        mp.ntile_marketing AS score_marketing,
+        CONCAT('M', mp.ntile_marketing) AS score_marketing_label
+    FROM marketing_percentiles mp
+    WHERE mp.joueur_id NOT IN (SELECT joueur_id FROM sport_percentiles)
+)
+
+-- ── Assemblage final ──────────────────────────────────────────────────────────
+SELECT
+    -- Identité
+    j.joueur_id,
+    j.nom,
+    j.birth_date,
+    j.age,
+    j.nationality,
+    j.position,
+    j.position_detail,
+    j.club,
+    j.league,
+
+    -- Photo principale (priorité : apif > tsdb_cutout > espn > tsdb_thumb)
+    COALESCE(pr.apif_photo, pr.tsdb_cutout, pr.espn_photo, pr.tsdb_thumb)
+        AS photo_url,
+
+    -- Profil physique
+    pr.height_cm,
+    pr.weight_kg,
+    pr.pied_fort,
+    pr.apife_team_logo AS team_logo,
+    pr.fbref_url,
+
+    -- Club
+    cl.player_number,
+
+    -- Valeur marchande
+    v.valeur_eur,
+    v.valeur_texte,
+    v.tm_player_url,
+
+    -- Contrat
+    ct.contrat_expiration,
+    ct.contrat_expiration_date,
+    ct.salaire_brut_semaine_eur,
+    ct.salaire_brut_annuel_eur,
+    ct.cap_position,
+
+    -- Stats performance clés
+    p.sfs_rating,
+    p.sfs_appearances,
+    p.sfs_minutes_played,
+    p.sfs_goals,
+    p.sfs_assists,
+    p.goals_assists_p90,
+    p.goals_p90,
+    p.assists_p90,
+    p.saves_p90,
+    p.sfs_expected_goals,
+    p.sfs_expected_assists,
+    p.sfs_yellow_cards,
+    p.sfs_red_cards,
+
+    -- Notoriété
+    n.instagram,
+    n.twitter,
+    n.facebook,
+    n.int_loved,
+    n.description_en,
+    n.description_fr,
+    n.tsdb_signing,
+
+    -- Scores finaux
+    sf.score_sport,
+    sf.score_sport_label,
+    sf.score_marketing,
+    sf.score_marketing_label,
+
+    -- IDs sources (traçabilité)
+    j.apif_id,
+    j.apife_player_id,
+    j.espn_id,
+    j.tm_id,
+    j.tsdb_id
+
+FROM joueurs j
+LEFT JOIN profil pr       ON j.joueur_id = pr.joueur_id
+LEFT JOIN clubs cl        ON j.joueur_id = cl.joueur_id
+LEFT JOIN valeur v        ON j.joueur_id = v.joueur_id
+LEFT JOIN contrats ct     ON j.joueur_id = ct.joueur_id
+LEFT JOIN perfs p         ON j.joueur_id = p.joueur_id
+LEFT JOIN notoriete n     ON j.joueur_id = n.joueur_id
+LEFT JOIN scores_finaux sf ON j.joueur_id = sf.joueur_id
+    )
+
+  
+[0m15:12:23.695069 [debug] [Thread-1 (]: SQL status: SUCCESS 16946 in 7.0 seconds
+[0m15:12:23.703045 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_joueurs_complets"
+[0m15:12:23.703733 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_joueurs_complets"} */
+
+    drop table if exists `football_db`.`v_joueurs_complets` cascade
+  
+[0m15:12:23.703733 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:23.710186 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_joueurs_complets"
+[0m15:12:23.711701 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_joueurs_complets"} */
+
+    rename table `football_db`.`v_joueurs_complets__dbt_tmp` to `football_db`.`v_joueurs_complets`
+  
+[0m15:12:23.736599 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:23.738938 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: COMMIT
+[0m15:12:23.738938 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_joueurs_complets"
+[0m15:12:23.738938 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: COMMIT
+[0m15:12:23.738938 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:23.750029 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_joueurs_complets"
+[0m15:12:23.752212 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_joueurs_complets"} */
+drop table if exists `football_db`.`v_joueurs_complets__dbt_backup`
+[0m15:12:23.752723 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:23.757710 [debug] [Thread-1 (]: Timing info for model.football_db.v_joueurs_complets (execute): 15:12:16.634797 => 15:12:23.757710
+[0m15:12:23.757710 [debug] [Thread-1 (]: On model.football_db.v_joueurs_complets: Close
+[0m15:12:23.757710 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CB84BAD0>]}
+[0m15:12:23.757710 [info ] [Thread-1 (]: 4 of 8 OK created sql table model football_db.v_joueurs_complets ............... [[32mSUCCESS 16946[0m in 7.13s]
+[0m15:12:23.757710 [debug] [Thread-1 (]: Finished running node model.football_db.v_joueurs_complets
+[0m15:12:23.763954 [debug] [Thread-1 (]: Began running node model.football_db.v_contrats_expiration
+[0m15:12:23.763954 [info ] [Thread-1 (]: 5 of 8 START sql table model football_db.v_contrats_expiration ................. [RUN]
+[0m15:12:23.766042 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_db.v_joueurs_complets, now model.football_db.v_contrats_expiration)
+[0m15:12:23.766042 [debug] [Thread-1 (]: Began compiling node model.football_db.v_contrats_expiration
+[0m15:12:23.770674 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.v_contrats_expiration"
+[0m15:12:23.772073 [debug] [Thread-1 (]: Timing info for model.football_db.v_contrats_expiration (compile): 15:12:23.766042 => 15:12:23.771318
+[0m15:12:23.772073 [debug] [Thread-1 (]: Began executing node model.football_db.v_contrats_expiration
+[0m15:12:23.784396 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.v_contrats_expiration"
+[0m15:12:23.786833 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_contrats_expiration"
+[0m15:12:23.788202 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: BEGIN
+[0m15:12:23.788202 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:23.810028 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:23.810028 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_contrats_expiration"
+[0m15:12:23.814814 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_contrats_expiration"} */
+
+  
+    
+
+  create  table
+    `football_db`.`v_contrats_expiration__dbt_tmp`
+    
+    
+      as
+    
+    (
+      -- models/marts/v_contrats_expiration.sql
+-- Opportunités mercato : joueurs en fin de contrat (< 18 mois)
+-- Utile pour identifier des joueurs libres ou en fin de contrat
+
+SELECT
+    joueur_id,
+    nom,
+    age,
+    nationality,
+    position,
+    position_detail,
+    club,
+    league,
+    photo_url,
+    team_logo,
+
+    -- Contrat
+    contrat_expiration,
+    contrat_expiration_date,
+    -- Mois restants avant expiration
+    TIMESTAMPDIFF(MONTH, CURDATE(), contrat_expiration_date)
+        AS mois_avant_expiration,
+    salaire_brut_annuel_eur,
+
+    -- Valeur marchande
+    valeur_eur,
+    valeur_texte,
+
+    -- Performance
+    sfs_rating,
+    sfs_goals,
+    sfs_assists,
+    goals_assists_p90,
+    sfs_minutes_played,
+
+    -- Scores
+    score_sport,
+    score_sport_label,
+    score_marketing,
+    score_marketing_label
+
+FROM `football_db`.`v_joueurs_complets`
+WHERE
+    contrat_expiration_date IS NOT NULL
+    AND contrat_expiration_date > CURDATE()
+    AND contrat_expiration_date <= DATE_ADD(CURDATE(), INTERVAL 18 MONTH)
+ORDER BY contrat_expiration_date ASC
+    )
+
+  
+[0m15:12:24.495642 [debug] [Thread-1 (]: SQL status: SUCCESS 4964 in 1.0 seconds
+[0m15:12:24.500948 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_contrats_expiration"
+[0m15:12:24.503065 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_contrats_expiration"} */
+
+    drop table if exists `football_db`.`v_contrats_expiration` cascade
+  
+[0m15:12:24.508600 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:24.510111 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_contrats_expiration"
+[0m15:12:24.510111 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_contrats_expiration"} */
+
+    rename table `football_db`.`v_contrats_expiration__dbt_tmp` to `football_db`.`v_contrats_expiration`
+  
+[0m15:12:24.531935 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:24.533958 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: COMMIT
+[0m15:12:24.535972 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_contrats_expiration"
+[0m15:12:24.537984 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: COMMIT
+[0m15:12:24.540027 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:24.545448 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_contrats_expiration"
+[0m15:12:24.545448 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_contrats_expiration"} */
+drop table if exists `football_db`.`v_contrats_expiration__dbt_backup`
+[0m15:12:24.552892 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:24.554981 [debug] [Thread-1 (]: Timing info for model.football_db.v_contrats_expiration (execute): 15:12:23.773182 => 15:12:24.554981
+[0m15:12:24.556994 [debug] [Thread-1 (]: On model.football_db.v_contrats_expiration: Close
+[0m15:12:24.560160 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CBAAC050>]}
+[0m15:12:24.561702 [info ] [Thread-1 (]: 5 of 8 OK created sql table model football_db.v_contrats_expiration ............ [[32mSUCCESS 4964[0m in 0.80s]
+[0m15:12:24.562727 [debug] [Thread-1 (]: Finished running node model.football_db.v_contrats_expiration
+[0m15:12:24.562727 [debug] [Thread-1 (]: Began running node model.football_db.v_marketing
+[0m15:12:24.566063 [info ] [Thread-1 (]: 6 of 8 START sql table model football_db.v_marketing ........................... [RUN]
+[0m15:12:24.567033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_db.v_contrats_expiration, now model.football_db.v_marketing)
+[0m15:12:24.567033 [debug] [Thread-1 (]: Began compiling node model.football_db.v_marketing
+[0m15:12:24.570049 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.v_marketing"
+[0m15:12:24.572654 [debug] [Thread-1 (]: Timing info for model.football_db.v_marketing (compile): 15:12:24.567033 => 15:12:24.572654
+[0m15:12:24.572654 [debug] [Thread-1 (]: Began executing node model.football_db.v_marketing
+[0m15:12:24.582978 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.v_marketing"
+[0m15:12:24.585168 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_marketing"
+[0m15:12:24.587190 [debug] [Thread-1 (]: On model.football_db.v_marketing: BEGIN
+[0m15:12:24.590147 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:24.615496 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:24.615496 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_marketing"
+[0m15:12:24.615496 [debug] [Thread-1 (]: On model.football_db.v_marketing: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_marketing"} */
+
+  
+    
+
+  create  table
+    `football_db`.`v_marketing__dbt_tmp`
+    
+    
+      as
+    
+    (
+      -- models/marts/v_marketing.sql
+-- Vue profil annonceur — notoriété, réseaux sociaux, image
+-- Exclut les stats de performance détaillées
+
+SELECT
+    joueur_id,
+    nom,
+    age,
+    nationality,
+    position,
+    club,
+    league,
+    photo_url,
+    team_logo,
+
+    -- Notoriété
+    int_loved,
+    instagram,
+    twitter,
+    facebook,
+    description_en,
+    description_fr,
+    tsdb_signing,
+
+    -- Valeur marchande (indicateur de notoriété commerciale)
+    valeur_eur,
+    valeur_texte,
+
+    -- Stats résumées (suffisent pour le contexte marketing)
+    sfs_rating,
+    sfs_goals,
+    sfs_assists,
+
+    -- Scores
+    score_marketing,
+    score_marketing_label,
+    score_sport,
+    score_sport_label
+
+FROM `football_db`.`v_joueurs_complets`
+    )
+
+  
+[0m15:12:26.113038 [debug] [Thread-1 (]: SQL status: SUCCESS 16946 in 1.0 seconds
+[0m15:12:26.116765 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_marketing"
+[0m15:12:26.116765 [debug] [Thread-1 (]: On model.football_db.v_marketing: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_marketing"} */
+
+    drop table if exists `football_db`.`v_marketing` cascade
+  
+[0m15:12:26.120112 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:26.120112 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_marketing"
+[0m15:12:26.123596 [debug] [Thread-1 (]: On model.football_db.v_marketing: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_marketing"} */
+
+    rename table `football_db`.`v_marketing__dbt_tmp` to `football_db`.`v_marketing`
+  
+[0m15:12:26.139614 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:26.143189 [debug] [Thread-1 (]: On model.football_db.v_marketing: COMMIT
+[0m15:12:26.143189 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_marketing"
+[0m15:12:26.143189 [debug] [Thread-1 (]: On model.football_db.v_marketing: COMMIT
+[0m15:12:26.143189 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:26.143189 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_marketing"
+[0m15:12:26.143189 [debug] [Thread-1 (]: On model.football_db.v_marketing: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_marketing"} */
+drop table if exists `football_db`.`v_marketing__dbt_backup`
+[0m15:12:26.143189 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:26.143189 [debug] [Thread-1 (]: Timing info for model.football_db.v_marketing (execute): 15:12:24.574418 => 15:12:26.143189
+[0m15:12:26.143189 [debug] [Thread-1 (]: On model.football_db.v_marketing: Close
+[0m15:12:26.156188 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CBADD280>]}
+[0m15:12:26.156899 [info ] [Thread-1 (]: 6 of 8 OK created sql table model football_db.v_marketing ...................... [[32mSUCCESS 16946[0m in 1.59s]
+[0m15:12:26.156899 [debug] [Thread-1 (]: Finished running node model.football_db.v_marketing
+[0m15:12:26.156899 [debug] [Thread-1 (]: Began running node model.football_db.v_recrutement
+[0m15:12:26.159873 [info ] [Thread-1 (]: 7 of 8 START sql table model football_db.v_recrutement ......................... [RUN]
+[0m15:12:26.161890 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_db.v_marketing, now model.football_db.v_recrutement)
+[0m15:12:26.162905 [debug] [Thread-1 (]: Began compiling node model.football_db.v_recrutement
+[0m15:12:26.164658 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.v_recrutement"
+[0m15:12:26.166676 [debug] [Thread-1 (]: Timing info for model.football_db.v_recrutement (compile): 15:12:26.162905 => 15:12:26.166676
+[0m15:12:26.168686 [debug] [Thread-1 (]: Began executing node model.football_db.v_recrutement
+[0m15:12:26.173793 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.v_recrutement"
+[0m15:12:26.173793 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_recrutement"
+[0m15:12:26.173793 [debug] [Thread-1 (]: On model.football_db.v_recrutement: BEGIN
+[0m15:12:26.180073 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:26.189359 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:26.189359 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_recrutement"
+[0m15:12:26.189359 [debug] [Thread-1 (]: On model.football_db.v_recrutement: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_recrutement"} */
+
+  
+    
+
+  create  table
+    `football_db`.`v_recrutement__dbt_tmp`
+    
+    
+      as
+    
+    (
+      -- models/marts/v_recrutement.sql
+-- Vue profil recruteur — colonnes mercato et performance
+-- Exclut les colonnes notoriété/réseaux sociaux
+
+SELECT
+    joueur_id,
+    nom,
+    age,
+    birth_date,
+    nationality,
+    position,
+    position_detail,
+    club,
+    league,
+    photo_url,
+    team_logo,
+    height_cm,
+    weight_kg,
+    pied_fort,
+    player_number,
+
+    -- Valeur marchande
+    valeur_eur,
+    valeur_texte,
+    tm_player_url,
+
+    -- Contrat
+    contrat_expiration,
+    contrat_expiration_date,
+    salaire_brut_semaine_eur,
+    salaire_brut_annuel_eur,
+    cap_position,
+
+    -- Stats performance
+    sfs_rating,
+    sfs_appearances,
+    sfs_minutes_played,
+    sfs_goals,
+    sfs_assists,
+    goals_assists_p90,
+    goals_p90,
+    assists_p90,
+    saves_p90,
+    sfs_expected_goals,
+    sfs_expected_assists,
+    sfs_yellow_cards,
+    sfs_red_cards,
+
+    -- Score sportif
+    score_sport,
+    score_sport_label,
+
+    -- Score marketing utile aussi pour le recruteur (image du joueur)
+    score_marketing,
+    score_marketing_label,
+
+    -- Traçabilité
+    fbref_url
+
+FROM `football_db`.`v_joueurs_complets`
+WHERE position IS NOT NULL
+    )
+
+  
+[0m15:12:27.459752 [debug] [Thread-1 (]: SQL status: SUCCESS 16331 in 1.0 seconds
+[0m15:12:27.459752 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_recrutement"
+[0m15:12:27.459752 [debug] [Thread-1 (]: On model.football_db.v_recrutement: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_recrutement"} */
+
+    drop table if exists `football_db`.`v_recrutement` cascade
+  
+[0m15:12:27.459752 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:27.472071 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_recrutement"
+[0m15:12:27.472071 [debug] [Thread-1 (]: On model.football_db.v_recrutement: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_recrutement"} */
+
+    rename table `football_db`.`v_recrutement__dbt_tmp` to `football_db`.`v_recrutement`
+  
+[0m15:12:27.495392 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:27.501902 [debug] [Thread-1 (]: On model.football_db.v_recrutement: COMMIT
+[0m15:12:27.502929 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_recrutement"
+[0m15:12:27.503244 [debug] [Thread-1 (]: On model.football_db.v_recrutement: COMMIT
+[0m15:12:27.503244 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:27.507353 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_recrutement"
+[0m15:12:27.507353 [debug] [Thread-1 (]: On model.football_db.v_recrutement: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_recrutement"} */
+drop table if exists `football_db`.`v_recrutement__dbt_backup`
+[0m15:12:27.515831 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:27.517849 [debug] [Thread-1 (]: Timing info for model.football_db.v_recrutement (execute): 15:12:26.169697 => 15:12:27.517849
+[0m15:12:27.519862 [debug] [Thread-1 (]: On model.football_db.v_recrutement: Close
+[0m15:12:27.521879 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CBA5C200>]}
+[0m15:12:27.522900 [info ] [Thread-1 (]: 7 of 8 OK created sql table model football_db.v_recrutement .................... [[32mSUCCESS 16331[0m in 1.36s]
+[0m15:12:27.525005 [debug] [Thread-1 (]: Finished running node model.football_db.v_recrutement
+[0m15:12:27.527025 [debug] [Thread-1 (]: Began running node model.football_db.v_top_valeur_par_poste
+[0m15:12:27.527025 [info ] [Thread-1 (]: 8 of 8 START sql table model football_db.v_top_valeur_par_poste ................ [RUN]
+[0m15:12:27.530087 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.football_db.v_recrutement, now model.football_db.v_top_valeur_par_poste)
+[0m15:12:27.530087 [debug] [Thread-1 (]: Began compiling node model.football_db.v_top_valeur_par_poste
+[0m15:12:27.535299 [debug] [Thread-1 (]: Writing injected SQL for node "model.football_db.v_top_valeur_par_poste"
+[0m15:12:27.537338 [debug] [Thread-1 (]: Timing info for model.football_db.v_top_valeur_par_poste (compile): 15:12:27.530087 => 15:12:27.537338
+[0m15:12:27.538359 [debug] [Thread-1 (]: Began executing node model.football_db.v_top_valeur_par_poste
+[0m15:12:27.551814 [debug] [Thread-1 (]: Writing runtime sql for node "model.football_db.v_top_valeur_par_poste"
+[0m15:12:27.556705 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_top_valeur_par_poste"
+[0m15:12:27.558733 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: BEGIN
+[0m15:12:27.561151 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:27.582965 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:27.585190 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_top_valeur_par_poste"
+[0m15:12:27.585190 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_top_valeur_par_poste"} */
+
+  
+    
+
+  create  table
+    `football_db`.`v_top_valeur_par_poste__dbt_tmp`
+    
+    
+      as
+    
+    (
+      -- models/marts/v_top_valeur_par_poste.sql
+-- Benchmark valeur marchande : top joueurs par poste et par ligue
+-- Utile pour les visualisations comparatives dans Streamlit
+
+WITH ranked AS (
+    SELECT
+        joueur_id,
+        nom,
+        age,
+        nationality,
+        position,
+        position_detail,
+        club,
+        league,
+        photo_url,
+        team_logo,
+        valeur_eur,
+        valeur_texte,
+        sfs_rating,
+        sfs_goals,
+        sfs_assists,
+        goals_assists_p90,
+        score_sport,
+        score_sport_label,
+        score_marketing,
+        score_marketing_label,
+        -- Rang par poste (toutes ligues confondues)
+        RANK() OVER (
+            PARTITION BY position
+            ORDER BY valeur_eur DESC
+        ) AS rang_poste,
+        -- Rang par poste et par ligue
+        RANK() OVER (
+            PARTITION BY position, league
+            ORDER BY valeur_eur DESC
+        ) AS rang_poste_ligue
+    FROM `football_db`.`v_joueurs_complets`
+    WHERE valeur_eur IS NOT NULL
+      AND position IS NOT NULL
+)
+
+SELECT * FROM ranked
+    )
+
+  
+[0m15:12:28.778365 [debug] [Thread-1 (]: SQL status: SUCCESS 8240 in 1.0 seconds
+[0m15:12:28.785712 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_top_valeur_par_poste"
+[0m15:12:28.788630 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_top_valeur_par_poste"} */
+
+    drop table if exists `football_db`.`v_top_valeur_par_poste` cascade
+  
+[0m15:12:28.793163 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:28.793163 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_top_valeur_par_poste"
+[0m15:12:28.793163 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_top_valeur_par_poste"} */
+
+    rename table `football_db`.`v_top_valeur_par_poste__dbt_tmp` to `football_db`.`v_top_valeur_par_poste`
+  
+[0m15:12:28.836875 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:28.842994 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: COMMIT
+[0m15:12:28.842994 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_top_valeur_par_poste"
+[0m15:12:28.842994 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: COMMIT
+[0m15:12:28.847421 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:28.852165 [debug] [Thread-1 (]: Using mysql connection "model.football_db.v_top_valeur_par_poste"
+[0m15:12:28.853176 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "model.football_db.v_top_valeur_par_poste"} */
+drop table if exists `football_db`.`v_top_valeur_par_poste__dbt_backup`
+[0m15:12:28.858694 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:28.862759 [debug] [Thread-1 (]: Timing info for model.football_db.v_top_valeur_par_poste (execute): 15:12:27.538359 => 15:12:28.862759
+[0m15:12:28.864129 [debug] [Thread-1 (]: On model.football_db.v_top_valeur_par_poste: Close
+[0m15:12:28.864129 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2787e230-7224-4416-85a6-ff18a70e0f76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238CBA5D070>]}
+[0m15:12:28.864129 [info ] [Thread-1 (]: 8 of 8 OK created sql table model football_db.v_top_valeur_par_poste ........... [[32mSUCCESS 8240[0m in 1.34s]
+[0m15:12:28.864129 [debug] [Thread-1 (]: Finished running node model.football_db.v_top_valeur_par_poste
+[0m15:12:28.873034 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:28.873034 [debug] [MainThread]: On master: BEGIN
+[0m15:12:28.873034 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:12:28.884826 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:28.886839 [debug] [MainThread]: On master: COMMIT
+[0m15:12:28.886839 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:28.886839 [debug] [MainThread]: On master: COMMIT
+[0m15:12:28.888607 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:28.888607 [debug] [MainThread]: On master: Close
+[0m15:12:28.892746 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:28.892746 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m15:12:28.892746 [debug] [MainThread]: Connection 'list_None_football_db' was properly closed.
+[0m15:12:28.892746 [debug] [MainThread]: Connection 'model.football_db.v_top_valeur_par_poste' was properly closed.
+[0m15:12:28.897080 [info ] [MainThread]: 
+[0m15:12:28.899980 [info ] [MainThread]: Finished running 3 view models, 5 table models in 0 hours 0 minutes and 13.21 seconds (13.21s).
+[0m15:12:28.908525 [debug] [MainThread]: Command end result
+[0m15:12:28.931766 [info ] [MainThread]: 
+[0m15:12:28.934913 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:12:28.936232 [info ] [MainThread]: 
+[0m15:12:28.939787 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m15:12:28.943683 [debug] [MainThread]: Command `dbt run` succeeded at 15:12:28.943683 after 15.50 seconds
+[0m15:12:28.945696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238C971E030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238C99D1AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238C99D3740>]}
+[0m15:12:28.945696 [debug] [MainThread]: Flushing usage events
+[0m15:12:34.939897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197074B5400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970A4DB2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970A4988F0>]}
+
+
+============================== 15:12:34.939897 | fa9e9df2-eb02-470b-9dce-54c14c0a95be ==============================
+[0m15:12:34.939897 [info ] [MainThread]: Running with dbt=1.7.19
+[0m15:12:34.939897 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '.', 'log_path': 'C:\\Users\\patri\\OneDrive\\Documentos\\Projet3_Football\\dbt_football\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test --profiles-dir .', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:35.272761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fa9e9df2-eb02-470b-9dce-54c14c0a95be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970BA566F0>]}
+[0m15:12:35.395000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fa9e9df2-eb02-470b-9dce-54c14c0a95be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970BA566F0>]}
+[0m15:12:35.395000 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m15:12:35.409930 [debug] [MainThread]: checksum: a8d43cdff37d0f32d7fbe4c5c25bea4bb6c86e162f8ce8fdb1a38cdcf7495431, vars: {}, profile: , target: , version: 1.7.19
+[0m15:12:35.474362 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:12:35.475139 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:12:35.481966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fa9e9df2-eb02-470b-9dce-54c14c0a95be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970C11D9D0>]}
+[0m15:12:35.499501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fa9e9df2-eb02-470b-9dce-54c14c0a95be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970C1BDCA0>]}
+[0m15:12:35.501338 [info ] [MainThread]: Found 8 models, 10 tests, 0 sources, 0 exposures, 0 metrics, 414 macros, 0 groups, 0 semantic models
+[0m15:12:35.502042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa9e9df2-eb02-470b-9dce-54c14c0a95be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970BFE2330>]}
+[0m15:12:35.506910 [info ] [MainThread]: 
+[0m15:12:35.510057 [debug] [MainThread]: Acquiring new mysql connection 'master'
+[0m15:12:35.514092 [debug] [ThreadPool]: Acquiring new mysql connection 'list_None_football_db'
+[0m15:12:35.523059 [debug] [ThreadPool]: Using mysql connection "list_None_football_db"
+[0m15:12:35.523059 [debug] [ThreadPool]: On list_None_football_db: BEGIN
+[0m15:12:35.523059 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:35.544994 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.544994 [debug] [ThreadPool]: Using mysql connection "list_None_football_db"
+[0m15:12:35.544994 [debug] [ThreadPool]: On list_None_football_db: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "connection_name": "list_None_football_db"} */
+select
+      null as "database",
+      table_name as name,
+      table_schema as "schema",
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+    from information_schema.tables
+    where table_schema = 'football_db'
+  
+[0m15:12:35.544994 [debug] [ThreadPool]: SQL status: SUCCESS 15 in 0.0 seconds
+[0m15:12:35.560139 [debug] [ThreadPool]: On list_None_football_db: ROLLBACK
+[0m15:12:35.563008 [debug] [ThreadPool]: On list_None_football_db: Close
+[0m15:12:35.567538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa9e9df2-eb02-470b-9dce-54c14c0a95be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970BA13050>]}
+[0m15:12:35.567538 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:35.567538 [debug] [MainThread]: On master: BEGIN
+[0m15:12:35.567538 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:12:35.582010 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.582010 [debug] [MainThread]: On master: COMMIT
+[0m15:12:35.583087 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:35.583087 [debug] [MainThread]: On master: COMMIT
+[0m15:12:35.583087 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.583087 [debug] [MainThread]: On master: Close
+[0m15:12:35.585599 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:12:35.586467 [info ] [MainThread]: 
+[0m15:12:35.592899 [debug] [Thread-1 (]: Began running node test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a
+[0m15:12:35.593427 [info ] [Thread-1 (]: 1 of 10 START test accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper  [RUN]
+[0m15:12:35.593427 [debug] [Thread-1 (]: Acquiring new mysql connection 'test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a'
+[0m15:12:35.593427 [debug] [Thread-1 (]: Began compiling node test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a
+[0m15:12:35.623095 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a"
+[0m15:12:35.623095 [debug] [Thread-1 (]: Timing info for test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a (compile): 15:12:35.593427 => 15:12:35.623095
+[0m15:12:35.623095 [debug] [Thread-1 (]: Began executing node test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a
+[0m15:12:35.649056 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a"
+[0m15:12:35.652757 [debug] [Thread-1 (]: Using mysql connection "test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a"
+[0m15:12:35.652757 [debug] [Thread-1 (]: On test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a: BEGIN
+[0m15:12:35.652757 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:12:35.672787 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.672787 [debug] [Thread-1 (]: Using mysql connection "test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a"
+[0m15:12:35.675331 [debug] [Thread-1 (]: On test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        position as value_field,
+        count(*) as n_records
+
+    from `football_db`.`stg_joueurs`
+    group by position
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Attacker','Midfielder','Defender','Goalkeeper'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:35.769867 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:35.774128 [debug] [Thread-1 (]: Timing info for test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a (execute): 15:12:35.626680 => 15:12:35.774128
+[0m15:12:35.774909 [debug] [Thread-1 (]: On test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a: ROLLBACK
+[0m15:12:35.774909 [debug] [Thread-1 (]: On test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a: Close
+[0m15:12:35.777261 [info ] [Thread-1 (]: 1 of 10 PASS accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper  [[32mPASS[0m in 0.18s]
+[0m15:12:35.779278 [debug] [Thread-1 (]: Finished running node test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a
+[0m15:12:35.779278 [debug] [Thread-1 (]: Began running node test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0
+[0m15:12:35.781536 [info ] [Thread-1 (]: 2 of 10 START test not_null_stg_joueurs_joueur_id .............................. [RUN]
+[0m15:12:35.782611 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.accepted_values_stg_joueurs_position__Attacker__Midfielder__Defender__Goalkeeper.56e9d9d41a, now test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0)
+[0m15:12:35.784572 [debug] [Thread-1 (]: Began compiling node test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0
+[0m15:12:35.794600 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0"
+[0m15:12:35.797851 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0 (compile): 15:12:35.784572 => 15:12:35.797851
+[0m15:12:35.799861 [debug] [Thread-1 (]: Began executing node test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0
+[0m15:12:35.806082 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0"
+[0m15:12:35.810046 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0"
+[0m15:12:35.810046 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0: BEGIN
+[0m15:12:35.812071 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:35.826829 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.826829 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0"
+[0m15:12:35.826829 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+
+
+select joueur_id
+from `football_db`.`stg_joueurs`
+where joueur_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:35.830667 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:35.833284 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0 (execute): 15:12:35.800380 => 15:12:35.833284
+[0m15:12:35.833284 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0: ROLLBACK
+[0m15:12:35.833284 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0: Close
+[0m15:12:35.833284 [info ] [Thread-1 (]: 2 of 10 PASS not_null_stg_joueurs_joueur_id .................................... [[32mPASS[0m in 0.05s]
+[0m15:12:35.833284 [debug] [Thread-1 (]: Finished running node test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0
+[0m15:12:35.839009 [debug] [Thread-1 (]: Began running node test.football_db.not_null_stg_joueurs_nom.39b28cf471
+[0m15:12:35.840022 [info ] [Thread-1 (]: 3 of 10 START test not_null_stg_joueurs_nom .................................... [RUN]
+[0m15:12:35.840022 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.not_null_stg_joueurs_joueur_id.0e099c13b0, now test.football_db.not_null_stg_joueurs_nom.39b28cf471)
+[0m15:12:35.843023 [debug] [Thread-1 (]: Began compiling node test.football_db.not_null_stg_joueurs_nom.39b28cf471
+[0m15:12:35.852065 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.not_null_stg_joueurs_nom.39b28cf471"
+[0m15:12:35.853087 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_joueurs_nom.39b28cf471 (compile): 15:12:35.843023 => 15:12:35.853087
+[0m15:12:35.855267 [debug] [Thread-1 (]: Began executing node test.football_db.not_null_stg_joueurs_nom.39b28cf471
+[0m15:12:35.861851 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.not_null_stg_joueurs_nom.39b28cf471"
+[0m15:12:35.864406 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_joueurs_nom.39b28cf471"
+[0m15:12:35.866437 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_nom.39b28cf471: BEGIN
+[0m15:12:35.868461 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:35.882999 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.885108 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_joueurs_nom.39b28cf471"
+[0m15:12:35.885108 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_nom.39b28cf471: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.not_null_stg_joueurs_nom.39b28cf471"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+
+
+select nom
+from `football_db`.`stg_joueurs`
+where nom is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:35.887123 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:35.889723 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_joueurs_nom.39b28cf471 (execute): 15:12:35.855267 => 15:12:35.889723
+[0m15:12:35.891752 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_nom.39b28cf471: ROLLBACK
+[0m15:12:35.892769 [debug] [Thread-1 (]: On test.football_db.not_null_stg_joueurs_nom.39b28cf471: Close
+[0m15:12:35.894867 [info ] [Thread-1 (]: 3 of 10 PASS not_null_stg_joueurs_nom .......................................... [[32mPASS[0m in 0.05s]
+[0m15:12:35.896883 [debug] [Thread-1 (]: Finished running node test.football_db.not_null_stg_joueurs_nom.39b28cf471
+[0m15:12:35.896883 [debug] [Thread-1 (]: Began running node test.football_db.not_null_stg_performances_joueur_id.cb187ec78b
+[0m15:12:35.898905 [info ] [Thread-1 (]: 4 of 10 START test not_null_stg_performances_joueur_id ......................... [RUN]
+[0m15:12:35.899925 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.not_null_stg_joueurs_nom.39b28cf471, now test.football_db.not_null_stg_performances_joueur_id.cb187ec78b)
+[0m15:12:35.901949 [debug] [Thread-1 (]: Began compiling node test.football_db.not_null_stg_performances_joueur_id.cb187ec78b
+[0m15:12:35.911792 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.not_null_stg_performances_joueur_id.cb187ec78b"
+[0m15:12:35.912802 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_performances_joueur_id.cb187ec78b (compile): 15:12:35.902967 => 15:12:35.912802
+[0m15:12:35.914857 [debug] [Thread-1 (]: Began executing node test.football_db.not_null_stg_performances_joueur_id.cb187ec78b
+[0m15:12:35.919904 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.not_null_stg_performances_joueur_id.cb187ec78b"
+[0m15:12:35.919904 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_performances_joueur_id.cb187ec78b"
+[0m15:12:35.919904 [debug] [Thread-1 (]: On test.football_db.not_null_stg_performances_joueur_id.cb187ec78b: BEGIN
+[0m15:12:35.919904 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:35.932801 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.934864 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_performances_joueur_id.cb187ec78b"
+[0m15:12:35.934864 [debug] [Thread-1 (]: On test.football_db.not_null_stg_performances_joueur_id.cb187ec78b: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.not_null_stg_performances_joueur_id.cb187ec78b"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+
+
+select joueur_id
+from `football_db`.`stg_performances`
+where joueur_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:35.936880 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:35.939913 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_performances_joueur_id.cb187ec78b (execute): 15:12:35.914857 => 15:12:35.938894
+[0m15:12:35.941263 [debug] [Thread-1 (]: On test.football_db.not_null_stg_performances_joueur_id.cb187ec78b: ROLLBACK
+[0m15:12:35.942786 [debug] [Thread-1 (]: On test.football_db.not_null_stg_performances_joueur_id.cb187ec78b: Close
+[0m15:12:35.943684 [info ] [Thread-1 (]: 4 of 10 PASS not_null_stg_performances_joueur_id ............................... [[32mPASS[0m in 0.04s]
+[0m15:12:35.945701 [debug] [Thread-1 (]: Finished running node test.football_db.not_null_stg_performances_joueur_id.cb187ec78b
+[0m15:12:35.945701 [debug] [Thread-1 (]: Began running node test.football_db.not_null_stg_scores_joueur_id.8ef8257178
+[0m15:12:35.945701 [info ] [Thread-1 (]: 5 of 10 START test not_null_stg_scores_joueur_id ............................... [RUN]
+[0m15:12:35.947712 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.not_null_stg_performances_joueur_id.cb187ec78b, now test.football_db.not_null_stg_scores_joueur_id.8ef8257178)
+[0m15:12:35.947712 [debug] [Thread-1 (]: Began compiling node test.football_db.not_null_stg_scores_joueur_id.8ef8257178
+[0m15:12:35.956302 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.not_null_stg_scores_joueur_id.8ef8257178"
+[0m15:12:35.956302 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_scores_joueur_id.8ef8257178 (compile): 15:12:35.949725 => 15:12:35.956302
+[0m15:12:35.956302 [debug] [Thread-1 (]: Began executing node test.football_db.not_null_stg_scores_joueur_id.8ef8257178
+[0m15:12:35.962073 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.not_null_stg_scores_joueur_id.8ef8257178"
+[0m15:12:35.963090 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_scores_joueur_id.8ef8257178"
+[0m15:12:35.965160 [debug] [Thread-1 (]: On test.football_db.not_null_stg_scores_joueur_id.8ef8257178: BEGIN
+[0m15:12:35.965160 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:35.983051 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:35.983051 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_stg_scores_joueur_id.8ef8257178"
+[0m15:12:35.984814 [debug] [Thread-1 (]: On test.football_db.not_null_stg_scores_joueur_id.8ef8257178: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.not_null_stg_scores_joueur_id.8ef8257178"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+
+
+select joueur_id
+from `football_db`.`stg_scores`
+where joueur_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:35.993076 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:35.997174 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_stg_scores_joueur_id.8ef8257178 (execute): 15:12:35.956302 => 15:12:35.997174
+[0m15:12:35.997174 [debug] [Thread-1 (]: On test.football_db.not_null_stg_scores_joueur_id.8ef8257178: ROLLBACK
+[0m15:12:35.999196 [debug] [Thread-1 (]: On test.football_db.not_null_stg_scores_joueur_id.8ef8257178: Close
+[0m15:12:36.001324 [info ] [Thread-1 (]: 5 of 10 PASS not_null_stg_scores_joueur_id ..................................... [[32mPASS[0m in 0.05s]
+[0m15:12:36.002858 [debug] [Thread-1 (]: Finished running node test.football_db.not_null_stg_scores_joueur_id.8ef8257178
+[0m15:12:36.002858 [debug] [Thread-1 (]: Began running node test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f
+[0m15:12:36.004904 [info ] [Thread-1 (]: 6 of 10 START test not_null_v_joueurs_complets_joueur_id ....................... [RUN]
+[0m15:12:36.006931 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.not_null_stg_scores_joueur_id.8ef8257178, now test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f)
+[0m15:12:36.008952 [debug] [Thread-1 (]: Began compiling node test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f
+[0m15:12:36.019078 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f"
+[0m15:12:36.022650 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f (compile): 15:12:36.009976 => 15:12:36.020100
+[0m15:12:36.022650 [debug] [Thread-1 (]: Began executing node test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f
+[0m15:12:36.029932 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f"
+[0m15:12:36.033344 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f"
+[0m15:12:36.034307 [debug] [Thread-1 (]: On test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f: BEGIN
+[0m15:12:36.034307 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:36.050885 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:36.051901 [debug] [Thread-1 (]: Using mysql connection "test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f"
+[0m15:12:36.052914 [debug] [Thread-1 (]: On test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+
+
+select joueur_id
+from `football_db`.`v_joueurs_complets`
+where joueur_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:36.055392 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:36.058069 [debug] [Thread-1 (]: Timing info for test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f (execute): 15:12:36.024762 => 15:12:36.058069
+[0m15:12:36.058069 [debug] [Thread-1 (]: On test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f: ROLLBACK
+[0m15:12:36.060081 [debug] [Thread-1 (]: On test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f: Close
+[0m15:12:36.062670 [info ] [Thread-1 (]: 6 of 10 PASS not_null_v_joueurs_complets_joueur_id ............................. [[32mPASS[0m in 0.06s]
+[0m15:12:36.064766 [debug] [Thread-1 (]: Finished running node test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f
+[0m15:12:36.065793 [debug] [Thread-1 (]: Began running node test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352
+[0m15:12:36.065793 [info ] [Thread-1 (]: 7 of 10 START test unique_stg_joueurs_joueur_id ................................ [RUN]
+[0m15:12:36.067814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.not_null_v_joueurs_complets_joueur_id.99a0c8812f, now test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352)
+[0m15:12:36.067814 [debug] [Thread-1 (]: Began compiling node test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352
+[0m15:12:36.074635 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352"
+[0m15:12:36.083268 [debug] [Thread-1 (]: Timing info for test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352 (compile): 15:12:36.069829 => 15:12:36.082701
+[0m15:12:36.083268 [debug] [Thread-1 (]: Began executing node test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352
+[0m15:12:36.087307 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352"
+[0m15:12:36.089487 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352"
+[0m15:12:36.089487 [debug] [Thread-1 (]: On test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352: BEGIN
+[0m15:12:36.089487 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:36.111649 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:36.112667 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352"
+[0m15:12:36.112667 [debug] [Thread-1 (]: On test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+select
+    joueur_id as unique_field,
+    count(*) as n_records
+
+from `football_db`.`stg_joueurs`
+where joueur_id is not null
+group by joueur_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:36.138043 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:36.142604 [debug] [Thread-1 (]: Timing info for test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352 (execute): 15:12:36.083268 => 15:12:36.142604
+[0m15:12:36.144808 [debug] [Thread-1 (]: On test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352: ROLLBACK
+[0m15:12:36.144808 [debug] [Thread-1 (]: On test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352: Close
+[0m15:12:36.148394 [info ] [Thread-1 (]: 7 of 10 PASS unique_stg_joueurs_joueur_id ...................................... [[32mPASS[0m in 0.08s]
+[0m15:12:36.149909 [debug] [Thread-1 (]: Finished running node test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352
+[0m15:12:36.149909 [debug] [Thread-1 (]: Began running node test.football_db.unique_stg_performances_joueur_id.2a167498b1
+[0m15:12:36.151931 [info ] [Thread-1 (]: 8 of 10 START test unique_stg_performances_joueur_id ........................... [RUN]
+[0m15:12:36.152955 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.unique_stg_joueurs_joueur_id.7ba1e75352, now test.football_db.unique_stg_performances_joueur_id.2a167498b1)
+[0m15:12:36.154720 [debug] [Thread-1 (]: Began compiling node test.football_db.unique_stg_performances_joueur_id.2a167498b1
+[0m15:12:36.159890 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.unique_stg_performances_joueur_id.2a167498b1"
+[0m15:12:36.162968 [debug] [Thread-1 (]: Timing info for test.football_db.unique_stg_performances_joueur_id.2a167498b1 (compile): 15:12:36.155586 => 15:12:36.161954
+[0m15:12:36.162968 [debug] [Thread-1 (]: Began executing node test.football_db.unique_stg_performances_joueur_id.2a167498b1
+[0m15:12:36.165100 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.unique_stg_performances_joueur_id.2a167498b1"
+[0m15:12:36.167111 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_stg_performances_joueur_id.2a167498b1"
+[0m15:12:36.167111 [debug] [Thread-1 (]: On test.football_db.unique_stg_performances_joueur_id.2a167498b1: BEGIN
+[0m15:12:36.167111 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:36.185170 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:36.187691 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_stg_performances_joueur_id.2a167498b1"
+[0m15:12:36.188009 [debug] [Thread-1 (]: On test.football_db.unique_stg_performances_joueur_id.2a167498b1: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.unique_stg_performances_joueur_id.2a167498b1"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+select
+    joueur_id as unique_field,
+    count(*) as n_records
+
+from `football_db`.`stg_performances`
+where joueur_id is not null
+group by joueur_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:36.230112 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:36.233240 [debug] [Thread-1 (]: Timing info for test.football_db.unique_stg_performances_joueur_id.2a167498b1 (execute): 15:12:36.162968 => 15:12:36.233240
+[0m15:12:36.236256 [debug] [Thread-1 (]: On test.football_db.unique_stg_performances_joueur_id.2a167498b1: ROLLBACK
+[0m15:12:36.236256 [debug] [Thread-1 (]: On test.football_db.unique_stg_performances_joueur_id.2a167498b1: Close
+[0m15:12:36.240296 [info ] [Thread-1 (]: 8 of 10 PASS unique_stg_performances_joueur_id ................................. [[32mPASS[0m in 0.09s]
+[0m15:12:36.241826 [debug] [Thread-1 (]: Finished running node test.football_db.unique_stg_performances_joueur_id.2a167498b1
+[0m15:12:36.241826 [debug] [Thread-1 (]: Began running node test.football_db.unique_stg_scores_joueur_id.5c6d316047
+[0m15:12:36.242841 [info ] [Thread-1 (]: 9 of 10 START test unique_stg_scores_joueur_id ................................. [RUN]
+[0m15:12:36.244605 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.unique_stg_performances_joueur_id.2a167498b1, now test.football_db.unique_stg_scores_joueur_id.5c6d316047)
+[0m15:12:36.246636 [debug] [Thread-1 (]: Began compiling node test.football_db.unique_stg_scores_joueur_id.5c6d316047
+[0m15:12:36.255075 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.unique_stg_scores_joueur_id.5c6d316047"
+[0m15:12:36.257856 [debug] [Thread-1 (]: Timing info for test.football_db.unique_stg_scores_joueur_id.5c6d316047 (compile): 15:12:36.248663 => 15:12:36.255840
+[0m15:12:36.257856 [debug] [Thread-1 (]: Began executing node test.football_db.unique_stg_scores_joueur_id.5c6d316047
+[0m15:12:36.265142 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.unique_stg_scores_joueur_id.5c6d316047"
+[0m15:12:36.267161 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_stg_scores_joueur_id.5c6d316047"
+[0m15:12:36.267161 [debug] [Thread-1 (]: On test.football_db.unique_stg_scores_joueur_id.5c6d316047: BEGIN
+[0m15:12:36.269704 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:36.281720 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:36.281720 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_stg_scores_joueur_id.5c6d316047"
+[0m15:12:36.282736 [debug] [Thread-1 (]: On test.football_db.unique_stg_scores_joueur_id.5c6d316047: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.unique_stg_scores_joueur_id.5c6d316047"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+select
+    joueur_id as unique_field,
+    count(*) as n_records
+
+from `football_db`.`stg_scores`
+where joueur_id is not null
+group by joueur_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:36.936604 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m15:12:36.942771 [debug] [Thread-1 (]: Timing info for test.football_db.unique_stg_scores_joueur_id.5c6d316047 (execute): 15:12:36.259875 => 15:12:36.942257
+[0m15:12:36.942771 [debug] [Thread-1 (]: On test.football_db.unique_stg_scores_joueur_id.5c6d316047: ROLLBACK
+[0m15:12:36.945376 [debug] [Thread-1 (]: On test.football_db.unique_stg_scores_joueur_id.5c6d316047: Close
+[0m15:12:36.947396 [info ] [Thread-1 (]: 9 of 10 PASS unique_stg_scores_joueur_id ....................................... [[32mPASS[0m in 0.70s]
+[0m15:12:36.947396 [debug] [Thread-1 (]: Finished running node test.football_db.unique_stg_scores_joueur_id.5c6d316047
+[0m15:12:36.947396 [debug] [Thread-1 (]: Began running node test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61
+[0m15:12:36.953102 [info ] [Thread-1 (]: 10 of 10 START test unique_v_joueurs_complets_joueur_id ........................ [RUN]
+[0m15:12:36.954492 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.football_db.unique_stg_scores_joueur_id.5c6d316047, now test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61)
+[0m15:12:36.955626 [debug] [Thread-1 (]: Began compiling node test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61
+[0m15:12:36.964817 [debug] [Thread-1 (]: Writing injected SQL for node "test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61"
+[0m15:12:36.969866 [debug] [Thread-1 (]: Timing info for test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61 (compile): 15:12:36.955626 => 15:12:36.966837
+[0m15:12:36.970913 [debug] [Thread-1 (]: Began executing node test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61
+[0m15:12:36.977062 [debug] [Thread-1 (]: Writing runtime sql for node "test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61"
+[0m15:12:36.980118 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61"
+[0m15:12:36.986538 [debug] [Thread-1 (]: On test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61: BEGIN
+[0m15:12:36.988627 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:12:37.004726 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:37.006751 [debug] [Thread-1 (]: Using mysql connection "test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61"
+[0m15:12:37.008770 [debug] [Thread-1 (]: On test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "football_db", "target_name": "dev", "node_id": "test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61"} */
+select
+      count(*) as failures,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_warn,
+      case
+        when count(*) <> 0 then 'true'
+        else 'false'
+      end as should_error
+    from (
+      
+    
+    
+
+select
+    joueur_id as unique_field,
+    count(*) as n_records
+
+from `football_db`.`v_joueurs_complets`
+where joueur_id is not null
+group by joueur_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:12:37.118823 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m15:12:37.121863 [debug] [Thread-1 (]: Timing info for test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61 (execute): 15:12:36.971937 => 15:12:37.119842
+[0m15:12:37.121863 [debug] [Thread-1 (]: On test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61: ROLLBACK
+[0m15:12:37.123985 [debug] [Thread-1 (]: On test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61: Close
+[0m15:12:37.124531 [info ] [Thread-1 (]: 10 of 10 PASS unique_v_joueurs_complets_joueur_id .............................. [[32mPASS[0m in 0.17s]
+[0m15:12:37.124531 [debug] [Thread-1 (]: Finished running node test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61
+[0m15:12:37.128186 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:37.128186 [debug] [MainThread]: On master: BEGIN
+[0m15:12:37.129696 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:12:37.142780 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:37.142780 [debug] [MainThread]: On master: COMMIT
+[0m15:12:37.142780 [debug] [MainThread]: Using mysql connection "master"
+[0m15:12:37.148377 [debug] [MainThread]: On master: COMMIT
+[0m15:12:37.148377 [debug] [MainThread]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m15:12:37.148377 [debug] [MainThread]: On master: Close
+[0m15:12:37.148377 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:37.148377 [debug] [MainThread]: Connection 'list_None_football_db' was properly closed.
+[0m15:12:37.148377 [debug] [MainThread]: Connection 'test.football_db.unique_v_joueurs_complets_joueur_id.86e27e2a61' was properly closed.
+[0m15:12:37.148377 [info ] [MainThread]: 
+[0m15:12:37.148377 [info ] [MainThread]: Finished running 10 tests in 0 hours 0 minutes and 1.64 seconds (1.64s).
+[0m15:12:37.166117 [debug] [MainThread]: Command end result
+[0m15:12:37.185059 [info ] [MainThread]: 
+[0m15:12:37.185059 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:12:37.187082 [info ] [MainThread]: 
+[0m15:12:37.188602 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[0m15:12:37.190132 [debug] [MainThread]: Command `dbt test` succeeded at 15:12:37.190132 after 2.51 seconds
+[0m15:12:37.190132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019709B1AF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197074B5400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001970BA7F440>]}
+[0m15:12:37.192208 [debug] [MainThread]: Flushing usage events

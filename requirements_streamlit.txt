@@ -1,0 +1,21 @@
+# requirements_streamlit.txt
+# Dépendances minimales pour l'application Streamlit uniquement
+# (sans les scrapers, Selenium, Botasaurus, Prefect — non nécessaires en production)
+
+# ── Interface & visualisation ─────────────────────────────────────────────────
+streamlit>=1.35.0
+plotly>=5.22.0
+
+# ── Base de données ───────────────────────────────────────────────────────────
+SQLAlchemy==2.0.48
+PyMySQL==1.1.2
+
+# ── Données ───────────────────────────────────────────────────────────────────
+pandas==2.3.3
+numpy==2.4.3
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+python-dotenv==1.2.2
+
+# ── Utilitaires ───────────────────────────────────────────────────────────────
+requests==2.32.3
